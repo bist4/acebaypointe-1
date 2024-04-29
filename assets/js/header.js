@@ -1,5 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const header = `
+    // The Top Header
     <div id="topbar" class="header d-flex align-items-center fixed-top">
     <div class="container">
       <div class="row justify-content-between align-items-center">
@@ -26,14 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
   </div> 
 
-
-  <header id="header" class="fixed-top">
+    // Main Header
+    <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-
       <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
-
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto" href="index.html">HOME</a></li>
@@ -71,13 +70,13 @@ document.addEventListener("DOMContentLoaded", function() {
           <li><a class="nav-link scrollto" href="contact_us.html">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
 
       <!-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span>
         Appointment</a> -->
-        
+
     </div>
-  </header> <!-- End Header -->
+  </header>  // End Header
     `;
 
     document.body.insertAdjacentHTML('afterbegin', header);
