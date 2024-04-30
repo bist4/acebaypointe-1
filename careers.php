@@ -81,7 +81,7 @@
               </div>
             </div>
           </div>
-        </div> <!-- End of Template Card --> 
+        </div> <!-- End of Template Card -->
         <div class="row gy-5 mb-5 loadmore services">
           <div class="col-12 col-lg-6 col-xl-12"><!-- template-card -->
             <div class="template-card d-xl-flex gray-shadow">

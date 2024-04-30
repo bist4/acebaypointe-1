@@ -205,7 +205,10 @@ h6, p, strong{
   max-height: 60px;
 }
 
-
+.mobile-nav-toggle {
+  z-index: 9999; /* Siguraduhing mataas ang z-index para sa hamburger icon */
+}
+  
 /**
 * Appointment Button
 */

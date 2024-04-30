@@ -1,6 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const header = `
-    // The Top Header
+
     <div id="topbar" class="header d-flex align-items-center fixed-top">
     <div class="container">
       <div class="row justify-content-between align-items-center">
@@ -27,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   </div> 
 
-    // Main Header
+    <!-- // Main Header -->
     <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <a href="index.html" class="logo me-auto"><img src="assets/img/logos/logo-l.png" alt=""></a>
@@ -76,9 +74,4 @@ document.addEventListener("DOMContentLoaded", function () {
         Appointment</a> -->
 
     </div>
-  </header>  // End Header
-    `;
-
-    document.body.insertAdjacentHTML('afterbegin', header);
-});
-
+  </header> 
