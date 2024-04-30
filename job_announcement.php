@@ -42,7 +42,7 @@
 </head>
 
 <body>
-    <script>header(); </script> <!-- The Header -->
+    <?php require ('header.php') ?> <!-- The Header -->
     <main> <!-- Main -->
         <!-- Title -->
         <div class="bg-dark py-5 my-5" id="wwa">
