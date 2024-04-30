@@ -46,99 +46,49 @@
 <body>
   <?php require ('assets/links/header.php') ?> <!-- The Header -->
   <!-- Main -->
-  <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-      <div class="carousel-inner" role="listbox">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
-          <div class="container">
-            <h2>Welcome to <span>Medicio</span></h2>
-            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
-              Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
-              deleniti vel.</p>
-            <a href="#about" class="btn-get-started scrollto">Read More</a>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
-          <div class="container">
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
-              Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
-              deleniti vel.</p>
-            <a href="#about" class="btn-get-started scrollto">Read More</a>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
-          <div class="container">
-            <h2>Sequi ea ut et est quaerat</h2>
-            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
-              Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
-              deleniti vel.</p>
-            <a href="#about" class="btn-get-started scrollto">Read More</a>
-          </div>
-        </div>
-
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
+  <main>
+  <div class="bg-dark py-5 my-5" id="wwa" style="background-image: url('assets/img/slide/slide-1.png'); background-size: cover; background-position: center; filter: brightness(50%)">
+    <div class="py-5">
     </div>
-  </section><!-- End Hero -->
+    <div class="container">
+        <div class="col-lg-6" style="height: 50%;">
+            <div class="">
+            <h2>Welcome to <span>Ace Medical Center Baypointe</span></h2>
+            <p>Baypointe Hospital and Medical Center is a member of the ACE (Allied Care Experts) Group of Hospitals
+              which is now around 40 medical centers, half of which are fully operational. Doctors and investors at
+              Baypointe enjoy portability of privileges and benefits like professional practice and management discounts
+              in all of the currently operational centers in Luzon Subic, Valenzuela, Baliwag, Pateros, Quezon City,
+              Marinduque, Legaspi, Malolos, San Jose Del Monte, San Jose Bulacan and Tuguegarao-Palawan. In Visayas
+              Bohol, Tacloban, Cebu, Dumaguete and Bayawan. In Mindanao, Cagayan de Oro, Dipolog and Zamboanga.</p>
+            <a href="#about" class="btn-get-started mb-sm-2">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
 
   <main id="main">
 
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="fas fa-heartbeat"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
+          <div class="container">
+            <h2>Welcome to <span>Ace Medical Center Baypointe</span></h2>
+            <p>Baypointe Hospital and Medical Center is a member of the ACE (Allied Care Experts) Group of Hospitals
+              which is now around 40 medical centers, half of which are fully operational. Doctors and investors at
+              Baypointe enjoy portability of privileges and benefits like professional practice and management discounts
+              in all of the currently operational centers in Luzon Subic, Valenzuela, Baliwag, Pateros, Quezon City,
+              Marinduque, Legaspi, Malolos, San Jose Del Monte, San Jose Bulacan and Tuguegarao-Palawan. In Visayas
+              Bohol, Tacloban, Cebu, Dumaguete and Bayawan. In Mindanao, Cagayan de Oro, Dipolog and Zamboanga.</p>
+            <a href="#about" class="btn-get-started mb-sm-2">Read More</a>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="fas fa-pills"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="fas fa-thermometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="fas fa-dna"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
         </div>
+        
+
+        
 
       </div>
     </section><!-- End Featured Services Section -->

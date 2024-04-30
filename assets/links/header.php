@@ -44,7 +44,7 @@
           </ul>
         <li class="dropdown"><a href="#"><span>NEWS & EVENTS</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="#">NEWS & EVENTS</a></li>
+            <li><a href="news_and_events.php">NEWS & EVENTS</a></li>
             <li><a href="#">PROMOS & PACKAGES</a></li>
           </ul>
         </li>
