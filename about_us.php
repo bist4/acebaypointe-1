@@ -29,9 +29,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Script of the Header -->
-  <script src="assets/js/header.js" defer></script>
-
   <!-- =======================================================
   * Template Name: Medicio
   * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
@@ -42,11 +39,7 @@
 </head>
 
 <body>
-  <!-- <script>header(); </script> The Header -->
-
-  <?php require ('header.php') ?>
-
-
+  <?php require ('assets/links/header.php') ?> <!-- The Header -->
   <main> <!-- Main -->
     <!-- Title -->
     <div class="bg-dark py-5 my-5" id="wwa">
