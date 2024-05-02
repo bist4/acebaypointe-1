@@ -195,8 +195,11 @@
     </div>
 
   </main> <!-- End Main -->
+
   <!-- Footer -->
-  <footer></footer>
+  <footer>
+    <?php require ('assets/links/footer.php') ?>
+  </footer>
   <!-- End Footer -->
 
   <div id="preloader">
