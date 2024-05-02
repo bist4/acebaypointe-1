@@ -1,7 +1,7 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
   <div class="footer-top">
-    <div class="container">
+    <div class="container" style="font-family: poppins;">
       <div class="row">
         <div class="col-lg-2 col-md-6">
           <div class="footer-info">
@@ -14,11 +14,14 @@
           <h4>Useful Links</h4>
           <ul>
             <!-- Second column content -->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Departments Services</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about_us.php">About us</a></li>
+            <li><a href="">News & Events</a></li>
+            <li><a href="doctors.php">Doctors</a></li>
+            <li><a href="#">Department & Services</a></li>
+            <li><a href="careers.php">Careers</a></li>
+            <li><a href="#">Patient Guide & Features</a></li>
+            <li><a href="contacts.php">Contacts</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 footer-links"> <!--OUR SERVICES-->
@@ -26,9 +29,9 @@
           <ul>
             <!-- Third column content -->
             <li><a href="#">Price List</a></li>
-            <li><a href="#">Department Item</a></li>
-            <li><a href="#">Room Rates</a></li>
-            <li><a href="#">Philhealth Case Rate Packages<span class="align-text-bottom"></span></a></li>
+            <li><i class="bx bx-chevron-right"></i><a href="#">Department Item</a></li>
+            <li><i class="bx bx-chevron-right"></i><a href="#">Room Rates</a></li>
+            <li><i class="bx bx-chevron-right"></i><a href="#">Philhealth Case Rate Packages<span class="align-text-bottom"></span></a></li>
             <li><a href="#">Packages For You</a></li>
           </ul>
         </div>

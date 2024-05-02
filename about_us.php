@@ -149,7 +149,7 @@
 
           <!-- Core Values-->
           <div class="col-12" data-aos="fade-up" data-aos-delay="300" id="core_values">
-            <section class="service text-center">
+            <section class="service text-center" style="">
               <div class="container">
                 <h2 class="mb-5">Core Values</h2>
                 <div class="row">
@@ -201,11 +201,10 @@
     <?php require ('assets/links/footer.php') ?>
   </footer>
   <!-- End Footer -->
-
-  <div id="preloader">
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
-  </div>
+  
+  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+  
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
