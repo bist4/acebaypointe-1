@@ -8,10 +8,9 @@
             <!-- First column content -->
             <a href="index.html" class="logo me-auto"><img src="assets/img/logos/logo-l.png" alt="Small Logo"
                 class="img-fluid small-logo"></a>
-
           </div>
         </div>
-        <div class="col-lg-2 col-md-6 footer-links">
+        <div class="col-lg-2 col-md-6 footer-links"> <!--USEFUL LINKS-->
           <h4>Useful Links</h4>
           <ul>
             <!-- Second column content -->
@@ -22,7 +21,7 @@
             <li><a href="#">Contacts</a></li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-6 footer-links">
+        <div class="col-lg-2 col-md-6 footer-links"> <!--OUR SERVICES-->
           <h4>Our Services</h4>
           <ul>
             <!-- Third column content -->
@@ -30,21 +29,19 @@
             <li><a href="#">Department Item</a></li>
             <li><a href="#">Room Rates</a></li>
             <li><a href="#">Philhealth Case Rate Packages<span class="align-text-bottom"></span></a></li>
-            <li><a href="#">Investment</a></li>
+            <li><a href="#">Packages For You</a></li>
           </ul>
-
         </div>
-        <div class="col-lg-2 col-md-6 footer-links">
+        <div class="col-lg-2 col-md-6 footer-links"> <!--OTHER LINKS-->
           <h4>Other Links</h4>
           <ul>
             <!-- Fourth column content -->
             <li><a href="#">Job Announcements</a></li>
             <li><a href="#">Equipment Acquisition</a></li>
             <li><a href="#">Accredited HMOS</a></li>
-            <li><a href="#">Packages For You</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 radiantthemes-contact-box rt412613828 element-one" style="font-family: poppins;">
+        <div class="col-lg-4 col-md-6 radiantthemes-contact-box rt412613828 element-one" style="font-family: poppins;">
           <h3 style="font-size: 18px;color: #000000;line-height: 24px;text-align: left"
             class="vc_custom_heading font-weight-bold vc_custom_1546582444223">Quick Contact</h3>
           <ul>
@@ -67,7 +64,7 @@
   </div>
   <div class="container d-md-flex py-4">
     <div class="me-md-auto text-center text-md-start">
-      <div class="copyright"> &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved</div>
+      <div class="copyright"> &copy; Copyright <strong><span>Batang COMTEQ</span></strong>. All Rights Reserved</div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
