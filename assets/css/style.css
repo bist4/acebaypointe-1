@@ -3072,6 +3072,10 @@ input[disabled]::placeholder {
 	padding-left:27px;
 }
 
+.spacing{
+	position:relative;
+	padding-left:27px;
+}
 .radiantthemes-contact-box.element-one ul li:last-child{
 	margin-bottom:0;
 }
