@@ -150,15 +150,12 @@
             </main>
     </main> <!-- End Main -->
     <!-- Footer -->
-    <footer>
-
-    </footer> <!-- End Footer -->
-
-    <!-- PRELOADER -->
-    <div id="preloader">
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-                class="bi bi-arrow-up-short"></i></a>
-    </div>
+  <footer>
+    <?php require ('assets/links/footer.php') ?>
+  </footer>
+  <!-- End Footer -->
+  
+  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>

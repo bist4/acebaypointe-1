@@ -113,7 +113,7 @@
     </div>
 
     <div class="container-fluid px-0" id="mission_vision">
-      <section id="services" class="services section-bg mt-5 mb-5 mx-3">
+      <section id="services" class="services section-bg mt-5 mx-3">
         <!-- Container of the mission, vision and core values -->
         <!-- Added margin classes mt-5, mb-5, and mx-3 to the services section -->
         <div class="container" data-aos="fade-up">
@@ -149,7 +149,7 @@
 
           <!-- Core Values-->
           <div class="col-12" data-aos="fade-up" data-aos-delay="300" id="core_values">
-            <section class="service text-center" style="">
+            <section class="service text-center">
               <div class="container">
                 <h2 class="mb-5">Core Values</h2>
                 <div class="row">

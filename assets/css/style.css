@@ -3226,7 +3226,7 @@ input[disabled]::placeholder {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #2487ce;
+  color: #0EA2BD;
   font-size: 18px;
   line-height: 1;
 }
@@ -3310,7 +3310,7 @@ input[disabled]::placeholder {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0EA2BD;
+  background: #2487ce;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -3323,7 +3323,7 @@ input[disabled]::placeholder {
 }
 
 #footer .social-links a:hover {
-  background: #0EA2BD;
+  background: #3194db;
   color: #fff;
   text-decoration: none;
 }
