@@ -29,9 +29,9 @@
           <ul>
             <!-- Third column content -->
             <li><a href="#">Price List</a></li>
-            <li><i class="bx bx-chevron-right"></i><a href="#">Department Item</a></li>
-            <li><i class="bx bx-chevron-right"></i><a href="#">Room Rates</a></li>
-            <li><i class="bx bx-chevron-right"></i><a href="#">Philhealth Case Rate Packages<span class="align-text-bottom"></span></a></li>
+            <li><i class="bx bx-chevron-right"></i><a href="pricelist.php #room_rates">Room Rates</a></li>
+            <li><i class="bx bx-chevron-right"></i><a href="pricelist.php #philhealth_case">Philhealth Case Rate Packages<span class="align-text-bottom"></span></a></li>
+            <li><i class="bx bx-chevron-right"></i><a href="pricelist.php #departmental_item">Department Item</a></li>
             <li><a href="#">Packages For You</a></li>
           </ul>
         </div>

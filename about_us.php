@@ -39,10 +39,10 @@
 </head>
 
 <body>
-  <?php require ('assets/links/header.php') ?> <!-- The Header -->
+  <?php require ('assets/links/header.php')?> <!-- The Header -->
   <main> <!-- Main -->
     <!-- Title -->
-    <div class="bg-dark py-5 my-5" id="wwa">
+    <div class="bg-dark py-5 my-5">
       <div class="py-5">
       </div>
       <div class="container">
@@ -55,8 +55,9 @@
       </div>
     </div> <!-- End of Page Title -->
 
+    
     <!-- Main content of About Us -->
-    <div class="container mt-5">
+    <div class="container mt-5" id="who_we_are">
       <div class="col-lg">
         <article>
           <!-- Post header-->
@@ -193,17 +194,46 @@
           </div><!-- End Service Item -->
         </div>
       </section><!-- End Services Section -->
+
+      <!-- QUALITY, ENVIRONMENT, HEALTH AND SAFETY POLICY MODULE -->
+      <div class="featured container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="featured-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div><!-- End Featured Item -->
+
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="featured-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Featured Item -->
+
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="featured-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Featured Item -->  
     </div>
 
   </main> <!-- End Main -->
 
   <!-- Footer -->
   <footer>
-    <?php require ('assets/links/footer.php') ?>
+    <?php require ('assets/links/footer.php')?>
   </footer>
   <!-- End Footer -->
 
-  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+  <?php require ('assets/links/back-to-top.php')?> <!-- Back to Top -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

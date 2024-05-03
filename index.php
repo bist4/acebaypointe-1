@@ -44,11 +44,11 @@
 </head>
 
 <body>
-  <?php require ('assets/links/header.php') ?> <!-- The Header -->
+  <?php require ('assets/links/header.php')?> <!-- The Header -->
   <!-- Main -->
 
   <main>
-  <div class="bg-dark py-5 my-5" id="wwa" style="background-image: url('assets/img/slide/slide-1.png'); background-size: cover; background-position: center; filter: brightness(50%); height: 50%;">
+  <div class="bg-dark py-5 my-5" style="background-image: url('assets/img/slide/slide-1.png'); background-size: cover; background-position: center; filter: brightness(50%); height: 50%;">
     <div class="py-5">
     </div>
     <div class="container">

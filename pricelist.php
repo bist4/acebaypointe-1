@@ -47,7 +47,7 @@
     <?php require ('assets/links/header.php') ?> <!-- The Header -->
     <main> <!-- Main -->
         <!-- Title -->
-        <div class="bg-dark py-5 my-5" id="wwa">
+        <div class="bg-dark py-5 my-5">
             <div class="py-5">
             </div>
             <div class="container">
@@ -71,12 +71,12 @@
                         </a>
                     </li><!-- End tab nav item -->
                     <li class="nav-item col-4">
-                        <a class="nav-link text-center" data-bs-toggle="tab" data-bs-target="#tab-2">
+                        <a class="nav-link text-center" data-bs-toggle="tab" data-bs-target="#philhealth_case">
                             <h4>PHILHEALTH CASE RATE PACKAGES</h4>
                         </a><!-- End tab nav item -->
                     </li>
                     <li class="nav-item col-4">
-                        <a class="nav-link text-center" data-bs-toggle="tab" data-bs-target="#tab-3">
+                        <a class="nav-link text-center" data-bs-toggle="tab" data-bs-target="#departmental_item">
                             <h4>DEPARTMENTAL ITEM </h4>
                         </a>
                     </li><!-- End tab nav item -->
@@ -238,18 +238,14 @@
 
                                                 </div>
                                             </section><!-- End Departments Section -->
-
                                         </div>
-
                                     </div>
-
                                 </div>
                             </section><!-- End Room rates Section -->
-
                         </div>
                     </div> <!-- End tab content item -->
 
-                    <div class="tab-pane" id="tab-2">
+                    <div class="tab-pane" id="philhealth_case">
                         <div class="row">
                             <!-- PHILHEALTH CASE RATE PACKAGES -->
                             <section id="why-us" class="why-us section-bg container">
@@ -257,7 +253,6 @@
                                     <div class="row">
                                         <div
                                             class="col-lg-12 d-flex flex-column justify-content-center align-items-stretch">
-
                                             <div class="content">
                                                 <h3><strong>PHILHEALTH CASE RATE PACKAGES</strong></h3>
                                                 <div class="text-muted fst-italic mb-2">Posted on January 1, 2023 by
@@ -291,7 +286,7 @@
                         </div>
                     </div><!-- End tab content item -->
 
-                    <div class="tab-pane" id="tab-3"> <!-- The content of the Navigation (DEPARTMENTAL ITEM)-->
+                    <div class="tab-pane" id="departmental_item"> <!-- The content of the Navigation (DEPARTMENTAL ITEM)-->
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
                                 data-aos="fade-up" data-aos-delay="100">
@@ -332,6 +327,8 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    
 
 </body>
 

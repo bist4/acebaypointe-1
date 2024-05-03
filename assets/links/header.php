@@ -36,7 +36,7 @@
         <li><a class="nav-link scrollto" href="index.php">HOME</a></li>
         <li class="dropdown"><a href="#"><span>ABOUT US</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a class="nav-link scrollto" href="about_us.php#wwa">WHO WE ARE</a></li>
+            <li><a class="nav-link scrollto" href="about_us.php#who_we_are">WHO WE ARE</a></li>
             <li><a class="nav-link scrollto" href="about_us.php#mission_vision">MISSION & VISION</a></li>
             <li><a class="nav-link scrollto" href="about_us.php#core_values">CORE VALUES</a></li>
             <li><a class="nav-link scrollto" href="privacy_policy.php">DATA PRIVARY POLICY</a></li>

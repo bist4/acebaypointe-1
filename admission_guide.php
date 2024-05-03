@@ -42,10 +42,10 @@
 </head>
 
 <body>
-    <?php require ('assets/links/header.php') ?> <!-- The Header -->
+    <?php require ('assets/links/header.php')?> <!-- The Header -->
     <main> <!-- Main -->
         <!-- Title -->
-        <div class="bg-dark py-5 my-5" id="wwa">
+        <div class="bg-dark py-5 my-5">
             <div class="py-5">
             </div>
             <div class="container">

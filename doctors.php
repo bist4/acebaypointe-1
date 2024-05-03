@@ -56,10 +56,10 @@
 </head>
 
 <body>
-    <?php require ('assets/links/header.php') ?> <!-- The Header -->
+    <?php require ('assets/links/header.php')?> <!-- The Header -->
     <main>
         <!-- Title -->
-        <div class="bg-dark py-5 my-5" id="wwa">
+        <div class="bg-dark py-5 my-5">
             <div class="py-5">
             </div>
             <div class="container">
@@ -257,7 +257,7 @@
         <?php require ('assets/links/footer.php')?>
     </footer> <!-- End Footer -->
 
-    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+    <?php require ('assets/links/back-to-top.php')?> <!-- Back to Top -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
