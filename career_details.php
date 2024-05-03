@@ -100,20 +100,20 @@
 
                 <p>Download the application form <a
                         href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Facebaypointe.com%2Fadmin%2Fupload%2Ffile%2FACEMCB-HRD-04-64%2520Employment%2520Application.doc&wdOrigin=BROWSELINK"><strong>here</strong></a>
-                    and <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angelmaecarpeso@gmail.com&su=Application%20Form'" >send</a>
-                    
-                     it to: hrd@unihealthbaypointe.com</p>
+                    and <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=angelmaecarpeso@gmail.com&su=Application%20Form'">send</a>
+
+                    it to: hrd@unihealthbaypointe.com</p>
             </div>
         </main> <!-- End of the main content of Career Details -->
     </main> <!-- End Main -->
-    <!-- ======= Footer ======= -->
+
     <!-- Footer -->
-  <footer>
-    <?php require ('assets/links/footer.php') ?>
-  </footer>
-  <!-- End Footer -->
-  
-  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+    <footer>
+        <?php require ('assets/links/footer.php') ?>
+    </footer> <!-- End Footer -->
+
+    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -125,7 +125,7 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    
+
 
 
     <!-- <script>

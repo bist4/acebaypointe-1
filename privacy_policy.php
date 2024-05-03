@@ -62,7 +62,8 @@
 
         <div class="container mt-5">
             <p><strong>Allied Care Experts (ACE) Medical Center - Baypointe</strong>, your well-being is at the heart
-                of everything we do. We understand the importance of quality healthcare delivered with compassion and respect, which
+                of everything we do. We understand the importance of quality healthcare delivered with compassion and
+                respect, which
                 is why we prioritize your safety and privacy above all else.
             </p>
             <p>At ACE Medical Center - Baypointe, you can trust that your personal information is handled with the
@@ -148,12 +149,12 @@
 
     </main> <!-- End Main -->
     <!-- Footer -->
-  <footer>
-    <?php require ('assets/links/footer.php') ?>
-  </footer>
-  <!-- End Footer -->
-  
-  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+    <footer>
+        <?php require ('assets/links/footer.php') ?>
+    </footer>
+    <!-- End Footer -->
+
+    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>

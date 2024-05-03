@@ -918,11 +918,10 @@
 
   <!-- Footer -->
   <footer>
-    <?php require ('assets/links/footer.php') ?>
-  </footer>
-  <!-- End Footer -->
+    <?php require ('assets/links/footer.php')?>
+  </footer> <!-- End Footer -->
   
-  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+  <?php require ('assets/links/back-to-top.php')?> <!-- Back to Top -->
 
   <!-- <div id="cookie-bar" class="cookie-bar"><span class="cookie-message">We use cookies to provide our services and
       enhance your experience. By using this website, you agree with this.</span><button type="button"

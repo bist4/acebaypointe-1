@@ -73,7 +73,8 @@
           </div>
           <div data-aos="fade-up"> <!-- Content -->
             <p>
-              <strong>Allied Care Experts (ACE) Medical Center - Baypointe</strong> is a privately owned and controlled corporation registered in September 20, 2006 initially as Allied Care
+              <strong>Allied Care Experts (ACE) Medical Center - Baypointe</strong> is a privately owned and controlled
+              corporation registered in September 20, 2006 initially as Allied Care
               Experts (ACE) Medical Center - Baypointe under SEC Registration Number CS200614900 with initial authorized
               capital of Php.40,000,000.00. The name was later amended as Unihealth-Baypointe Hospital and Medical
               Center,
@@ -201,10 +202,9 @@
     <?php require ('assets/links/footer.php') ?>
   </footer>
   <!-- End Footer -->
-  
+
   <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
-  
-  
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>

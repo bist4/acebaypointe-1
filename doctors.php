@@ -253,12 +253,11 @@
     </main>
 
     <!-- Footer -->
-  <footer>
-    <?php require ('assets/links/footer.php')?>
-  </footer>
-  <!-- End Footer -->
-  
-  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+    <footer>
+        <?php require ('assets/links/footer.php')?>
+    </footer> <!-- End Footer -->
+
+    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

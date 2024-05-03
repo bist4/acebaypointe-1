@@ -66,29 +66,40 @@
                     <div>
                         <h1>Lorem ipsum dolor sit amet</h1>
                         <p>The Admitting Section is located at the ground floor main lobby in front of the cashier.
-                            Your admission is pre-arranged by your attending Physician and if you have an admitting order (also
-                            called Direct Admission), then you can go direct to the Admitting Office. The admitting staff will
-                            explain details and procedures of your admission and will have you or your relative read and sign important
-                            documents as requirements for admission. This important procedure will take a few minutes but as soon
+                            Your admission is pre-arranged by your attending Physician and if you have an admitting
+                            order (also
+                            called Direct Admission), then you can go direct to the Admitting Office. The admitting
+                            staff will
+                            explain details and procedures of your admission and will have you or your relative read and
+                            sign important
+                            documents as requirements for admission. This important procedure will take a few minutes
+                            but as soon
                             as it is completed a designated staff will assist you to your room of choice. </p>
                         <p>In the event of an Emergency, Admission is arranged directly to Emergency room. Patient’s
-                            relative are assisted by ER staff and directed to the Admitting Office for intake interview and
+                            relative are assisted by ER staff and directed to the Admitting Office for intake interview
+                            and
                             process of admission. </p>
 
                         <p>If you have Corporate Credit line or a Health Maintenance Organization (HMO) card holder,
-                            you need to inform the ER Nurse and Admitting Staff right away. Your relative will be directed to
-                            the HMO office for verification of the coverage of your card in relation to your admitting or final
+                            you need to inform the ER Nurse and Admitting Staff right away. Your relative will be
+                            directed to
+                            the HMO office for verification of the coverage of your card in relation to your admitting
+                            or final
                             diagnosis.
                         </p>
 
                         <p>If you are Philhealth Member, Senior Citizen, Stockholder or with an Agreement on any
-                            Medical Packages we have, kindly inform the Admitting staff upon admission for proper documentation of
+                            Medical Packages we have, kindly inform the Admitting staff upon admission for proper
+                            documentation of
                             your transaction. </p>
 
                         <p>We suggest that you bring only personal belongings like towel and slippers & basic
-                            toiletries to make your confinement more comfortable except for ben linen and extra pillows as these are
-                            readily available at the hospital. However, we discourage bringing of valuable items that are not
-                            necessary for your confinement (e.g. jewelries or electronic gadgets), UBHMC will not be liable for any
+                            toiletries to make your confinement more comfortable except for ben linen and extra pillows
+                            as these are
+                            readily available at the hospital. However, we discourage bringing of valuable items that
+                            are not
+                            necessary for your confinement (e.g. jewelries or electronic gadgets), UBHMC will not be
+                            liable for any
                             loss of your valuables.</p>
                     </div>
 
@@ -104,9 +115,12 @@
                     <ul>
                         <li class="address no-bullet"><i class="fa fa-map-marker"></i><strong>Address</strong> Block 8,
                             Lot 1A and 1B Dewey Avenue Subic Bay Freeport Zone, Olongapo, 2222 Zambales</li>
-                        <li class="email"><i class="fa fa-envelope"></i><strong>Email</strong>baypointehospitalmedicalcenter@yahoo.com</li>
+                        <li class="email"><i
+                                class="fa fa-envelope"></i><strong>Email</strong>baypointehospitalmedicalcenter@yahoo.com
+                        </li>
                         <li class="phone"><i class="fa fa-phone"></i><strong>Phone</strong>(047) 250-6070 Local 100</li>
-                        <li class="mobile" style="list-style-type: none; margin:0;"><i class="fa fa-mobile"></i><strong>Mobile</strong>
+                        <li class="mobile" style="list-style-type: none; margin:0;"><i
+                                class="fa fa-mobile"></i><strong>Mobile</strong>
                             Smart: 0939-915-7633 <br>
                             Globe: 0917-545-1566 <br>
                             Sun: 0922-812-8623 <br>
@@ -118,13 +132,12 @@
         </div>
     </main> <!-- End Main -->
     <!-- Footer -->
-  <footer>
-    <?php require ('assets/links/footer.php') ?>
-  </footer>
-  <!-- End Footer -->
-  
-  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
-  
+    <footer>
+        <?php require ('assets/links/footer.php') ?>
+    </footer> <!-- End Footer -->
+
+    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
