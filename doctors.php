@@ -254,7 +254,7 @@
 
     <!-- Footer -->
   <footer>
-    <?php require ('assets/links/footer.php') ?>
+    <?php require ('assets/links/footer.php')?>
   </footer>
   <!-- End Footer -->
   
