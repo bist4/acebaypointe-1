@@ -192,9 +192,15 @@
             </section>
           </div><!-- End Service Item -->
         </div>
+
+        <!-- QUALITY, ENVIRONMENT, HEALTH AND SAFETY POLICY MODULE -->
+        <div class="container" data-aos="fade-up">
+          <div class="container section-title aos-init aos-animate px-5" data-aos="fade-up">
+            <h2>Quality, Environment, Health and Safety Policy</h2>
+            <p>ACEMCB is a secondary hospital dedicated to the total satisfaction of its patients, and the welfare of its employees and the environment, through its Integrated Management System. A firm commitment is made to:</p>
+          </div>
       </section><!-- End Services Section -->
 
-      <!-- QUALITY, ENVIRONMENT, HEALTH AND SAFETY POLICY MODULE -->
       
   </main> <!-- End Main -->
 

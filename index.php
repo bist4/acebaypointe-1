@@ -53,7 +53,7 @@
     </div>
     <div class="container">
         <div class="col-lg-6">
-            <div class="">
+            <div class="indexHidden">
             <h2>Welcome to <span>Ace Medical Center Baypointe</span></h2>
             <p>Baypointe Hospital and Medical Center is a member of the ACE (Allied Care Experts) Group of Hospitals
               which is now around 40 medical centers, half of which are fully operational. Doctors and investors at

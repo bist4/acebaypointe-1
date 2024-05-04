@@ -3304,3 +3304,7 @@ hr {
   color: #fff;
   text-decoration: none;
 }
+
+.indexHidden{
+  visibility: hidden;
+}
