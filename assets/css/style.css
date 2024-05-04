@@ -3287,7 +3287,7 @@ hr {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #2487ce;
+  background: #3fbbc0;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -3300,8 +3300,8 @@ hr {
 }
 
 #footer .social-links a:hover {
-  background: #3194db;
-  color: #fff;
+  background: #2bc8ce;
+  color: #ffffff;
   text-decoration: none;
 }
 

@@ -46,7 +46,6 @@
 <body>
   <?php require ('assets/links/header.php')?> <!-- The Header -->
   <!-- Main -->
-
   <main>
   <div class="bg-dark py-5 my-5" style="background-image: url('assets/img/slide/slide-1.png'); background-size: cover; background-position: center; filter: brightness(50%); height: 50%;">
     <div class="py-5">
@@ -61,17 +60,13 @@
               in all of the currently operational centers in Luzon Subic, Valenzuela, Baliwag, Pateros, Quezon City,
               Marinduque, Legaspi, Malolos, San Jose Del Monte, San Jose Bulacan and Tuguegarao-Palawan. In Visayas
               Bohol, Tacloban, Cebu, Dumaguete and Bayawan. In Mindanao, Cagayan de Oro, Dipolog and Zamboanga.</p>
-            <a href="#about" class="btn-get-started mb-sm-2">Read More</a>
+            <a href="about_us.php" class="btn-get-started mb-sm-2">Read More</a>
             </div>
         </div>
     </div>
 </div>
 
-
-  
-
   <main id="main">
-
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">

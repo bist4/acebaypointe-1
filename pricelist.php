@@ -269,15 +269,13 @@
                                                 <h4><strong>LIST OF MEDICAL CASE RATES</strong></h4>
                                                 <div class="text-muted fst-italic mb-3">UPDATED FEBRUARY 2017</div>
                                                 <div><a class="btn philhealth-btn mb-4"
-                                                        href="https://www.philhealth.gov.ph/circulars/2017/annexes/0019/AnnexA-MedicalCaseRates.pdf">View
-                                                        Schedule</a></div>
+                                                        href="https://www.philhealth.gov.ph/circulars/2017/annexes/0019/AnnexA-MedicalCaseRates.pdf">View Details</a></div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <h4><strong>ANNEX 2. LIST OF PROCEDURE CASE RATES</strong></h4>
                                                 <div class="text-muted fst-italic mb-3">REVISION 2.0</div>
                                                 <div><a class="btn philhealth-btn mb-4"
-                                                        href="https://www.philhealth.gov.ph/circulars/2015/annexes/circ012_2015/Annex2_ListofProcedureCaseRatesRevision2.pdf">View
-                                                        Schedule</a></div>
+                                                        href="https://www.philhealth.gov.ph/circulars/2015/annexes/circ012_2015/Annex2_ListofProcedureCaseRatesRevision2.pdf">View Details</a></div>
                                             </div>
                                         </div>
                                     </div>

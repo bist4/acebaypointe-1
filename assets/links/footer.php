@@ -78,7 +78,7 @@
     </div>
     <div class="footer-info">
       <div class="social-links mt-3 d-flex align-items-center justify-content-center">
-        <a href="#" class="facebook me-2"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/people/Allied-Care-Experts-Medical-Center-Baypointe/100064028532593/" class="facebook me-2"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram me-2"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
