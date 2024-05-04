@@ -66,7 +66,7 @@
             <li><a href="#">EMERGENCY & SERVICES.</a></li>
           </ul>
         </li>
-        <li><a class="nav-link scrollto" href="contact_us.php">CONTACTS</a></li>
+        <li><a class="nav-link scrollto" href="contact_us.php">CONTACT US</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>

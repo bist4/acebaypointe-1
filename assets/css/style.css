@@ -209,9 +209,7 @@ h6, p, strong{
   z-index: 9999; /* Siguraduhing mataas ang z-index para sa hamburger icon */
 }
 
-/**
-* Appointment Button
-*/
+/* Appointment Button */
 .appointment-btn {
   margin-left: 25px;
   background: #3fbbc0;
@@ -224,12 +222,10 @@ h6, p, strong{
   display: inline-block;
 }
 
-
 .appointment-btn:hover {
   background: #65c9cd;
   color: #fff;
 }
-
 
 @media (max-width: 768px) {
   .appointment-btn {
@@ -2407,13 +2403,13 @@ hr {
 
 
 
+
 /*--------------------------------------------------------------
-# Form for Section
+# Contact Section
 --------------------------------------------------------------*/
 .contact .map {
   margin-bottom: 40px;
 }
-
 
 .contact .map iframe {
   border: 0;
@@ -2421,19 +2417,16 @@ hr {
   height: 400px;
 }
 
-
 .contact .info {
   padding: 40px;
-  box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); /* Palitan ang 'var(--color-black-rgb)' ng actual na halaga */
   overflow: hidden;
 }
-
 
 .contact .info h3 {
   font-weight: 600;
   font-size: 24px;
 }
-
 
 .contact .info p {
   color: var(--color-secondary-light);
@@ -2441,21 +2434,20 @@ hr {
   font-size: 15px;
 }
 
-
 .contact .info-item+.info-item {
   padding-top: 20px;
   margin-top: 20px;
-  border-top: 1px solid rgba(var(--color-secondary-rgb), 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.15); /* Adjust the color and opacity as needed */
+  border-bottom: 0px 2px 20px 13px rgb(203 45 45 / 10%);
 }
 
 
 .contact .info-item i {
   font-size: 24px;
-  color: var(--color-primary);
+  color: #0EA2BD;
   transition: all 0.3s ease-in-out;
   margin-right: 20px;
 }
-
 
 .contact .info-item h4 {
   padding: 0;
@@ -2465,7 +2457,6 @@ hr {
   color: var(--color-secondary);
 }
 
-
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
@@ -2473,17 +2464,14 @@ hr {
   color: var(--color-secondary-light);
 }
 
-
 .contact .php-email-form {
   width: 100%;
   background: var(--color-white);
 }
 
-
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
-
 
 .contact .php-email-form .error-message {
   display: none;
@@ -2494,11 +2482,9 @@ hr {
   font-weight: 600;
 }
 
-
 .contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
-
 
 .contact .php-email-form .sent-message {
   display: none;
@@ -2509,14 +2495,12 @@ hr {
   font-weight: 600;
 }
 
-
 .contact .php-email-form .loading {
   display: none;
   background: var(--color-white);
   text-align: center;
   padding: 15px;
 }
-
 
 .contact .php-email-form .loading:before {
   content: "";
@@ -2530,7 +2514,6 @@ hr {
   animation: animate-loading 1s linear infinite;
 }
 
-
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
@@ -2539,13 +2522,11 @@ hr {
   font-size: 14px;
 }
 
-
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--color-secondary-light);
 }
-
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email] {
@@ -2553,46 +2534,33 @@ hr {
   padding: 10px 15px;
 }
 
-
 .contact .php-email-form textarea {
   padding: 10px 12px;
   height: 290px;
 }
 
-
 .contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
+  background: #0EA2BD;
   border: 0;
   padding: 13px 50px;
-  color: var(--color-white);
+  color: white;
   transition: 0.4s;
   border-radius: 0;
 }
 
-
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(var(--color-primary-rgb), 0.85);
+  background: #0EA2BD;
 }
-
-input[disabled]::placeholder {
-  font-weight: bold;
-}
-
-
-
 
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
 
-
   100% {
     transform: rotate(360deg);
   }
 }
-
-
 
 
 /*--------------------------------------------------------------
