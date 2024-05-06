@@ -125,12 +125,17 @@
                 </div>
                 <!-- Department Dropdown -->
                 <div class="form-group mt-3">
-                  <select class="form-control" name="department" id="department" required type="dropdown">
-                    <option value="" disabled selected>Select Department</option>
-                    <option value="Sales">Sales</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="Customer Support">Customer Support</option>
-                    <!-- Add more options as needed -->
+                  <select name="department" id="department" class="form-select">
+                    <option value="">Select Department</option>
+                    <option value="Department 1">Department 1</option>
+                    <option value="Department 2">Department 2</option>
+                    <option value="Department 3">Department 3</option>
+                    <option value="Department 1">Department 4</option>
+                    <option value="Department 2">Department 5</option>
+                    <option value="Department 3">Department 6</option>
+                    <option value="Department 1">Department 7</option>
+                    <option value="Department 2">Department 8</option>
+                    <option value="Department 3">Department 9</option>
                   </select>
                 </div>
                 <div class="form-group mt-3">
