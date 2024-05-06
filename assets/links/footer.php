@@ -21,7 +21,7 @@
             <li><a href="#">Department & Services</a></li>
             <li><a href="careers.php">Careers</a></li>
             <li><a href="#">Patient Guide & Features</a></li>
-            <li><a href="contacts.php">Contacts</a></li>
+            <li><a href="contact_us.php">Contacts</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 footer-links"> <!--OUR SERVICES-->
