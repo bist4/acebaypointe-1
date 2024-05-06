@@ -2400,9 +2400,6 @@ hr {
   }
 } */
 
-
-
-
 .contact .map {
   margin-bottom: 40px;
 }
@@ -2511,6 +2508,7 @@ hr {
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
+.contact .php-email-form input[type=tel],
 .contact .php-email-form textarea,
 .contact .php-email-form select {
   border-radius: 0px;
@@ -2520,6 +2518,7 @@ hr {
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type=tel],
 .contact .php-email-form textarea:focus,
 .contact .php-email-form select:focus {
   border-color: var(--color-secondary-light);
@@ -2527,6 +2526,7 @@ hr {
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
+.contact .php-email-form input[type=tel],
 .contact .php-email-form textarea,
 .contact .php-email-form select {
   height: 48px;

@@ -67,9 +67,14 @@
           src="https://maps.google.com/maps?q=Block%208,%20Lot%201A%20and%201B%20Dewey%20Avenue%20Subic%20Bay%20Freeport%20Zone,%20Olongapo,%202222%20Zambales&t=&z=13&ie=UTF8&iwloc=&output=embed"
           frameborder="0" allowfullscreen></iframe>
       </div>
-      <!-- ======= Contact Section ======= -->
+      <!-- Contact Us Section -->
       <section id="contact" class="contact">
         <div class="container">
+          <!-- <div class="my-3"> Message
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div> -->
           <div class="row gy-5 gx-lg-5">
             <div class="col-lg-5">
               <div class="info">
@@ -141,16 +146,10 @@
                 <div class="form-group mt-3">
                   <textarea class="form-control" name="message" placeholder="Message" required></textarea>
                 </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
                 <div class="text-center appointments-btn"><button type="submit">Send Message</button></div>
               </form>
             </div><!-- End Contact Form -->
           </div>
-
         </div>
       </section><!-- End Contact Section -->
 
