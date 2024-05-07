@@ -3384,7 +3384,7 @@ hr {
 .portfolio-wrap img{
   width: 100%;
 }
-/* .portfolio .portfolio-wrap .portfolio-info::before {
+.portfolio .portfolio-wrap .portfolio-info::after {
   display: block;
   content: "";
   width: 48px;
@@ -3398,7 +3398,7 @@ hr {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::after {
+.portfolio .portfolio-wrap .portfolio-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -3410,7 +3410,7 @@ hr {
   border-right: 3px solid #fff;
   transition: all 0.5s ease 0s;
   z-index: 9994;
-} */
+}
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
@@ -3443,13 +3443,13 @@ hr {
   color: #fff;
 }
 
-/* .portfolio .portfolio-wrap:hover::before {
+.portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   opacity: 1;
-} */
+}
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
@@ -3529,7 +3529,40 @@ hr {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-.portfolio .portfolio-wrap img {
-  width: 100%;
-  height: 250px; /* Adjust the height as needed */
+
+/* AT HMOS */
+#departmentDropdown1, #departmentDropdown2 {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+  /* Table styling */
+  .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  }
+
+  .table th, .table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .table th {
+      background-color: #f2f2f2;
+  }
+
+  .table tbody tr:hover {
+      background-color: #f2f2f2;
+  }
+
+.bullet ul {
+  list-style-type: disc !important;
+  margin: 20px;
 }
