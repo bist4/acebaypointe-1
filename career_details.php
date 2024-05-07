@@ -133,7 +133,7 @@
                                         </div>
                                         <div class="col-md-6 form-group">
                                             <input type="tel" class="form-control" name="phoneNum" id="phoneNum"
-                                                placeholder="Phone Number" pattern="^\+(?:[0-9] ?){6,14}[0-9]$">
+                                                placeholder="Phone Number">
                                         </div>
                                     </div>
                                     <div class="form-group mt-3">

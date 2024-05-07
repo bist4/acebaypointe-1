@@ -41,6 +41,28 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -147,157 +169,176 @@
                 </div>
             </div>
         </section> -->
+
+
+
         <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio" data-aos="fade-up">
+        <section id="portfolio" class="portfolio">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="150">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-local">Local HMOs</li>
+                            <li data-filter=".filter-international">International HMOs</li>
+                        </ul>
+                    </div>
+                </div>
 
-<div class="container">
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
 
-  <div class="section-header">
-    <h2>Portfolio</h2>
-    <p>Non hic nulla eum consequatur maxime ut vero memo vero totam officiis pariatur eos dolorum sed fug dolorem est possimus esse quae repudiandae. Dolorem id enim officiis sunt deserunt esse soluta consequatur quaerat</p>
-  </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-local">
+                        <div class="portfolio-wrap">
+                            <div class="col-lg-4 mb-5">
+                                <img src="assets/img/logos/logo-p.png" alt="" class="img-fluid">
+                                <p class="mb-3 text-center">Easy to Use</p>
+                            </div>
+                        </div>
+                    </div>
 
-</div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-local">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="container-fluid container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-local">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 2</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-  <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-local">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Card 2</h4>
+                                <p>Card</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <ul class="portfolio-flters">
-      <li data-filter="*" class="filter-active">All</li>
-      <li data-filter=".filter-app">App</li>
-      <li data-filter=".filter-product">Product</li>
-      <li data-filter=".filter-branding">Branding</li>
-      <li data-filter=".filter-books">Books</li>
-    </ul><!-- End Portfolio Filters -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-local">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web 2</h4>
+                                <p>Web</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="row g-0 portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-international">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 3</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-        <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>App 1</h4>
-          <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-international">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Card 1</h4>
+                                <p>Card</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product">
-        <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Product 1</h4>
-          <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-international">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Card 3</h4>
+                                <p>Card</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding">
-        <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Branding 1</h4>
-          <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-international">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books">
-        <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Books 1</h4>
-          <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
 
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-        <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>App 2</h4>
-          <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
 
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product">
-        <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Product 2</h4>
-          <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
+                </div>
 
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding">
-        <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Branding 2</h4>
-          <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
+            </div>
+        </section><!-- End Portfolio Section -->
 
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books">
-        <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Books 2</h4>
-          <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
 
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-        <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>App 3</h4>
-          <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product">
-        <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Product 3</h4>
-          <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding">
-        <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Branding 3</h4>
-          <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books">
-        <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Books 3</h4>
-          <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-    </div><!-- End Portfolio Container -->
-
-  </div>
-
-</div>
-</section><!-- End Portfolio Section -->
     </main>
-    
-    </main> <!-- End of the main content of Contact Us -->
-    </main> <!-- End Main -->
+
     <!-- Footer -->
-  <footer>
-    <?php require ('assets/links/footer.php') ?>
-  </footer>
-  <!-- End Footer -->
-  
-  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+    <footer>
+        <?php require ('assets/links/footer.php') ?>
+    </footer>
+    <!-- End Footer -->
+
+    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -306,6 +347,19 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor_OnePage/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor_OnePage/aos/aos.js"></script>
+    <script src="assets/vendor_OnePage/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor_OnePage/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor_OnePage/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor_OnePage/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor_OnePage/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
