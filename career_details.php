@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Medicio Bootstrap Template - Index</title>
+    <title>Ace Medical Center Baypointe</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/logos/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -63,35 +63,35 @@
 
         <!-- Main content of Career Details -->
         <main id="main" class="main">
-                <div class="mb-4 container">
-                    <!-- Title-->
-                    <h1 class="fw-bolder mb-1">Junior Clinical Pharmacist</h1>
-                    <!-- Post meta content-->
-                    <div class="text-muted fst-italic mb-2">Posted on January 1, 2023 by Department</div>
-                    <a class="badge bg-secondary text-decoration-none link-light">Medical</a>
-                </div>
-                <div class="container"> <!-- Job Description -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div> <!-- End of Job Description -->
-                <div class="container"> <!-- Qualification -->
-                    <h2 class="color-text">Qualification</h2>
-                    <ul> <!-- Bullet -->
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</li>
-                        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</li>
-                    </ul> <!-- End of Bullet -->
-                </div> <!-- End of Qualification -->
+            <div class="mb-4 container">
+                <!-- Title-->
+                <h1 class="fw-bolder mb-1">Junior Clinical Pharmacist</h1>
+                <!-- Post meta content-->
+                <div class="text-muted fst-italic mb-2">Posted on January 1, 2023 by Department</div>
+                <a class="badge bg-secondary text-decoration-none link-light">Medical</a>
+            </div>
+            <div class="container"> <!-- Job Description -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div> <!-- End of Job Description -->
+            <div class="container"> <!-- Qualification -->
+                <h2 class="color-text">Qualification</h2>
+                <ul> <!-- Bullet -->
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</li>
+                </ul> <!-- End of Bullet -->
+            </div> <!-- End of Qualification -->
 
             <!-- ======= Contact Section ======= -->
 

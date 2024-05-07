@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Medicio Bootstrap Template - Index</title>
+    <title>Ace Medical Center Baypointe</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/logos/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -44,7 +44,7 @@
 </head>
 
 <body>
-    <?php require ('assets/links/header.php')?> <!-- The Header -->
+    <?php require ('assets/links/header.php') ?> <!-- The Header -->
     <main> <!-- Main -->
         <!-- Title -->
         <div class="bg-dark py-5 my-5">
@@ -67,11 +67,11 @@
     </main> <!-- End Main -->
     <!-- Footer -->
     <footer>
-        <?php require ('assets/links/footer.php')?>
+        <?php require ('assets/links/footer.php') ?>
     </footer>
     <!-- End Footer -->
 
-    <?php require ('assets/links/back-to-top.php')?> <!-- Back to Top -->
+    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

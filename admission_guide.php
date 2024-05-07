@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Medicio Bootstrap Template - Index</title>
+    <title>Ace Medical Center Baypointe</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/logos/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -42,7 +42,7 @@
 </head>
 
 <body>
-    <?php require ('assets/links/header.php')?> <!-- The Header -->
+    <?php require ('assets/links/header.php') ?> <!-- The Header -->
     <main> <!-- Main -->
         <!-- Title -->
         <div class="bg-dark py-5 my-5">
@@ -67,17 +67,22 @@
                         <h1>Lorem ipsum dolor sit amet</h1>
                         <p>The Admitting Section is located at the ground floor main lobby in front of the cashier.
                             Your admission is pre-arranged by your attending Physician and if you have an admitting
-                            order (also called Direct Admission), then you can go direct to the Admitting Office. The admitting
-                            staff will explain details and procedures of your admission and will have you or your relative read and
-                            sign important documents as requirements for admission. This important procedure will take a few minutes
-                            but as soon as it is completed a designated staff will assist you to your room of choice. </p>
+                            order (also called Direct Admission), then you can go direct to the Admitting Office. The
+                            admitting
+                            staff will explain details and procedures of your admission and will have you or your
+                            relative read and
+                            sign important documents as requirements for admission. This important procedure will take a
+                            few minutes
+                            but as soon as it is completed a designated staff will assist you to your room of choice.
+                        </p>
                         <p>In the event of an Emergency, Admission is arranged directly to Emergency room. Patient’s
                             relative are assisted by ER staff and directed to the Admitting Office for intake interview
                             and process of admission. </p>
 
                         <p>If you have Corporate Credit line or a Health Maintenance Organization (HMO) card holder,
                             you need to inform the ER Nurse and Admitting Staff right away. Your relative will be
-                            directed to the HMO office for verification of the coverage of your card in relation to your admitting
+                            directed to the HMO office for verification of the coverage of your card in relation to your
+                            admitting
                             or final diagnosis.
                         </p>
 
@@ -87,8 +92,10 @@
 
                         <p>We suggest that you bring only personal belongings like towel and slippers & basic
                             toiletries to make your confinement more comfortable except for ben linen and extra pillows
-                            as these are readily available at the hospital. However, we discourage bringing of valuable items that
-                            are not necessary for your confinement (e.g. jewelries or electronic gadgets), UBHMC will not be
+                            as these are readily available at the hospital. However, we discourage bringing of valuable
+                            items that
+                            are not necessary for your confinement (e.g. jewelries or electronic gadgets), UBHMC will
+                            not be
                             liable for any loss of your valuables.</p>
                     </div>
 
