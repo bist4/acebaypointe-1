@@ -63,134 +63,137 @@
 
         <!-- Main content of Career Details -->
         <main id="main" class="main">
-            <div class="mb-4 container">
-                <!-- Title-->
-                <h1 class="fw-bolder mb-1">Junior Clinical Pharmacist</h1>
-                <!-- Post meta content-->
-                <div class="text-muted fst-italic mb-2">Posted on January 1, 2023 by Department</div>
-                <a class="badge bg-secondary text-decoration-none link-light">Medical</a>
-            </div>
-            <div class="container"> <!-- Job Description -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div> <!-- End of Job Description -->
-            <div class="container"> <!-- Qualification -->
-                <h2 class="color-text">Qualification</h2>
-                <ul> <!-- Bullet -->
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</li>
-                </ul> <!-- End of Bullet -->
-            </div> <!-- End of Qualification -->
+                <div class="mb-4 container">
+                    <!-- Title-->
+                    <h1 class="fw-bolder mb-1">Junior Clinical Pharmacist</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on January 1, 2023 by Department</div>
+                    <a class="badge bg-secondary text-decoration-none link-light">Medical</a>
+                </div>
+                <div class="container"> <!-- Job Description -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div> <!-- End of Job Description -->
+                <div class="container"> <!-- Qualification -->
+                    <h2 class="color-text">Qualification</h2>
+                    <ul> <!-- Bullet -->
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                    </ul> <!-- End of Bullet -->
+                </div> <!-- End of Qualification -->
 
             <!-- ======= Contact Section ======= -->
 
 
 
             <!-- Contact Us Section -->
-            <section id="contact" class="contact">
+            <section id="contact" class="contact mt-0">
                 <div class="container">
                     <!-- <div class="my-3"> Message
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div> -->
-                     <!-- Form for applying the Position -->
-                        <hr class="my-5"> <!-- Line at the bottom -->
-                        <h2>Complete the form below to apply for this position</h2>
-                        <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut
-                            ad
-                            dolores adipisci aliquam.</p>
-                        <div class="row gy-5 gx-lg-5">
+                    <!-- Form for applying the Position -->
+                    <hr class="my-5"> <!-- Line at the bottom -->
+                    <h2>Complete the form below to apply for this position</h2>
+                    <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut
+                        ad
+                        dolores adipisci aliquam.</p>
+                    <div class="row gy-5 gx-lg-5">
 
-                            <!-- The Form -->
-                            <div class="col-lg-7 info">
-                                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                    <div class="row">
-                                        <div class="form-group"> <!-- Position Applying For -->
-                                            <label for="text" class="mb-2">Position Applying Form</label>
-                                            <input type="text" name="position" class="form-control" id="position"
-                                                placeholder="Position" style="font-weight: bold;" disabled>
-                                        </div>
+                        <!-- The Form -->
+                        <div class="col-lg-7 info">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="row">
+                                    <div class="form-group"> <!-- Position Applying For -->
+                                        <label for="text" class="mb-2">Position Applying Form</label>
+                                        <input type="text" name="position" class="form-control" id="position"
+                                            placeholder="Position" style="font-weight: bold;" disabled>
                                     </div>
-                                    <div class="form-group mt-3">
-                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name"
-                                            required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name"
+                                        required>
+                                </div>
+                                <div class="row"> <!-- Contact information-->
+                                    <label for="text" class="mb-2">Contact Information</label>
+                                    <div class="col-md-6 form-group">
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Your Name" required>
                                     </div>
-                                    <div class="row"> <!-- Contact information-->
-                                        <label for="text" class="mb-2">Contact Information</label>
-                                        <div class="col-md-6 form-group">
-                                            <input type="email" name="email" class="form-control" id="email"
-                                                placeholder="Your Name" required>
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <input type="tel" class="form-control" name="phoneNum" id="phoneNum"
-                                                placeholder="Phone Number">
-                                        </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="tel" class="form-control" name="phoneNum" id="phoneNum"
+                                            placeholder="Phone Number">
                                     </div>
-                                    <div class="form-group mt-3">
-                                        <textarea class="form-control" name="message" placeholder="Message" required
-                                            style="height: 100px"></textarea>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" name="message" placeholder="Message" required
+                                        style="height: 100px"></textarea>
+                                </div>
+                                <div class="text-center appointments-btn"><button type="submit">Send
+                                        Message</button></div>
+                            </form>
+                        </div><!-- End Contact Form -->
+                        <div class="col-lg-5">
+                            <div class="info">
+                                <h3 class="mb-3">Get in touch</h3>
+                                <div class="info-item d-flex">
+                                    <i class="fa fa-map-marker flex-shrink-0"></i>
+                                    <div>
+                                        <h4>Location:</h4>
+                                        <p>Block 8, Lot 1A and 1B Dewey Avenue Subic Bay Freeport Zone, Olongapo,
+                                            2222 Zambales</p>
                                     </div>
-                                    <div class="text-center appointments-btn"><button type="submit">Send
-                                            Message</button></div>
-                                </form>
-                            </div><!-- End Contact Form -->
-                            <div class="col-lg-5">
-                                <div class="info">
-                                    <h3 class="mb-3">Get in touch</h3>
-                                    <div class="info-item d-flex">
-                                        <i class="fa fa-map-marker flex-shrink-0"></i>
-                                        <div>
-                                            <h4>Location:</h4>
-                                            <p>Block 8, Lot 1A and 1B Dewey Avenue Subic Bay Freeport Zone, Olongapo,
-                                                2222 Zambales</p>
-                                        </div>
-                                    </div><!-- End Info Item -->
+                                </div><!-- End Info Item -->
 
-                                    <div class="info-item d-flex">
-                                        <i class="fa fa-envelope flex-shrink-0"></i>
-                                        <div>
-                                            <h4>Email:</h4>
-                                            <p>baypointehospitalmedicalcenter@yahoo.com</p>
-                                        </div>
-                                    </div><!-- End Info Item -->
-
-                                    <div class="info-item d-flex">
-                                        <i class="fa fa-phone flex-shrink-0"></i>
-                                        <div>
-                                            <h4>Phone:</h4>
-                                            <p>(047) 250-6070 Local 100</p>
-                                        </div>
-                                    </div><!-- End Info Item -->
-
-                                    <div class="info-item d-flex">
-                                        <i class="fa fa-mobile flex-shrink-0"></i>
-                                        <div>
-                                            <h4>Call:</h4>
-                                            <p>Smart: 0939-915-7633</p>
-                                            <p>Globe: 0917-545-1566</p>
-                                            <p>Sun: 0922-812-8623</p>
-                                        </div>
+                                <div class="info-item d-flex">
+                                    <i class="fa fa-envelope flex-shrink-0"></i>
+                                    <div>
+                                        <h4>Email:</h4>
+                                        <p>baypointehospitalmedicalcenter@yahoo.com</p>
                                     </div>
-                                </div> <!-- End Info Item -->
-                            </div>
+                                </div><!-- End Info Item -->
+
+                                <div class="info-item d-flex">
+                                    <i class="fa fa-phone flex-shrink-0"></i>
+                                    <div>
+                                        <h4>Phone:</h4>
+                                        <p>(047) 250-6070 Local 100</p>
+                                    </div>
+                                </div><!-- End Info Item -->
+
+                                <div class="info-item d-flex">
+                                    <i class="fa fa-mobile flex-shrink-0"></i>
+                                    <div>
+                                        <h4>Call:</h4>
+                                        <p>Smart: 0939-915-7633</p>
+                                        <p>Globe: 0917-545-1566</p>
+                                        <p>Sun: 0922-812-8623</p>
+                                    </div>
+                                </div>
+                            </div> <!-- End Info Item -->
                         </div>
-                        <div class="mt-5 text-center">
-                            <p>Download the application form <a
-                                    href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Facebaypointe.com%2Fadmin%2Fupload%2Ffile%2FACEMCB-HRD-04-64%2520Employment%2520Application.doc&wdOrigin=BROWSELINK"><strong>here</strong></a>
-                                and <a
-                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=angelmaecarpeso@gmail.com&su=Application%20Form'">send</a> it to: hrd@unihealthbaypointe.com</p>
-                        </div>
-                   
+                    </div>
+                    <div class="mt-5 text-center">
+                        <p>Download the application form <a
+                                href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Facebaypointe.com%2Fadmin%2Fupload%2Ffile%2FACEMCB-HRD-04-64%2520Employment%2520Application.doc&wdOrigin=BROWSELINK"><strong>here</strong></a>
+                            and <a
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=angelmaecarpeso@gmail.com&su=Application%20Form'">send</a>
+                            it to: hrd@unihealthbaypointe.com</p>
+                    </div>
+
             </section><!-- End Contact Section -->
 
 

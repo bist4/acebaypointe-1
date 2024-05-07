@@ -303,10 +303,8 @@
                 </div>
             </div>
         </section><!-- End Features Section -->
-
-
-
     </main> <!-- End Main -->
+    
     <!-- Footer -->
     <footer>
         <?php require ('assets/links/footer.php') ?>

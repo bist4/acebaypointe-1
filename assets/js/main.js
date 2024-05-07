@@ -271,7 +271,7 @@
    */
   new PureCounter();
   /**
-   * Porfolio isotope and filter
+   * Porfolio isotope and filtering at HMOS Module
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
