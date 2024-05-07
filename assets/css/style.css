@@ -130,7 +130,7 @@ h6, p, strong{
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #5B8291;
+  background: #3fbbc0;
   color: #EAEBED;
   height: 40px;
   font-size: 12px;
@@ -3531,14 +3531,12 @@ hr {
 }
 
 /* AT HMOS */
-#departmentDropdown1, #departmentDropdown2 {
+#category, #department_filter {
   width: 20%;
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #ccc;
   margin-bottom: 20px;
-  background-color: #fff;
 }
 
   /* Table styling */

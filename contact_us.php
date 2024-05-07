@@ -144,7 +144,7 @@
                   </select>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="message" placeholder="Message" style="height: 230px" required></textarea>
                 </div>
                 <div class="text-center appointments-btn"><button type="submit">Send Message</button></div>
               </form>

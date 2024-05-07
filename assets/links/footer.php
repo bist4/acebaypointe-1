@@ -21,7 +21,7 @@
             <li><a href="#">Department & Services</a></li>
             <li><a href="careers.php">Careers</a></li>
             <li><a href="#">Patient Guide & Features</a></li>
-            <li><a href="contact_us.php">Contacts</a></li>
+            <li><a href="contact_us.php">Contact Us</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 footer-links"> <!--OUR SERVICES-->
@@ -39,9 +39,9 @@
           <h4>Other Links</h4>
           <ul>
             <!-- Fourth column content -->
-            <li><a href="#">Job Announcements</a></li>
-            <li><a href="#">Equipment Acquisition</a></li>
-            <li><a href="#">Accredited HMOS</a></li>
+            <li><a href="job_announcement.php">Job Announcements</a></li>
+            <li><a href="equipment_acquisition.php">Equipment Acquisition</a></li>
+            <li><a href="hmos.php">Accredited HMOS</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6 radiantthemes-contact-box rt412613828 element-one" style="font-family: poppins;">
@@ -61,19 +61,18 @@
             </li>
           </ul>
         </div>
-
       </div>
     </div>
   </div>
   <div class="container d-md-flex py-4">
     <div class="me-md-auto text-center text-md-start">
-      <div class="copyright"> &copy; Copyright <strong><span>Batang COMTEQ</span></strong>. All Rights Reserved</div>
+      <div class="copyright"> &copy; Copyright <strong><span> &#169;</span> 2024</strong>. All Rights Reserved</div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Design and Developed by <a href="#">Batang COMTEQ</a>
       </div>
     </div>
     <div class="footer-info">
