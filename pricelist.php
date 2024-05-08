@@ -61,7 +61,7 @@
         </div> <!-- End of Page Title -->
 
         <!-- Main content of PriceList -->
-        <section id="features" class="features section-bg">
+        <section id="features" class="features">
             <div class="container" data-aos="fade-up">
                 <!-- Navigation on the upper main -->
                 <ul class="nav nav-tabs row g-2 d-flex">
@@ -517,70 +517,75 @@
                                 </div>
                                 <p class="fst-italic">Rates may change without prior notice. May vary according to case,
                                     category, and specialization.</p>
-                                <div class="d-flex mb-3">
-                                    <div id="category">
-                                        <label for="">Category</label> <!-- Label for Category dropdown -->
-                                        <select class="form-select me-3">
+
+                                <div class="dropdowns">
+                                    <div id="category" class="dropdown col-lg-4" type="dropdown">
+                                        <label for="" class="mb-1">Category</label>
+                                        <select class="form-select" >
                                             <option value="option1">Option 1</option>
                                             <option value="option2">Option 2</option>
                                             <option value="option3">Option 3</option>
                                         </select>
                                     </div>
-                                    <div id="department_filter">
-                                        <label for="department">Department</label>
-                                        <!-- Label for Department dropdown -->
-                                        <select class="form-select">
-                                            <option value="option1">Option 1</option>
-                                            <option value="option2">Option 2</option>
-                                            <option value="option3">Option 3</option>
-                                        </select>
+                                    <div id="department_filter" class="dropdown col-lg-4">
+                                        <label for="" class="mb-1">Department</label>
+                                        <div class="department-container" type="dropdown">
+                                            <select class="form-select">
+                                                <option value="option1">Option 1</option>
+                                                <option value="option2">Option 2</option>
+                                                <option value="option3">Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 d-flex align-items-center">
+                                        <button class="btn doctors-btn">Submit</button>
                                     </div>
                                 </div>
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Code</th>
-                                            <th>Category</th>
-                                            <th>Description</th>
-                                            <th>Department</th>
-                                            <th>Price Range</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Row 1, Cell 1</td> <!-- Code -->
-                                            <td>Row 1, Cell 2</td> <!-- Category -->
-                                            <td>Row 1, Cell 3</td> <!-- Description -->
-                                            <td>Row 1, Cell 2</td> <!-- Department -->
-                                            <td>Row 1, Cell 3</td> <!-- Price Range -->
-                                        </tr>
-                                        <tr>
-                                            <td>Row 1, Cell 1</td> <!-- Code -->
-                                            <td>Row 1, Cell 2</td> <!-- Category -->
-                                            <td>Row 1, Cell 3</td> <!-- Description -->
-                                            <td>Row 1, Cell 2</td> <!-- Department -->
-                                            <td>Row 1, Cell 3</td> <!-- Price Range -->
-                                        </tr>
-                                        <tr>
-                                            <td>Row 1, Cell 1</td> <!-- Code -->
-                                            <td>Row 1, Cell 2</td> <!-- Category -->
-                                            <td>Row 1, Cell 3</td> <!-- Description -->
-                                            <td>Row 1, Cell 2</td> <!-- Department -->
-                                            <td>Row 1, Cell 3</td> <!-- Price Range -->
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Code</th>
+                                                <th>Category</th>
+                                                <th>Description</th>
+                                                <th>Department</th>
+                                                <th>Price Range</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>SUP0000001</td>
+                                                <td>CSR Supplies</td>
+                                                <td>FOLEY CATH. FR. 8</td>
+                                                <td>CENTRAL SUPPLIES</td>
+                                                <td>₱139.66 - ₱300.1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SUP0000002</td>
+                                                <td>CSR Supplies</td>
+                                                <td>3-WAY FOLEY BAG CATH. FR. 20 BARD</td>
+                                                <td>CENTRAL SUPPLIES</td>
+                                                <td>₱737.18 - ₱1,588.61</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SUP0000003</td>
+                                                <td>CSR Supplies</td>
+                                                <td>3-WAY FOLEY BAG CATH. FR. 22 BARD</td>
+                                                <td>CENTRAL SUPPLIES</td>
+                                                <td>₱737.18 - ₱1,588.61</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+                                    <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
+                                </div>
                             </div>
 
-                            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-                                <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
 
-
-                    </div><!-- End tab content item -->
+                        </div><!-- End tab content item -->
+                    </div>
                 </div>
-            </div>
         </section><!-- End Features Section -->
     </main> <!-- End Main -->
 

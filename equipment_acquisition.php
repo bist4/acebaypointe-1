@@ -62,15 +62,12 @@
 
         <!-- Main content of Equipment Acquisition -->
         <main id="main" class="main container">
-
+            <p>For acquisition of hospital equipment and supplies please send your quotations to our Purchasing
+                department at purchasing@unihealthbaypointe.com</p>
         </main> <!-- End of the main content of Equipment Acquisition -->
     </main> <!-- End Main -->
 
-    <!-- Footer -->
-    <footer>
-        <?php require ('assets/links/footer.php') ?>
-    </footer>
-    <!-- End Footer -->
+
 
     <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 

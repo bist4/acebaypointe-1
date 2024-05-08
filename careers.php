@@ -53,7 +53,7 @@
         <div class="col-lg-6">
           <div class=" display-5 fw-bolder text-center text-xl-start my-5">
             <h1 class="display-5 fw-bolder text-white mb-lg-2">CAREERS</h1>
-            <p class="lead text-white-50 mb-0 mb-lg-3">JOB ANNOUNCEMENT</p>
+            <p class="lead text-white-50 mb-0 mb-lg-3">Join our Team</p>
           </div>
         </div>
       </div>

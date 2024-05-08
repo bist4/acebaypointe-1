@@ -59,7 +59,7 @@
         </div> <!-- End of Page Title -->
 
         <!-- Main content of About Us -->
-
+        
         <div class="container mt-5">
             <p><strong>Allied Care Experts (ACE) Medical Center - Baypointe</strong>, your well-being is at the heart
                 of everything we do. We understand the importance of quality healthcare delivered with compassion and
@@ -114,7 +114,7 @@
             </ul>
             <p>&nbsp;</p>
 
-            <h3>Website Privacy Policy</h3> <!-- -	Website Privacy Policy -->
+            <h3>Website Privacy Policy</h3> <!-- WEBSITE PRIVACY POLICY -->
             <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit</strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
                 nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus
@@ -132,21 +132,14 @@
             </ul>
             <p>&nbsp;</p>
 
-            <div id="quality_policy"> <!-- QUALITY POLICY -->
+            <div id="quality_policy" class="mb-5"> <!-- QUALITY POLICY -->
                 <h3>Quality Policy</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
                     nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate
                     voluptatibus
                     possimus, veniam magni quis!</p>
             </div>
-
-        </div>
-
-        <!-- DATA PRIVACY -->
-
-
-        <!-- WEBSITE PRIVACY POLICY -->
-
+        </div>      
     </main> <!-- End Main -->
     <!-- Footer -->
     <footer>

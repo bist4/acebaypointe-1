@@ -2515,7 +2515,8 @@ hr {
 .contact .php-email-form input[type=email],
 .contact .php-email-form input[type=tel],
 .contact .php-email-form textarea,
-.contact .php-email-form select {
+.contact .php-email-form select,
+#category input[type=dropdown] {
   border-radius: 0px;
   box-shadow: none;
   font-size: 14px;
@@ -2525,7 +2526,8 @@ hr {
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form input[type=tel],
 .contact .php-email-form textarea:focus,
-.contact .php-email-form select:focus {
+.contact .php-email-form select:focus,
+#category input[type=dropdown] {
   border-color: var(--color-secondary-light);
 }
 
@@ -2533,7 +2535,8 @@ hr {
 .contact .php-email-form input[type=email],
 .contact .php-email-form input[type=tel],
 .contact .php-email-form textarea,
-.contact .php-email-form select {
+.contact .php-email-form select,
+#category input[type=dropdown] {
   height: 48px;
   padding: 10px 15px;
 }
@@ -3572,6 +3575,13 @@ hr {
   font-size: 16px;
   border-radius: 5px;
   margin-bottom: 20px;
+  color: #4F4F4F;
+  font-weight: bold;
+}
+
+/* Responsive table */
+.table-responsive {
+  overflow-x: auto;
 }
 
 /* Table styling */
@@ -3579,14 +3589,13 @@ hr {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .table th,
 .table td {
-  position: flex;
-  align-items: center;
   padding: 8px;
-  text-align: left;
+  color: #4F4F4F;
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -3598,7 +3607,41 @@ hr {
   background-color: #f2f2f2;
 }
 
+/* Dropdown styling */
+.dropdowns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .dropdown {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 10px; /* Added margin bottom for spacing */
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown select, .dropdown button {
+    width: 100%;
+  }
+}
+
 .bullet ul {
   list-style-type: disc !important;
   margin: 20px;
+}
+
+.form-select{
+  border-color: gray;
 }
