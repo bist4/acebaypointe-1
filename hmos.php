@@ -76,7 +76,7 @@
                 <div class="col-lg-6">
                     <div class=" display-5 fw-bolder text-center text-xl-start my-5">
                         <h1 class="display-5 fw-bolder text-white mb-lg-2">ACRREDITED HMOS</h1>
-                        <p class="lead text-white-50 mb-0 mb-lg-3">QUICK CONTACT</p>
+                        <!-- <p class="lead text-white-50 mb-0 mb-lg-3">QUICK CONTACT</p> -->
                     </div>
                 </div>
             </div>
@@ -170,8 +170,6 @@
             </div>
         </section> -->
 
-
-
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">
             <div class="container" data-aos="fade-up">
@@ -194,32 +192,22 @@
                 <!-- The Content -->
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
+                            <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
+                            <div class="portfolio-info gray-shadow">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/logos/logo-p.png" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Web 3</h4>
                                 <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -242,7 +230,7 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
+                            <div class="portfolio-info card-body">
                                 <h4>Card 2</h4>
                                 <p>Card</p>
                                 <div class="portfolio-links">
