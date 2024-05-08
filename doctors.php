@@ -26,19 +26,6 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Vendor SCSS Files -->
-    <link rel="stylesheet" href="assets/vendor/scss/_accordion.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_alert.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_badge.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_breadcrumb.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_button-group.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_buttons.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_card.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_carousel.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_close.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_container.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_dropdown.scss">
-    <link rel="stylesheet" href="assets/vendor/scss/_grid.scss">
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -71,8 +58,7 @@
                 </div>
             </div>
         </div> <!-- End of Page Title -->
-
-
+        
         <!-- Doctor section-->
         <section class="bg-light py-5">
             <div class="container px-5 my-5">
