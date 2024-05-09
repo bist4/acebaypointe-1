@@ -3365,8 +3365,15 @@ hr {
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  /* height: 500px; */
 }
-
+.portfolio-wrap {
+  /* Other existing styles */
+  text-align: center; /* Center aligns all the content inside portfolio-wrap */
+}
+.portfolio .portfolio-item img{
+  height: auto;
+}
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;

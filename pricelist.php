@@ -61,7 +61,7 @@
         </div> <!-- End of Page Title -->
 
         <!-- Main content of PriceList -->
-        <section id="features" class="features">
+        <section id="features" class="features section-bg">
             <div class="container" data-aos="fade-up">
                 <!-- Navigation on the upper main -->
                 <ul class="nav nav-tabs row g-2 d-flex">
@@ -153,7 +153,7 @@
                                                             </ul>
                                                         </div>
                                                         <!-- Content -->
-                                                        <div class="col-lg-9 mt-4 mt-lg-0">
+                                                        <div class="col-lg-9 mt-4 mt-lg-0 section-bg">
                                                             <div class="tab-content bullet">
                                                                 <div class="tab-pane active show" id="room_rates1">
                                                                     <h3>Ward</h3>
@@ -194,6 +194,7 @@
                                                                     </ul>
 
                                                                 </div>
+                                                                
                                                                 <div class="tab-pane" id="room_rates2">
                                                                     <h3>Semi-private</h3>
                                                                     <p>₱1,550 - ₱2,325</p>
