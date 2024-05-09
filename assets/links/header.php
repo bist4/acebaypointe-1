@@ -2,9 +2,7 @@
 <div id="topbar" class="header d-flex align-items-center fixed-top">
   <div class="container">
     <div class="row justify-content-between align-items-center">
-      <div class="col-md-auto mb-2 mb-md-0 text-md-start text-center">
-        <i class="bi bi-clock"></i> Monday - Saturday, 8AM to 10PM
-      </div>
+      <div class="col-md-auto mb-2 mb-md-0 text-md-start text-center"></div>
       <div class="col-md-auto text-md-end">
         <div class="row justify-content-center justify-content-md-end">
           <div class="col-auto mb-2 mb-md-0">
@@ -18,6 +16,9 @@
           </div>
           <div class="col-auto">
             <i class="bi bi-phone"></i> Sun: 0922-812-8623
+          </div>
+          <div class="col-auto">
+            <p class="elementor-image-box-description">Say hi to <a href="https://m.me/TheMedicalCityClark/" target="_blank">ACEMCB</a> on Messenger</p>
           </div>
         </div>
       </div>
