@@ -178,23 +178,28 @@
 
                 </div>
                 <!-- Filtering -->
-                <div class="row" data-aos="fade-up" data-aos-delay="150">
-                    <div class="col-lg-12 d-flex justify-content-center">
+                <div class="row mb-5" data-aos="fade-up" data-aos-delay="150">
+                    <div class="col-lg-6 d-flex">
                         <ul id="portfolio-flters">
                             <li data-filter="*" class="filter-active">All</li>
                             <li data-filter=".filter-local">Local HMOs</li>
                             <li data-filter=".filter-international">International HMOs</li>
                         </ul>
                     </div>
+                    <div class="col-lg-6 d-flex">
+                        <!-- search bar here -->
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Type HMO here">
+                        </div>
+                    </div>
                 </div>
                 <!-- The Content -->
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+
                     <div class="col-lg-3 col-md-6 portfolio-item filter-international">
                         <div class="portfolio-wrap">
                             <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>AON Insurance and Reinsurance Brokers Philippines</h4>
-                            </div>
+                            <p class="mt-5">AON Insurance and Reinsurance Brokers Philippines</p>
                             <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p>  -->
                         </div>
                     </div>
@@ -202,9 +207,7 @@
                     <div class="col-lg-3 col-md-6 portfolio-item filter-local">
                         <div class="portfolio-wrap">
                             <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                            <div class="portfolio-info gray-shadow">
-                                <h4>Asiancare Health Systems Inc.</h4>
-                            </div>
+                            <p class="mt-5">Asiancare Health Systems Inc.</p>
                             <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
                         </div>
                     </div>
@@ -212,108 +215,22 @@
                     <div class="col-lg-3 col-md-6 portfolio-item filter-international">
                         <div class="portfolio-wrap">
                             <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Asianlife & General Assurance Corporation</h4>
-                            </div>
+                            <p class="mt-5">Asianlife & General Assurance Corporation</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 portfolio-item filter-local">
                         <div class="portfolio-wrap">
                             <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                            <div class="portfolio-info gray-shadow">
-                                <h4>Assist and Assistance Concept Inc.</h4>
-                            </div>
+                            <p class="mt-5">Asiancare Health Systems Inc.</p>
                             <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 portfolio-item filter-international">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                            <div class="portfolio-info gray-shadow">
-                                <h4>Avega Managed Care Inc.</h4>
-                            </div>
-                            <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 portfolio-item filter-local">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                            <div class="portfolio-info gray-shadow">
-                                <h4>Axa Insurance</h4>
-                            </div>
-                            <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                        </div>
-                    </div>
-
-                    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-international">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>AON Insurance and Reinsurance Brokers Philippines</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p>  -->
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-local">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                                <div class="portfolio-info gray-shadow">
-                                    <h4>Asiancare Health Systems Inc.</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-international">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Asianlife & General Assurance Corporation</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-local">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                                <div class="portfolio-info gray-shadow">
-                                    <h4>Assist and Assistance Concept Inc.</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-international">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                                <div class="portfolio-info gray-shadow">
-                                    <h4>Avega Managed Care Inc.</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-local">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                                <div class="portfolio-info gray-shadow">
-                                    <h4>Axa Insurance</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-international">
-                        <div class="portfolio-wrap">
                             <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>AON Insurance and Reinsurance Brokers Philippines</h4>
-                            </div>
+                            <p class="mt-5">AON Insurance and Reinsurance Brokers Philippines</p>
                             <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p>  -->
                         </div>
                     </div>
@@ -321,9 +238,7 @@
                     <div class="col-lg-3 col-md-6 portfolio-item filter-local">
                         <div class="portfolio-wrap">
                             <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                            <div class="portfolio-info gray-shadow">
-                                <h4>Asiancare Health Systems Inc.</h4>
-                            </div>
+                            <p class="mt-5">Asiancare Health Systems Inc.</p>
                             <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
                         </div>
                     </div>
@@ -331,105 +246,83 @@
                     <div class="col-lg-3 col-md-6 portfolio-item filter-international">
                         <div class="portfolio-wrap">
                             <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Asianlife & General Assurance Corporation</h4>
-                            </div>
+                            <p class="mt-5">Asianlife & General Assurance Corporation</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 portfolio-item filter-local">
                         <div class="portfolio-wrap">
                             <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                            <div class="portfolio-info gray-shadow">
-                                <h4>Assist and Assistance Concept Inc.</h4>
-                            </div>
+                            <p class="mt-5">Asiancare Health Systems Inc.</p>
                             <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 portfolio-item filter-international">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                            <div class="portfolio-info gray-shadow">
-                                <h4>Avega Managed Care Inc.</h4>
-                            </div>
-                            <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
+                            <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
+                            <p class="mt-5">AON Insurance and Reinsurance Brokers Philippines</p>
+                            <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p>  -->
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 portfolio-item filter-local">
                         <div class="portfolio-wrap">
                             <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                            <div class="portfolio-info gray-shadow">
-                                <h4>Axa Insurance</h4>
-                            </div>
+                            <p class="mt-5">Asiancare Health Systems Inc.</p>
                             <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
                         </div>
                     </div>
 
-                    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-international">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>AON Insurance and Reinsurance Brokers Philippines</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p>  -->
-                            </div>
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-international">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
+                            <p class="mt-5">Asianlife & General Assurance Corporation</p>
                         </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-local">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                                <div class="portfolio-info gray-shadow">
-                                    <h4>Asiancare Health Systems Inc.</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-international">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Asianlife & General Assurance Corporation</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-local">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                                <div class="portfolio-info gray-shadow">
-                                    <h4>Assist and Assistance Concept Inc.</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-international">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                                <div class="portfolio-info gray-shadow">
-                                    <h4>Avega Managed Care Inc.</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 portfolio-item filter-local">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
-                                <div class="portfolio-info gray-shadow">
-                                    <h4>Axa Insurance</h4>
-                                </div>
-                                <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
-                            </div>
-                        </div>
-
                     </div>
+
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-local">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
+                            <p class="mt-5">Asiancare Health Systems Inc.</p>
+                            <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-international">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
+                            <p class="mt-5">AON Insurance and Reinsurance Brokers Philippines</p>
+                            <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p>  -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-local">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
+                            <p class="mt-5">Asiancare Health Systems Inc.</p>
+                            <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-international">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/logos/logo.png" class="img-fluid" alt="">
+                            <p class="mt-5">Asianlife & General Assurance Corporation</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-local">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/logos/logo-l.png" class="img-fluid" alt="">
+                            <p class="mt-5">Asiancare Health Systems Inc.</p>
+                            <!-- <p class="text-center mt-3">AON Insurance and Reinsurance Brokers Philippines</p> -->
+                        </div>
+                    </div>
+
 
                 </div>
+            </div>
         </section><!-- End Portfolio Section -->
 
 

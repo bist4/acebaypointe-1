@@ -194,7 +194,7 @@
                                                                     </ul>
 
                                                                 </div>
-                                                                
+
                                                                 <div class="tab-pane" id="room_rates2">
                                                                     <h3>Semi-private</h3>
                                                                     <p>₱1,550 - ₱2,325</p>
@@ -507,22 +507,26 @@
                         </div>
                     </div><!-- End tab content item -->
 
-                    <div class="tab-pane" id="departmental_item">
+                    <div class="tab-pane why-us" id="departmental_item">
                         <!-- The content of the Navigation (DEPARTMENTAL ITEM)-->
                         <div class="row">
                             <div class="col-lg-16 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
                                 data-aos="fade-up" data-aos-delay="100">
-                                <h3>DEPARTMENTAL ITEM</h3>
-                                <!-- Post meta content-->
-                                <div class="text-muted fst-italic mb-2">Posted on January 1, 2023 by Start Bootstrap
+                                <div class="content">
+                                    <h3><strong>DEPARTMENTAL ITEM</strong></h3>
+                                    <div class="text-muted fst-italic mb-2">Last updated on March 22, 2024
+                                    </div>
+                                    <p class="mb-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                                        aute irure dolor in reprehenderit
+                                    </p>
                                 </div>
-                                <p class="fst-italic">Rates may change without prior notice. May vary according to case,
-                                    category, and specialization.</p>
 
                                 <div class="dropdowns">
                                     <div id="category" class="dropdown col-lg-4" type="dropdown">
                                         <label for="" class="mb-1">Category</label>
-                                        <select class="form-select" >
+                                        <select class="form-select">
                                             <option value="option1">Option 1</option>
                                             <option value="option2">Option 2</option>
                                             <option value="option3">Option 3</option>

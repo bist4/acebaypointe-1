@@ -65,7 +65,7 @@
                 <div class="text-center "></div>
                 <div class="row gx-5 justify-content-center">
                     <!-- Doctor-->
-                    <div class="col-lg-6 col-xl-4 mb-lg-5">
+                    <div class="col-lg-5 col-xl-4 mb-lg-5">
                         <div class="card mb-5 mb-xl-0">
                             <div class="card-body p-5 gray-shadow">
                                 <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
