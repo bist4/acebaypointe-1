@@ -32,7 +32,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- Script of the Header -->
-    <script src="assets/js/header.js" defer></script>
+    <!-- <script src="assets/js/header.js" defer></script> -->
 
     <!-- =======================================================
   * Template Name: Medicio

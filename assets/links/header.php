@@ -18,7 +18,8 @@
             <i class="bi bi-phone"></i> Sun: 0922-812-8623
           </div>
           <div class="col-auto">
-            <p class="elementor-image-box-description">Say hi to <a href="https://m.me/TheMedicalCityClark/" target="_blank">ACEMCB</a> on Messenger</p>
+            
+            <p class="messanger">Say hi to <a href="https://m.me/TheMedicalCityClark/" target="_blank">ACEMCB</a> on <i class="bi bi-messenger"></i>Messenger</p>
           </div>
         </div>
       </div>
