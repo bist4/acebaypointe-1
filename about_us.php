@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <?php require ('assets/links/favicons.php')?> 
+  <?php require ('assets/links/favicons.php') ?>
 
   <!-- Google Fonts -->
   <link href="assets/fonts/fonts.css" rel="stylesheet">
@@ -38,7 +38,7 @@
 </head>
 
 <body>
-  <?php require ('assets/links/header.php')?> <!-- The Header -->
+  <?php require ('assets/links/header.php') ?> <!-- The Header -->
   <main> <!-- Main -->
     <!-- Title -->
     <div class="bg-dark py-5 my-5">
@@ -123,29 +123,32 @@
               facere in deserunt aut accusantium enim fugiat vel cum dolorum expedita natus totam eum repellendus quas?
             </p>
           </div>
-          <div class="row gy-4 row-cols-2 px-5"> <!-- Row-cols-2 -->
-            <!-- Mission -->
-            <div class="col" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item gray-shadow">
-                <div class="py-2">
-                  <img src="assets/img/icons/mission.png" alt="" style="border-radius: 0;">
+          <div class="container">
+            <div class="row gy-4 row-cols-1 row-cols-md-2 px-md-5"> <!-- Adjusted for responsiveness -->
+              <!-- Mission -->
+              <div class="col" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item gray-shadow">
+                  <div class="py-2">
+                    <img src="assets/img/icons/mission.png" alt="" style="border-radius: 0;">
+                  </div>
+                  <h4>Mission</h4>
+                  <p>A - dvanced medical facilities in a multicenter global network.</p>
                 </div>
-                <h4>Mission</h4>
-                <p>A - dvanced medical facilities in a multicenter global network.</p>
-              </div>
-            </div> <!-- End of Mission -->
-            <!-- Vision -->
-            <div class="col" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item gray-shadow">
-                <div class="py-2 mv-img">
-                  <img src="assets/img/icons/mission.png" alt="" style="border-radius: 0;">
+              </div> <!-- End of Mission -->
+              <!-- Vision -->
+              <div class="col" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item gray-shadow">
+                  <div class="py-2 mv-img">
+                    <img src="assets/img/icons/mission.png" alt="" style="border-radius: 0;">
+                  </div>
+                  <h4>Vision</h4>
+                  <p>C - are for the patient where and when he needs it most</p>
+                  <p>E - xcellence in healthcare service and governance.</p>
                 </div>
-                <h4>Vision</h4>
-                <p>C - are for the patient where and when he needs it most</p>
-                <p>E - xcellence in healthcare service and governance</p>
-              </div>
-            </div><!-- End of Vision -->
+              </div><!-- End of Vision -->
+            </div>
           </div>
+
 
           <!-- Core Values-->
           <div class="col-12" data-aos="fade-up" data-aos-delay="300" id="core_values">
@@ -196,20 +199,22 @@
         <div class="container" data-aos="fade-up">
           <div class="container section-title aos-init aos-animate px-5" data-aos="fade-up">
             <h2>Quality, Environment, Health and Safety Policy</h2>
-            <p>ACEMCB is a secondary hospital dedicated to the total satisfaction of its patients, and the welfare of its employees and the environment, through its Integrated Management System. A firm commitment is made to:</p>
+            <p>ACEMCB is a secondary hospital dedicated to the total satisfaction of its patients, and the welfare of
+              its employees and the environment, through its Integrated Management System. A firm commitment is made to:
+            </p>
           </div>
       </section><!-- End Services Section -->
 
-      
+
   </main> <!-- End Main -->
 
   <!-- Footer -->
   <footer>
-    <?php require ('assets/links/footer.php')?>
+    <?php require ('assets/links/footer.php') ?>
   </footer>
   <!-- End Footer -->
 
-  <?php require ('assets/links/back-to-top.php')?> <!-- Back to Top -->
+  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

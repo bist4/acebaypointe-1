@@ -312,7 +312,7 @@
             <ul>
               <li>Complete History and Physical</li>
               <li>Examination with Visual Acuity Screening</li>
-              
+
               <li>Complete Blood Count</li>
               <li>Urinalysis (Routine)</li>
               <li>Fecalysis (Routine Stool Exam)</li>
@@ -340,17 +340,21 @@
               <h5>FAMILY* HEALTH SCREENING PACKAGE </h5>
               <h6>(PRE-EMPLOYMENT, SURVEILLANCE, EXIT)</h6>
             </div>
-            <p>Complete History and Physical</p>
-            <p>Examination with Visual Acuity Screening</p>
-            <p>Complete Blood Count</p>
-            <p>Urinalysis (Routine)</p>
-            <p>Fecalysis (Routine Stool Exam)</p>
-            <p>Chest X-ray</p>
-            <p>Option of either ECG or Blood Typing</p>
-            <p>Interpretation of Results</p>
             <ul>
-              <li>Recommended for dependents, siblings, other immediate family members</li>
+              <li>Complete History and Physical</li>
+              <li>Examination with Visual Acuity Screening</li>
+              <li>Complete Blood Count</li>
+              <li>Urinalysis (Routine)</li>
+              <li>Fecalysis (Routine Stool Exam)</li>
+              <li>Chest X-ray</li>
+              <li>Option of either ECG or Blood Typing</li>
+              <li>Interpretation of Results
+                <ul>
+                  <li>Recommended for dependents, siblings, other immediate family members</li>
+                </ul>
+              </li>
             </ul>
+
           </div>
         </div>
       </div>
