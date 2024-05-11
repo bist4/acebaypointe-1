@@ -6,7 +6,7 @@
         <div class="col-lg-2 col-md-6">
           <div class="footer-info">
             <!-- First column content -->
-            <a href="index.html" class="logo me-auto"><img src="assets/img/logos/logo-l.png" alt="Small Logo"
+            <a href="index.php" class="logo me-auto"><img src="assets/img/logos/logo-l.png" alt="Small Logo"
                 class="img-fluid small-logo"></a>
           </div>
         </div>

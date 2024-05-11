@@ -17,8 +17,8 @@
           <div class="col-auto">
             <i class="bi bi-phone"></i> Sun: 0922-812-8623
           </div>
-          <div class="col-auto">
-            <i class="messanger">Say hi to <a href="https://m.me/TheMedicalCityClark/" target="_blank">ACEMCB</a> on <i class="bi bi-messenger"></i>Messenger</i>
+          <div class="col-auto pfy">
+            <a href="https://m.me/TheMedicalCityClark/" target="_blank" class="messenger"><i class="bi bi-messenger"></i><span>Say hi to ACEMCB on Messanger</span></a>
           </div>
         </div>
       </div>
@@ -52,12 +52,12 @@
         </li>
         <li><a href="doctors.php">DOCTORS</a></li>
         <li><a href="#">DEPARTMENT & SERVICES</a></li>
-        <li><a href="careers.php/#medical">CAREERS</a></li>
+        <li><a href="careers.php">CAREERS</a></li>
         <li class="dropdown"><a href="#"><span>PATIENT GUIDE & FEATURES</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">VIRTUAL TOUR</a></li>
             <li><a href="#">ADMISSION PROCEDURE</a></li>
-            <li><a href="#">ROOM ACCOMMODATIONS</a></li>
+            <li><a href="room_accommodation.php">ROOM ACCOMMODATIONS</a></li>
             <li><a href="#">PATIENT SAFETY & QUALITY CARE</a></li>
             <li><a href="#">MEDICAL RECORDS</a></li>
             <li><a href="#">HMO PARTNERS</a></li>
