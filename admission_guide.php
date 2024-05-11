@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Ace Medical Center Baypointe</title>
+    <title>Admission Guide | ACEMC - Baypointe</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -30,7 +30,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- Script of the Header -->
-    <script src="assets/js/header.js" defer></script>
+    <!-- <script src="assets/js/header.js" defer></script> -->
 
     <!-- =======================================================
   * Template Name: Medicio
