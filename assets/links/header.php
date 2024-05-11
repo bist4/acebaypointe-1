@@ -18,8 +18,7 @@
             <i class="bi bi-phone"></i> Sun: 0922-812-8623
           </div>
           <div class="col-auto">
-            
-            <p class="messanger">Say hi to <a href="https://m.me/TheMedicalCityClark/" target="_blank">ACEMCB</a> on <i class="bi bi-messenger"></i>Messenger</p>
+            <i class="messanger">Say hi to <a href="https://m.me/TheMedicalCityClark/" target="_blank">ACEMCB</a> on <i class="bi bi-messenger"></i>Messenger</i>
           </div>
         </div>
       </div>
@@ -53,7 +52,7 @@
         </li>
         <li><a href="doctors.php">DOCTORS</a></li>
         <li><a href="#">DEPARTMENT & SERVICES</a></li>
-        <li><a href="careers.php">CAREERS</a></li>
+        <li><a href="careers.php/#medical">CAREERS</a></li>
         <li class="dropdown"><a href="#"><span>PATIENT GUIDE & FEATURES</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">VIRTUAL TOUR</a></li>

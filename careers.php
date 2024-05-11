@@ -133,7 +133,7 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-medical">Medical</li>
+              <li id="medical" data-filter=".filter-medical">Medical</li>
               <li data-filter=".filter-corporate">Corporate</li>
             </ul>
           </div>
