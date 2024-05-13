@@ -112,18 +112,14 @@
         /* Adjust carousel control buttons position */
         .carousel-control-prev,
         .carousel-control-next {
-            position: absolute;
+            /* position: absolute; */
             top: 50%;
             transform: translateY(-50%);
             z-index: 1000;
         }
 
-        .carousel-control-prev {
-            left: -40px;
-        }
-
-        .carousel-control-next {
-            right: -40px;
+        #myCarousel {
+            background-color: blue;
         }
     </style>
     <!-- =======================================================
@@ -153,39 +149,148 @@
         </div> <!-- End of Page Title -->
 
         <!-- Main content of Packages For You -->
-        <div class="container">
-            <div class="md:max-w-lg mx-auto text-center mb-20">
-                <h2 class="mb-4 font-heading font-semibold text-gray-900 text-4xl ">Room Accommodation</h2>
-            </div>
 
-            <div class="row">
-                <div id="myCarousel" class="carousel slide col-md-6" data-bs-ride="carousel">
-                    <!-- Carousel controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    <div class="carousel-inner">
-                        <!-- First slide -->
-                        <div class="carousel-item active">
-                            <img src="https://dummyimage.com/600x400/343a40/6c757d" alt="">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <!-- First Carousel -->
+                    <div id="myCarousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- First slide -->
+                            <div class="carousel-item active">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
+                            <!-- Second slide -->
+                            <div class="carousel-item">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
                         </div>
-                        <!-- Second slide -->
-                        <div class="carousel-item">
-                           <img src="https://dummyimage.com/600x400/343a40/6c757d" alt="">
-                        </div>
+                        <!-- Carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p>jicfsdhucfdshuidsnb sdbvbvdb bh  hfgndhfds b ba uah fab dadf aaa fdba vgsfs vgs</p>
+                    <!-- First Paragraph -->
+                    <div class="md:max-w-lg mb-0">
+                        <h2 class="font-heading font-semibold text-gray-900 text-2xl">Ward</h2>
+                        <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
+                        <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
+                            alt=""><span><strong> 19 sq. m</strong></span>
+                    </div>
+
+                    <div class="d-grid"><a class="mt-5" data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a>
+                    </div>
                 </div>
             </div>
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <!-- Second Carousel -->
+                    <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- First slide -->
+                            <div class="carousel-item active">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
+                            <!-- Second slide -->
+                            <div class="carousel-item">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Second Paragraph -->
+                    <div class="md:max-w-lg mb-20">
+                        <h2 class="mb-4 font-heading font-semibold text-gray-900 text-4xl ">Room Accommodation</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade gray-shadow" data-bs-backdrop="static" data-bs-keyboard="false" id="modal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content px-4 mx-4 my-5">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <!-- First slide -->
+                                        <div class="carousel-item active">
+                                            <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                                        </div>
+                                        <!-- Second slide -->
+                                        <div class="carousel-item">
+                                            <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h5>FAMILY* HEALTH SCREENING PACKAGE </h5>
+                                    <h6>(PRE-EMPLOYMENT, SURVEILLANCE, EXIT)</h6>
+                                </div>
+                                <ul>
+                                    <li>Complete History and Physical</li>
+                                    <li>Examination with Visual Acuity Screening</li>
+                                    <li>Complete Blood Count</li>
+                                    <li>Urinalysis (Routine)</li>
+                                    <li>Fecalysis (Routine Stool Exam)</li>
+                                    <li>Chest X-ray</li>
+                                    <li>Option of either ECG or Blood Typing</li>
+                                    <li>Interpretation of Results
+                                        <ul>
+                                            <li>Recommended for dependents, siblings, other immediate family members
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of the Modal -->
+
 
     </main> <!-- End Main -->
     <!-- Footer -->

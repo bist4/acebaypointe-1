@@ -151,7 +151,7 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Schedule</a>
+                <a class="btn doctors-btn" href="career_details.php">View Details</a>
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Schedule</a>
+                <a class="btn doctors-btn" href="career_details.php">View Details</a>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Schedule</a>
+                <a class="btn doctors-btn" href="career_details.php">View Details</a>
               </div>
             </div>
           </div>
@@ -196,7 +196,7 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Schedule</a>
+                <a class="btn doctors-btn" href="career_details.php">View Details</a>
               </div>
             </div>
           </div>
@@ -211,7 +211,7 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Schedule</a>
+                <a class="btn doctors-btn" href="career_details.php">View Details</a>
               </div>
             </div>
           </div>
@@ -226,7 +226,7 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Schedule</a>
+                <a class="btn doctors-btn" href="career_details.php">View Details</a>
               </div>
             </div>
           </div>

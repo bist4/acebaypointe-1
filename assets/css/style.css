@@ -3663,7 +3663,7 @@ hr {
 .team .member {
   margin-bottom: 20px;
   overflow: hidden;
-  text-align: center;
+  /* text-align: center; */
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
