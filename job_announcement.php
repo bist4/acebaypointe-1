@@ -30,7 +30,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- Script of the Header -->
-    <script src="assets/js/header.js" defer></script>
+    <!-- <script src="assets/js/header.js" defer></script> -->
 
     <!-- =======================================================
   * Template Name: Medicio
@@ -87,8 +87,8 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                             <div class="member-img">
-                                <img src="https://acebaypointe.com/admin/upload/events/1678ea6446.jpg"
-                                    class="img-fluid" alt="">
+                                <img src="https://acebaypointe.com/admin/upload/events/1678ea6446.jpg" class="img-fluid"
+                                    alt="">
                             </div>
                             <div class="member-info">
                                 <p>Posted on May 1, 2024</p>
@@ -127,9 +127,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
 
