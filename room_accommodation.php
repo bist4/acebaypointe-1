@@ -152,7 +152,7 @@
 
         <div class="container">
             <div class="row mb-4">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <!-- First Carousel -->
                     <div id="myCarousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -178,34 +178,35 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <!-- First Paragraph -->
                     <div class="md:max-w-lg mb-0">
-                        <h2 class="font-heading font-semibold text-gray-900 text-2xl">Ward</h2>
-                        <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
+                        <h2 class="font-heading font-semibold text-gray-900 text-2xl" style="background-color: #3fbbc0; color:white; padding: 10px;">Ward</h2>
+                        <h5 >Rate: ₱1,300 - ₱1,950</h5>
                         <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
                             alt=""><span><strong> 19 sq. m</strong></span>
+                        <p class="mt-2 mb-0"><strong>Admission Kit Inclusions: </strong>1pc. Admission bag with logo, 1pc. Calibrated cup 210ml, 1pc.
+                            Medicine cup 50ml, 1 set of dental kit (toothpaste and toothbrush), 1pc.Face towel, 1 bottle
+                            of 60ml isopropyl alcohol 70%, 1 tissue roll, 1pc.Soap, 1 small tube body lotion, 1 small
+                            tube bath gel, 1 small tube shampoo & conditioner.</p>
+                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will have additional charge.</i>
                     </div>
-
-                    <div class="d-grid"><a class="mt-5" data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a>
-                    </div>
+                    <div class="d-grid mt-3"><a data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
                 </div>
             </div>
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <!-- Second Carousel -->
+
+            <!-- Second Carousel -->
+            <div class="row mt-4">
+                <div class="col-md-4">
                     <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <!-- First slide -->
                             <div class="carousel-item active">
                                 <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
                             </div>
-                            <!-- Second slide -->
                             <div class="carousel-item">
                                 <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
                             </div>
                         </div>
-                        <!-- Carousel controls -->
                         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -218,15 +219,109 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <!-- Second Paragraph -->
-                    <div class="md:max-w-lg mb-20">
-                        <h2 class="mb-4 font-heading font-semibold text-gray-900 text-4xl ">Room Accommodation</h2>
+                <div class="col-md-8">
+                    <!-- First Paragraph -->
+                    <div class="md:max-w-lg mb-0">
+                        <h2 class="font-heading font-semibold text-gray-900 text-2xl">Ward</h2>
+                        <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
+                        <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
+                            alt=""><span><strong> 19 sq. m</strong></span>
+                        <p class="mt-2 mb-0">Admission Kit Inclusions: 1pc. Admission bag with logo, 1pc. Calibrated cup 210ml, 1pc.
+                            Medicine cup 50ml, 1 set of dental kit (toothpaste and toothbrush), 1pc.Face towel, 1 bottle
+                            of 60ml isopropyl alcohol 70%, 1 tissue roll, 1pc.Soap, 1 small tube body lotion, 1 small
+                            tube bath gel, 1 small tube shampoo & conditioner.</p>
+                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will have additional charge.</i>
                     </div>
+                    <div class="d-grid mt-3"><a data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
                 </div>
             </div>
+          
+            <!-- Second Carousel -->
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- First Paragraph -->
+                    <div class="md:max-w-lg mb-0">
+                        <h2 class="font-heading font-semibold text-gray-900 text-2xl">Ward</h2>
+                        <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
+                        <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
+                            alt=""><span><strong> 19 sq. m</strong></span>
+                        <p class="mt-2 mb-0">Admission Kit Inclusions: 1pc. Admission bag with logo, 1pc. Calibrated cup 210ml, 1pc.
+                            Medicine cup 50ml, 1 set of dental kit (toothpaste and toothbrush), 1pc.Face towel, 1 bottle
+                            of 60ml isopropyl alcohol 70%, 1 tissue roll, 1pc.Soap, 1 small tube body lotion, 1 small
+                            tube bath gel, 1 small tube shampoo & conditioner.</p>
+                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will have additional charge.</i>
+                    </div>
+                    <div class="d-grid mt-3"><a data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
+                </div>
+            </div>
+
+            <!-- Second Carousel -->
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- First Paragraph -->
+                    <div class="md:max-w-lg mb-0">
+                        <h2 class="font-heading font-semibold text-gray-900 text-2xl">Ward</h2>
+                        <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
+                        <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
+                            alt=""><span><strong> 19 sq. m</strong></span>
+                        <p class="mt-2 mb-0">Admission Kit Inclusions: 1pc. Admission bag with logo, 1pc. Calibrated cup 210ml, 1pc.
+                            Medicine cup 50ml, 1 set of dental kit (toothpaste and toothbrush), 1pc.Face towel, 1 bottle
+                            of 60ml isopropyl alcohol 70%, 1 tissue roll, 1pc.Soap, 1 small tube body lotion, 1 small
+                            tube bath gel, 1 small tube shampoo & conditioner.</p>
+                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will have additional charge.</i>
+                    </div>
+                    <div class="d-grid mt-3"><a data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
+                </div>
+            </div>
+
         </div>
 
+
+        <!-- MODAL -->
         <div class="modal fade gray-shadow" data-bs-backdrop="static" data-bs-keyboard="false" id="modal" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -237,7 +332,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-6">
-                                <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div id="myCarousel2.1" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <!-- First slide -->
                                         <div class="carousel-item active">
@@ -249,12 +344,12 @@
                                         </div>
                                     </div>
                                     <!-- Carousel controls -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2.1"
                                         data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
+                                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2.1"
                                         data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
@@ -262,19 +357,18 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="text-center">
-                                    <h5>FAMILY* HEALTH SCREENING PACKAGE </h5>
-                                    <h6>(PRE-EMPLOYMENT, SURVEILLANCE, EXIT)</h6>
+                                <div>
+                                    <p class="mb-0"><strong>Amenities:</strong></p>
                                 </div>
                                 <ul>
-                                    <li>Complete History and Physical</li>
-                                    <li>Examination with Visual Acuity Screening</li>
-                                    <li>Complete Blood Count</li>
-                                    <li>Urinalysis (Routine)</li>
-                                    <li>Fecalysis (Routine Stool Exam)</li>
-                                    <li>Chest X-ray</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Consectetur adipiscing elit</li>
+                                    <li>Sed do eiusmod tempor</li>
+                                    <li>Incididunt ut labore et dolore magna aliqua</li>
+                                    <li>Ut enim ad minim veniam</li>
+                                    <li>Duis aute irure dolor in reprehenderit in voluptate velit</li>
                                     <li>Option of either ECG or Blood Typing</li>
-                                    <li>Interpretation of Results
+                                    <li>sunt in culpa qui officia deserunt mollit anim id est laborum
                                         <ul>
                                             <li>Recommended for dependents, siblings, other immediate family members
                                             </li>
@@ -282,10 +376,7 @@
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>

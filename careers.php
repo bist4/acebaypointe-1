@@ -132,7 +132,7 @@
         <div class="row mb-5" data-aos="fade-up" data-aos-delay="150">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter="*" id="all" class="filter-active">All</li>
               <li id="medical" data-filter=".filter-medical">Medical</li>
               <li data-filter=".filter-corporate">Corporate</li>
             </ul>
@@ -261,6 +261,7 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    
 </body>
 
 </html>

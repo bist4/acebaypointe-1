@@ -72,7 +72,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
-        Design and Developed by <a href="#">Batang COMTEQ</a>
+        Design and Developed by <a href="#">MIS Department</a>
       </div>
     </div>
     <div class="footer-info">

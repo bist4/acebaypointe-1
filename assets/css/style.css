@@ -3745,3 +3745,9 @@ hr {
 .messenger:hover{
   color: black;
 }
+
+/* room accommodatio */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
