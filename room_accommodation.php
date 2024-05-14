@@ -150,7 +150,7 @@
 
         <!-- Main content of Packages For You -->
 
-        <div class="container">
+        <div class="container gray-shadow" style="padding: 20px;">
             <div class="row mb-4">
                 <div class="col-md-4">
                     <!-- First Carousel -->
@@ -181,17 +181,23 @@
                 <div class="col-md-8">
                     <!-- First Paragraph -->
                     <div class="md:max-w-lg mb-0">
-                        <h2 class="font-heading font-semibold text-gray-900 text-2xl" style="background-color: #3fbbc0; color:white; padding: 10px;">Ward</h2>
-                        <h5 >Rate: ₱1,300 - ₱1,950</h5>
+                        <h2 class="font-heading font-semibold text-gray-900 text-2xl">Ward</h2>
+                        <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
                         <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
                             alt=""><span><strong> 19 sq. m</strong></span>
-                        <p class="mt-2 mb-0"><strong>Admission Kit Inclusions: </strong>1pc. Admission bag with logo, 1pc. Calibrated cup 210ml, 1pc.
+                        <p class="mt-2 mb-0"><strong>Admission Kit Inclusions: </strong>1pc. Admission bag with logo,
+                            1pc. Calibrated cup 210ml, 1pc.
                             Medicine cup 50ml, 1 set of dental kit (toothpaste and toothbrush), 1pc.Face towel, 1 bottle
                             of 60ml isopropyl alcohol 70%, 1 tissue roll, 1pc.Soap, 1 small tube body lotion, 1 small
                             tube bath gel, 1 small tube shampoo & conditioner.</p>
-                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will have additional charge.</i>
+                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will
+                            have additional charge.</i>
                     </div>
-                    <div class="d-grid mt-3"><a data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
+                    <div class="d-grid mt-3"><a href="#" data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
+                </div>
+
+                <div class="col-12">
+                    <hr class="my-4" color="">
                 </div>
             </div>
 
@@ -226,54 +232,18 @@
                         <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
                         <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
                             alt=""><span><strong> 19 sq. m</strong></span>
-                        <p class="mt-2 mb-0">Admission Kit Inclusions: 1pc. Admission bag with logo, 1pc. Calibrated cup 210ml, 1pc.
+                        <p class="mt-2 mb-0"><strong>Admission Kit Inclusions: </strong>1pc. Admission bag with logo, 1pc. Calibrated cup
+                            210ml, 1pc.
                             Medicine cup 50ml, 1 set of dental kit (toothpaste and toothbrush), 1pc.Face towel, 1 bottle
                             of 60ml isopropyl alcohol 70%, 1 tissue roll, 1pc.Soap, 1 small tube body lotion, 1 small
                             tube bath gel, 1 small tube shampoo & conditioner.</p>
-                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will have additional charge.</i>
+                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will
+                            have additional charge.</i>
                     </div>
-                    <div class="d-grid mt-3"><a data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
+                    <div class="d-grid mt-3"><a href="#" data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
                 </div>
-            </div>
-          
-            <!-- Second Carousel -->
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <!-- First Paragraph -->
-                    <div class="md:max-w-lg mb-0">
-                        <h2 class="font-heading font-semibold text-gray-900 text-2xl">Ward</h2>
-                        <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
-                        <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
-                            alt=""><span><strong> 19 sq. m</strong></span>
-                        <p class="mt-2 mb-0">Admission Kit Inclusions: 1pc. Admission bag with logo, 1pc. Calibrated cup 210ml, 1pc.
-                            Medicine cup 50ml, 1 set of dental kit (toothpaste and toothbrush), 1pc.Face towel, 1 bottle
-                            of 60ml isopropyl alcohol 70%, 1 tissue roll, 1pc.Soap, 1 small tube body lotion, 1 small
-                            tube bath gel, 1 small tube shampoo & conditioner.</p>
-                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will have additional charge.</i>
-                    </div>
-                    <div class="d-grid mt-3"><a data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
+                <div class="col-12">
+                    <hr class="my-4" color="">
                 </div>
             </div>
 
@@ -308,23 +278,70 @@
                         <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
                         <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
                             alt=""><span><strong> 19 sq. m</strong></span>
-                        <p class="mt-2 mb-0">Admission Kit Inclusions: 1pc. Admission bag with logo, 1pc. Calibrated cup 210ml, 1pc.
+                        <p class="mt-2 mb-0"><strong>Admission Kit Inclusions: </strong>1pc. Admission bag with logo, 1pc. Calibrated cup
+                            210ml, 1pc.
                             Medicine cup 50ml, 1 set of dental kit (toothpaste and toothbrush), 1pc.Face towel, 1 bottle
                             of 60ml isopropyl alcohol 70%, 1 tissue roll, 1pc.Soap, 1 small tube body lotion, 1 small
                             tube bath gel, 1 small tube shampoo & conditioner.</p>
-                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will have additional charge.</i>
+                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will
+                            have additional charge.</i>
                     </div>
-                    <div class="d-grid mt-3"><a data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
+                    <div class="d-grid mt-3"><a href="#" data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
+                </div>
+                <div class="col-12">
+                    <hr class="my-4" color="">
                 </div>
             </div>
 
+            <!-- Second Carousel -->
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://dummyimage.com/300x200/343a40/6c757d" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- First Paragraph -->
+                    <div class="md:max-w-lg mb-0">
+                        <h2 class="font-heading font-semibold text-gray-900 text-2xl">Ward</h2>
+                        <h5 style="background-color: #3fbbc0; color:white; padding: 10px;">Rate: ₱1,300 - ₱1,950</h5>
+                        <img src="https://bingtravelms.azureedge.net/latest/ab03dc0d5f2c8103a2989b891b81b8e2.svg"
+                            alt=""><span><strong> 19 sq. m</strong></span>
+                        <p class="mt-2 mb-0"><strong>Admission Kit Inclusions: </strong>1pc. Admission bag with logo, 1pc. Calibrated cup
+                            210ml, 1pc.
+                            Medicine cup 50ml, 1 set of dental kit (toothpaste and toothbrush), 1pc.Face towel, 1 bottle
+                            of 60ml isopropyl alcohol 70%, 1 tissue roll, 1pc.Soap, 1 small tube body lotion, 1 small
+                            tube bath gel, 1 small tube shampoo & conditioner.</p>
+                        <i><strong>Note: </strong>Any additional bath towels, pillows, blankets, toiletries etc. will
+                            have additional charge.</i>
+                    </div>
+                    <div class="d-grid mt-3"><a href="#" data-bs-toggle="modal" data-bs-target="#modal">View Schedule</a></div>
+                </div>          
+            </div>
         </div>
 
 
         <!-- MODAL -->
         <div class="modal fade gray-shadow" data-bs-backdrop="static" data-bs-keyboard="false" id="modal" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-dialog modal-xl ">
                 <div class="modal-content px-4 mx-4 my-5">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

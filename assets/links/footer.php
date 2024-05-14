@@ -25,7 +25,7 @@
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 footer-links"> <!--OUR SERVICES-->
-          <h4>Our Services</h4>
+          <h4>Service Offerings</h4>
           <ul>
             <!-- Third column content -->
             <li><a href="#">Price List</a></li>
@@ -39,6 +39,8 @@
           <h4>Other Links</h4>
           <ul>
             <!-- Fourth column content -->
+            <li><a href="admission_guide.php">Admission Guide</a></li>
+            <li><a href="investment.php">Investments</a></li>
             <li><a href="job_announcement.php">Job Announcements</a></li>
             <li><a href="equipment_acquisition.php">Equipment Acquisition</a></li>
             <li><a href="hmos.php">Accredited HMOS</a></li>

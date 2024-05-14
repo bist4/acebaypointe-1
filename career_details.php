@@ -93,18 +93,14 @@
                 </ul> <!-- End of Bullet -->
             </div> <!-- End of Qualification -->
 
-            <!-- ======= Contact Section ======= -->
-
-
-
             <!-- Contact Us Section -->
             <section id="contact" class="contact mt-0">
                 <div class="container">
                     <!-- <div class="my-3"> Message
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div> -->
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div> -->
                     <!-- Form for applying the Position -->
                     <hr class="my-5"> <!-- Line at the bottom -->
                     <h2>Complete the form below to apply for this position</h2>
@@ -183,7 +179,7 @@
                                         <p>Sun: 0922-812-8623</p>
                                     </div>
                                 </div>
-                                
+
                             </div> <!-- End Info Item -->
                         </div>
                     </div>
@@ -194,10 +190,7 @@
                                 href="https://mail.google.com/mail/?view=cm&fs=1&to=angelmaecarpeso@gmail.com&su=Application%20Form'">send</a>
                             it to: hrd@unihealthbaypointe.com</p>
                     </div>
-
             </section><!-- End Contact Section -->
-
-
 
         </main> <!-- End of the main content of Career Details -->
     </main> <!-- End Main -->
