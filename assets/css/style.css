@@ -1951,9 +1951,11 @@ section {
 
 /* Shadow CSS */
 .gray-shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15); */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   /* Adjust the shadow color and intensity as needed */
 }
+
 
 .member-info h4 {
   font-weight: 700;
@@ -1961,7 +1963,6 @@ section {
   font-size: 25px;
   color: #555555;
 }
-
 
 .member-info span {
   display: block;
@@ -2768,6 +2769,46 @@ hr {
 
 .why-us .accordion-list a.collapsed .icon-close {
   display: none;
+}
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem; /* Replace with actual font-size variable or value */
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: var(--bs-accordion-btn-bg);
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+
+  &:not(.collapsed) {
+    /* color: var(--bs-accordion-active-color); */
+    background-color: #3fbbc0;
+    color: white;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+
+    &::after {
+      background-image: var(--bs-accordion-btn-active-icon);
+      transform: var(--bs-accordion-btn-icon-transform);
+      color: inherit; /* Inherit color from parent */
+    }
+  }
+
+  &::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+  }
 }
 
 .why-us .play-btn {

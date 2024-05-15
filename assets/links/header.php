@@ -35,7 +35,7 @@
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li><a class="nav-link scrollto" href="index.php">HOME</a></li>
-        <li class="dropdown"><a href="#"><span>ABOUT US</span> <i class="bi bi-chevron-down"></i></a>
+        <li class="dropdown"><a href="about_us.php"><span>ABOUT US</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a class="nav-link scrollto" href="about_us.php#who_we_are">WHO WE ARE</a></li>
             <li><a class="nav-link scrollto" href="about_us.php#mission_vision">MISSION & VISION</a></li>
@@ -58,6 +58,7 @@
             <li><a href="#">VIRTUAL TOUR</a></li>
             <li><a href="admission_procedure.php">ADMISSION PROCEDURE</a></li>
             <li><a href="room_accommodation.php">ROOM ACCOMMODATIONS</a></li>
+            <li><a href="patient_partnership.php">PATIENT PARTNERSHIP</a></li>
             <li><a href="#">PATIENT SAFETY & QUALITY CARE</a></li>
             <li><a href="#">MEDICAL RECORDS</a></li>
             <li><a href="#">HMO PARTNERS</a></li>

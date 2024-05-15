@@ -146,22 +146,8 @@
                     <!-- class sa label form-label -->
                   </div>
                 </div>
-                <!-- Dropdown -->
-                <div class="form-group mt-3">
-                  <div class="form-outline">
-                    <select name="department" required class="form-control form-control-lg">
-                      <option value=""></option>
-                      <option value="HR">HR</option>
-                      <option value="Finance">Finance</option>
-                      <option value="IT">IT</option>
-                      <!-- Add more options for other departments as needed -->
-                    </select>
-                    <label for="department" class="form-label">Department<span class="text-danger"></span></label>
-                  </div>
-                </div>
-
                 <!-- Department Dropdown -->
-                <!-- <div class="form-group mt-3">
+                <div class="form-group mt-3">
                   <select name="department" id="department" class="form-select">
                     <option value="">Select Department</option>
                     <option value="Department 1">Department 1</option>
@@ -174,10 +160,13 @@
                     <option value="Department 2">Department 8</option>
                     <option value="Department 3">Department 9</option>
                   </select>
-                </div> -->
+                </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" placeholder="Message" style="height: 230px"
-                    required></textarea>
+                  <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+                    <textarea class="form-control form-control-lg" name="message" style="height: 230px; required"></textarea>
+                    <label for="designation" class="form-label">Message<span class="text-danger"></span></label>
+                    <!-- class sa label form-label -->
+                  </div>
                 </div>
                 <div class="text-center appointments-btn"><button type="submit">Send Message</button></div>
               </form>
@@ -185,7 +174,6 @@
           </div>
         </div>
       </section><!-- End Contact Section -->
-
 
       <!-- body
       1. first div for margin top

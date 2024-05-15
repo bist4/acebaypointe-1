@@ -81,7 +81,7 @@
                                         <p class="mb-0">Posted on May 1, 2024</p>
                                         <h4 class="mb-0">STAFF NURSE</h4>
                                         <span class="mb-3">Medical</span>
-                                        <a href="careers.php">View Details</a>
+                                        <a href="careers.php" class="d-flex justify-content-center">View Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                                         <p class="mb-0">Posted on May 1, 2024</p>
                                         <h4 class="mb-0">ADMITTING STAFF</h4>
                                         <span class="mb-3">Medical</span>
-                                        <a href="careers.php #all">View Details</a>
+                                        <a href="careers.php" class="d-flex justify-content-center">View Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +111,7 @@
                                         <p class="mb-0">Posted on May 1, 2024</p>
                                         <h4 class="mb-0">STAFF NURSE</h4>
                                         <span class="mb-3">Medical</span>
-                                        <a href="careers.php">View Details</a>
+                                        <a href="careers.php" class="d-flex justify-content-center">View Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@
                                         <p class="mb-0">Posted on May 1, 2024</p>
                                         <h4 class="mb-0">ADMITTING STAFF</h4>
                                         <span class="mb-3">Medical</span>
-                                        <a href="careers.php">View Details</a>
+                                        <a href="careers.php" class="d-flex justify-content-center">View Details</a>
                                     </div>
                                 </div>
                             </div>
