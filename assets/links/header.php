@@ -59,9 +59,9 @@
             <li><a href="admission_procedure.php">ADMISSION PROCEDURE</a></li>
             <li><a href="room_accommodation.php">ROOM ACCOMMODATIONS</a></li>
             <li><a href="patient_partnership.php">PATIENT PARTNERSHIP</a></li>
-            <li><a href="#">PATIENT SAFETY & QUALITY CARE</a></li>
-            <li><a href="#">MEDICAL RECORDS</a></li>
-            <li><a href="#">HMO PARTNERS</a></li>
+            <li><a href="patient_safety_and_quality_care.php">PATIENT SAFETY & QUALITY CARE</a></li>
+            <li><a href="medical_records.php">MEDICAL RECORDS</a></li>
+            <li><a href="hmos.php">HMO PARTNERS</a></li>
             <li><a href="#">PHILHEALTH REQUIREMENTS</a></li>
             <li><a href="#">BILLING & PAYMENT</a></li>
             <li><a href="#">GETTING TO ACEMCBAYPOINTE</a></li>
