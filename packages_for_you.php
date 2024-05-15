@@ -389,7 +389,6 @@
               <li>Creatinine</li>
               <li>Uric Acid</li>
             </ul>
-
             <p><strong>Diagnostic Procedures:</strong></p>
             <ul>
               <li>Chest X-ray</li>

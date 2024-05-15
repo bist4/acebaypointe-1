@@ -63,8 +63,46 @@
     </div> <!-- End of Page Title -->
 
     <!-- Main content of Contact Us -->
-    <main id="main" class="main">
-    
+    <main id="main" class="main container mb-5">
+      <div class="mt-5"> <!-- Patient's Rights -->
+        <h3>Patient's Rights</h3>
+        <p><strong>As a patient of The Medical City Clark, you have the right, consistent with Philippine laws:</strong>
+        </p>
+        <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+        <p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Praesent semper feugiat nibh sed pulvinar proin.</p>
+        <p>3. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>4. Praesent semper feugiat nibh sed pulvinar proin.</p>
+        <p>5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+        <p>6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+        <p>7. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>8. Praesent semper feugiat nibh sed pulvinar proin.</p>
+      </div>
+
+      <div class="mt-5"> <!-- Patient's Responsibilities-->
+        <h3>Patient's Responsibilities</h3>
+        <p><strong>At the same time, as a patient of The Medical City Clark you have the following
+            responsibilities:</strong>
+        </p>
+        <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+        <p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Praesent semper feugiat nibh sed pulvinar proin.</p>
+        <p>3. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>4. Praesent semper feugiat nibh sed pulvinar proin.</p>
+        <p>5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+        <p>6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+        <p>7. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>8. Praesent semper feugiat nibh sed pulvinar proin.</p>
+        <p>9. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>10. Praesent semper feugiat nibh sed pulvinar proin.</p>
+      </div>
+
     </main> <!-- End of the main content of Contact Us -->
   </main> <!-- End Main -->
 
