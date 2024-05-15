@@ -13,6 +13,7 @@
   <link href="assets/img/logos/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -30,9 +31,10 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/styles1.css" rel="stylesheet"> <!-- Form animation -->
 
   <!-- Script of the Header -->
-  <script src="assets/js/header.js" defer></script>
+  <!-- <script src="assets/js/header.js" defer></script> -->
 
   <!-- =======================================================
   * Template Name: Medicio
@@ -44,7 +46,7 @@
 </head>
 
 <body>
-  <?php require ('assets/links/header.php')?> <!-- The Header -->
+  <?php require ('assets/links/header.php') ?> <!-- The Header -->
   <main> <!-- Main -->
     <!-- Title -->
     <div class="bg-dark py-5 my-5">
@@ -115,21 +117,51 @@
               </div> <!-- End Info Item -->
 
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-7 bg-white"
+              style="href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css'">
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+                      <input type="text" name="name" required class="form-control form-control-lg">
+                      <!-- class sa input form-control -->
+                      <label for="designation" class="form-label">Username<span class="text-danger"></span></label>
+                      <!-- class sa label form-label -->
+                    </div>
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+                      <input type="text" name="email" required class="form-control form-control-lg">
+                      <!-- class sa input form-control -->
+                      <label for="designation" class="form-label">Email<span class="text-danger"></span></label>
+                      <!-- class sa label form-label -->
+                    </div>
                   </div>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+                    <input type="email" name="subject" required class="form-control form-control-lg">
+                    <!-- class sa input form-control -->
+                    <label for="designation" class="form-label">Subject<span class="text-danger"></span></label>
+                    <!-- class sa label form-label -->
+                  </div>
                 </div>
-                <!-- Department Dropdown -->
+                <!-- Dropdown -->
                 <div class="form-group mt-3">
+                  <div class="form-outline">
+                    <select name="department" required class="form-control form-control-lg">
+                      <option value=""></option>
+                      <option value="HR">HR</option>
+                      <option value="Finance">Finance</option>
+                      <option value="IT">IT</option>
+                      <!-- Add more options for other departments as needed -->
+                    </select>
+                    <label for="department" class="form-label">Department<span class="text-danger"></span></label>
+                  </div>
+                </div>
+
+                <!-- Department Dropdown -->
+                <!-- <div class="form-group mt-3">
                   <select name="department" id="department" class="form-select">
                     <option value="">Select Department</option>
                     <option value="Department 1">Department 1</option>
@@ -142,9 +174,10 @@
                     <option value="Department 2">Department 8</option>
                     <option value="Department 3">Department 9</option>
                   </select>
-                </div>
+                </div> -->
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" placeholder="Message" style="height: 230px" required></textarea>
+                  <textarea class="form-control" name="message" placeholder="Message" style="height: 230px"
+                    required></textarea>
                 </div>
                 <div class="text-center appointments-btn"><button type="submit">Send Message</button></div>
               </form>
@@ -153,26 +186,44 @@
         </div>
       </section><!-- End Contact Section -->
 
+
+      <!-- body
+      1. first div for margin top
+      2. second div for background for form
+      3. third div row
+      4. fourth div for full screen with margin bottom
+      5. fifth div for outline tatas yung label
+      6. class sa input form-control
+      7. class sa label form-label
+
+      extension
+      head
+      1. first link is for outline of label
+      2. second link os for bootstrap -->
     </main> <!-- End of the main content of Contact Us -->
   </main> <!-- End Main -->
 
-  <!-- Footer -->
-  <footer>
-    <?php require ('assets/links/footer.php') ?>
-  </footer> <!-- End Footer -->
 
-  <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+</body>
+<!-- Footer -->
+<footer>
+  <?php require ('assets/links/footer.php') ?>
+</footer> <!-- End Footer -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+<?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 
 </body>
 

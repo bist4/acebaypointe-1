@@ -135,7 +135,7 @@ strong {
   background: #3fbbc0;
   color: #EAEBED;
   height: 40px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   z-index: 996;
   transition: all 0.5s;
@@ -3750,4 +3750,8 @@ hr {
 .carousel-inner img {
   width: 100%;
   height: 100%;
+}
+
+.navbar{
+  box-shadow: none;
 }

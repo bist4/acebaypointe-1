@@ -18,7 +18,7 @@
             <i class="bi bi-phone"></i> Sun: 0922-812-8623
           </div>
           <div class="col-auto pfy">
-            <a href="https://m.me/TheMedicalCityClark/" target="_blank" class="messenger"><i class="bi bi-messenger"></i><span>Say hi to ACEMCB on Messanger</span></a>
+            <a href="#" target="_blank" class="messenger"><i class="bi bi-messenger"></i><span>Say hi to ACEMCB on Messanger</span></a>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
         <li class="dropdown"><a href="#"><span>PATIENT GUIDE & FEATURES</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">VIRTUAL TOUR</a></li>
-            <li><a href="#">ADMISSION PROCEDURE</a></li>
+            <li><a href="admission_procedure.php">ADMISSION PROCEDURE</a></li>
             <li><a href="room_accommodation.php">ROOM ACCOMMODATIONS</a></li>
             <li><a href="#">PATIENT SAFETY & QUALITY CARE</a></li>
             <li><a href="#">MEDICAL RECORDS</a></li>

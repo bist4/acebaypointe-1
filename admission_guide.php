@@ -105,7 +105,7 @@
 
                 <div class="col-lg-4 radiantthemes-contact-box rt412613828 element-one" style="font-family: poppins;">
                     <figure class="mb-4"><img class="img-fluid rounded"
-                            src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                            src="assets/img/slide/slide-3.png" alt="..." /></figure>
                     <h3 style="font-size: 18px;color: #000000;line-height: 24px;text-align: left"
                         class="vc_custom_heading font-weight-bold vc_custom_1546582444223">Quick Contact</h3>
                     <ul>
@@ -124,7 +124,7 @@
                     </ul>
                 </div>
 
-            </div>
+
         </div>
     </main> <!-- End Main -->
     <!-- Footer -->
