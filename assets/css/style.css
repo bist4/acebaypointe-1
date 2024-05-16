@@ -3796,3 +3796,7 @@ hr {
 .navbar{
   box-shadow: none;
 }
+
+.career .portfolio-item{
+  height: auto;
+}

@@ -75,7 +75,7 @@
                             </header>
                             <!-- Preview image figure-->
                             <figure class="mb-4"><img class="img-fluid rounded"
-                                    src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                                    src="assets/img/announcement/packages.png" alt="..." /></figure>
                             <!-- Post content-->
                             <div class="mb-5">
                                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

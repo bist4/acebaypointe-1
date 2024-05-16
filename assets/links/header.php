@@ -30,7 +30,7 @@
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
     <a href="index.php" class="logo me-auto"><img src="assets/img/logos/logo-l.png" alt=""></a>
-    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- Uncomment below if you prefer to use an image logo --> 
     <!-- <h1 class="logo me-auto"><a href="index.php">Medicio</a></h1> -->
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
@@ -62,8 +62,8 @@
             <li><a href="patient_safety_and_quality_care.php">PATIENT SAFETY & QUALITY CARE</a></li>
             <li><a href="medical_records.php">MEDICAL RECORDS</a></li>
             <li><a href="hmos.php">HMO PARTNERS</a></li>
-            <li><a href="#">PHILHEALTH REQUIREMENTS</a></li>
-            <li><a href="#">BILLING & PAYMENT</a></li>
+            <li><a href="philhealth_requirements.php">PHILHEALTH REQUIREMENTS</a></li>
+            <li><a href="billing_and_payment.php">BILLING & PAYMENT</a></li>
             <li><a href="#">GETTING TO ACEMCBAYPOINTE</a></li>
             <li><a href="#">EMERGENCY & SERVICES.</a></li>
           </ul>

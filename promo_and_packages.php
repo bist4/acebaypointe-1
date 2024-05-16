@@ -77,7 +77,7 @@
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                                     <a class="text-decoration-none link-dark stretched-link"
                                         href="promo_and_packages_details.php">
-                                        <div class="h5 card-title mb-3">Blog post title</div>
+                                        <div class="h5 card-title mb-3">Promo & Packages</div>
                                         <!-- Title of the promo -->
                                         <div class="small">
                                             <div class="text-muted">Valid until: <strong>May 1, 2024</strong></div>
@@ -93,7 +93,7 @@
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                                     <a class="text-decoration-none link-dark stretched-link" href="promo_and_packages_details.php">
-                                        <div class="h5 card-title mb-3">Blog post title</div>
+                                        <div class="h5 card-title mb-3">Promo & Packages</div>
                                         <!-- Title of the promo -->
                                         <div class="small">
                                             <div class="text-muted">Valid until: <strong>May 1, 2024</strong></div>
@@ -109,7 +109,7 @@
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                                     <a class="text-decoration-none link-dark stretched-link" href="promo_and_packages_details.php">
-                                        <div class="h5 card-title mb-3">Blog post title</div>
+                                        <div class="h5 card-title mb-3">Promo & Packages</div>
                                         <!-- Title of the promo -->
                                         <div class="small">
                                             <div class="text-muted">Valid until: <strong>May 1, 2024</strong></div>
@@ -136,7 +136,7 @@
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                                     <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Blog post title</div>
+                                    <div class="h5 card-title mb-3">Promo & Packages</div>
                                     <!-- Title of the promo -->
                                     <div class="small">
                                         <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
@@ -152,7 +152,7 @@
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                                     <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Blog post title</div>
+                                    <div class="h5 card-title mb-3">Promo & Packages</div>
                                     <!-- Title of the promo -->
                                     <div class="small">
                                         <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
@@ -168,7 +168,7 @@
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                                     <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Blog post title</div>
+                                    <div class="h5 card-title mb-3">Promo & Packages</div>
                                     <!-- Title of the promo -->
                                     <div class="small">
                                         <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
@@ -184,7 +184,7 @@
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                                     <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Blog post title</div>
+                                    <div class="h5 card-title mb-3">Promo & Packages</div>
                                     <!-- Title of the promo -->
                                     <div class="small">
                                         <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
@@ -200,7 +200,7 @@
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                                     <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Blog post title</div>
+                                    <div class="h5 card-title mb-3">Promo & Packages</div>
                                     <!-- Title of the promo -->
                                     <div class="small">
                                         <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
@@ -216,7 +216,7 @@
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                                     <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Blog post title</div>
+                                    <div class="h5 card-title mb-3">Promo & Packages</div>
                                     <!-- Title of the promo -->
                                     <div class="small">
                                         <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
@@ -229,7 +229,7 @@
                     </div>
                 </div>
             </section>
-        </main> <!-- End of the main content of Contact Us -->
+        </main> <!-- End of the main content -->
     </main> <!-- End Main -->
 
     <!-- Footer -->

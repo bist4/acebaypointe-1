@@ -94,6 +94,14 @@
     .portfolio .portfolio-item .details-careers .btn:hover {
       background-color: #35a6af;
     }
+
+    .details-careers p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
   </style>
   <!-- Script of the Header -->
   <!-- <script src="assets/js/header.js" defer></script> -->
@@ -123,7 +131,12 @@
       </div>
     </div> <!-- End of Page Title -->
 
-    <section id="portfolio" class="portfolio">
+
+    </section><!-- End Portfolio Section -->
+    <!-- Main Content of Careers -->
+    <main id="main" class="main">
+    </main> <!-- End Main -->
+    <section id="portfolio" class="portfolio career">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Join our Team</h2>
@@ -145,13 +158,15 @@
             <div class="template-card gray-shadow">
               <div class="details-careers">
                 <h2 class="color-text">Junior Clinical Pharmacist</h2>
-                <h3 class="date-release">Medical</h3>
+                <h3 class="date-release clamp-3">Medical</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                  officia deserunt mollit anim id est laborum. </p>
+                <div class="d-flex justify-content-center">
+                  <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                </div>
               </div>
             </div>
           </div>
@@ -166,7 +181,9 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                <div class="d-flex justify-content-center">
+                  <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                </div>
               </div>
             </div>
           </div>
@@ -181,7 +198,9 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                <div class="d-flex justify-content-center">
+                  <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                </div>
               </div>
             </div>
           </div>
@@ -196,7 +215,9 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                <div class="d-flex justify-content-center">
+                  <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                </div>
               </div>
             </div>
           </div>
@@ -210,8 +231,10 @@
                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                  officia deserunt mollit anim id est laborum. </p>
+                <div class="d-flex justify-content-center">
+                  <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                </div>
               </div>
             </div>
           </div>
@@ -226,42 +249,34 @@
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.....</p>
-                <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                <div class="d-flex justify-content-center">
+                  <a class="btn doctors-btn" href="career_details.php">View Details</a>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
-    </section><!-- End Portfolio Section -->
+      <!-- Footer -->
+      <footer>
+        <?php require ('assets/links/footer.php') ?>
+      </footer> <!-- End Footer -->
 
+      <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
-    <!-- Main Content of Careers -->
-    <main id="main" class="main">
+      <!-- Vendor JS Files -->
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor_OnePage/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendor_OnePage/aos/aos.js"></script>
+      <script src="assets/vendor_OnePage/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor_OnePage/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor_OnePage/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor_OnePage/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor_OnePage/php-email-form/validate.js"></script>
 
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
 
-    </main> <!-- End Main -->
-
-    <!-- Footer -->
-    <footer>
-      <?php require ('assets/links/footer.php') ?>
-    </footer> <!-- End Footer -->
-
-    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
-
-    <!-- Vendor JS Files -->
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor_OnePage/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor_OnePage/aos/aos.js"></script>
-    <script src="assets/vendor_OnePage/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor_OnePage/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor_OnePage/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor_OnePage/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor_OnePage/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    
 </body>
 
 </html>

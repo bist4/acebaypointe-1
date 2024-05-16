@@ -133,7 +133,7 @@
             </div>
 
             <div class="text-center">
-                <p>For further inquiries or clarifications, kindly visit or call the admitting office (045) 598 4000 local 80043/80044 or 0919063319 we are open 24/7.</p>
+                <p>For further inquiries or clarifications, kindly visit or call the admitting office (045) 000 000 local 00000/00000 or 09000000000 we are open 24/7.</p>
             </div>
 
         </main> <!-- End of the main content of Admission Procedure -->

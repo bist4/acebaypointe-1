@@ -128,7 +128,7 @@
 }
 
 .form-outline .form-control:not(.placeholder-active)::placeholder {
-    opacity: 0
+    opacity: 0;
 }
 
 .form-outline .form-control.active::-moz-placeholder,

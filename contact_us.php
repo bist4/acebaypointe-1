@@ -131,19 +131,15 @@
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
                     <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
-                      <input type="text" name="email" required class="form-control form-control-lg">
-                      <!-- class sa input form-control -->
-                      <label for="designation" class="form-label">Email<span class="text-danger"></span></label>
-                      <!-- class sa label form-label -->
+                      <input type="text" name="email" required class="form-control form-control-lg"> <!-- class sa input form-control -->
+                      <label for="designation" class="form-label">Email<span class="text-danger"></span></label> <!-- class sa label form-label -->
                     </div>
                   </div>
                 </div>
                 <div class="form-group mt-3">
                   <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
-                    <input type="email" name="subject" required class="form-control form-control-lg">
-                    <!-- class sa input form-control -->
-                    <label for="designation" class="form-label">Subject<span class="text-danger"></span></label>
-                    <!-- class sa label form-label -->
+                    <input type="email" name="subject" required class="form-control form-control-lg"> <!-- class sa input form-control -->
+                    <label for="designation" class="form-label">Subject<span class="text-danger"></span></label> <!-- class sa label form-label -->
                   </div>
                 </div>
                 <!-- Department Dropdown -->
@@ -174,20 +170,6 @@
           </div>
         </div>
       </section><!-- End Contact Section -->
-
-      <!-- body
-      1. first div for margin top
-      2. second div for background for form
-      3. third div row
-      4. fourth div for full screen with margin bottom
-      5. fifth div for outline tatas yung label
-      6. class sa input form-control
-      7. class sa label form-label
-
-      extension
-      head
-      1. first link is for outline of label
-      2. second link os for bootstrap -->
     </main> <!-- End of the main content of Contact Us -->
   </main> <!-- End Main -->
 

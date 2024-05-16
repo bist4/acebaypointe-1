@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Medical Records | ACEMC - Baypointe</title>
+    <title>Contact Us | ACEMC - Baypointe</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
     <link href="assets/img/logos/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
 
     <!-- Google Fonts -->
     <link
@@ -30,10 +31,10 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styles1.css" rel="stylesheet"> <!-- Form animation -->
 
     <!-- Script of the Header -->
-    <script src="assets/js/header.js" defer></script>
-
+    <!-- <script src="assets/js/header.js" defer></script> -->
 
     <!-- =======================================================
   * Template Name: Medicio
@@ -54,36 +55,60 @@
             <div class="container">
                 <div class="col-lg-6">
                     <div class=" display-5 fw-bolder text-center text-xl-start my-5">
-                        <h1 class="display-5 fw-bolder text-white mb-lg-2">MEDICAL RECORDS</h1>
+                        <h1 class="display-5 fw-bolder text-white mb-lg-2">BILLING & PAYMENT</h1>
                         <!-- <p class="lead text-white-50 mb-0 mb-lg-3">QUICK CONTACT</p> -->
                     </div>
                 </div>
             </div>
         </div> <!-- End of Page Title -->
 
-        <!-- Main content of Medical Records -->
+        <!-- Main content of Contact Us -->
         <main id="main" class="main container">
-            <p>When requesting for medical records, kindly see list below of requirements for claiming documents:</p>
-        </main> <!-- End of the main content of Medical Records -->
+            <div class="mt-2"> <!-- Billing -->
+                <h3 class="mb-4">BILLING</h3>
+                <p>Location:</p>
+                <p>Contact Number:</p>
+                <p>Operating Hour:</p>
+            </div>
+            <div class="mt-2 mb-5"> <!-- Cashier -->
+                <h3 class="mt-4">CASIER</h3>
+                <div>
+                    <p>We accept payments by:</p>
+                    <img src="assets/img/bank.png" alt="" style="width: 150px" class="mb-3">
+                    <img src="assets/img/bank.png" alt="" style="width: 150px" class="mb-3">
+                    <img src="assets/img/bank.png" alt="" style="width: 150px" class="mb-3">
+                </div>
+                <p>Contact Number:</p>
+                <p>Operating Hour:</p>
+            </div>
+            <div class="text-center">
+                <p>For further inquiries or clarifications, kindly visit or call the casher office (045) 000 000
+                    local 00000/00000 or 09000000000 we are open 24/7.</p>
+            </div>
+        </main> <!-- End of the main content of Contact Us -->
     </main> <!-- End Main -->
 
-    <!-- Footer -->
-    <footer>
-        <?php require ('assets/links/footer.php') ?>
-    </footer> <!-- End Footer -->
 
-    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+</body>
+<!-- Footer -->
+<footer>
+    <?php require ('assets/links/footer.php') ?>
+</footer> <!-- End Footer -->
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+<?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 
 </body>
 

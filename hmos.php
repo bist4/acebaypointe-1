@@ -179,14 +179,15 @@
                 </div>
                 <!-- Filtering -->
                 <div class="row mb-5" data-aos="fade-up" data-aos-delay="150">
-                    <div class="col-lg-6 d-flex">
+                    <div class="col-lg-4">
                         <ul id="portfolio-flters">
                             <li data-filter="*" class="filter-active">All</li>
                             <li data-filter=".filter-local">Local HMOs</li>
                             <li data-filter=".filter-international">International HMOs</li>
                         </ul>
                     </div>
-                    <div class="col-lg-6 d-flex">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
                         <!-- search bar here -->
                         <div class="input-group">
                             <input type="text" id="searchInput" class="form-control" placeholder="Type HMO here">

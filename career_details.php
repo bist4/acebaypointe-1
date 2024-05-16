@@ -30,6 +30,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styles1.css" rel="stylesheet">
 
     <!-- Script of the Header -->
     <script src="assets/js/header.js" defer></script>
@@ -42,6 +43,8 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
 </head>
 
 <body>
@@ -102,7 +105,7 @@
                         <div class="sent-message">Your message has been sent. Thank you!</div>
                     </div> -->
                     <!-- Form for applying the Position -->
-                    <hr class="my-5"> <!-- Line at the bottom -->
+                    <hr class="mb-5 mt-0"> <!-- Line at the bottom -->
                     <h2>Complete the form below to apply for this position</h2>
                     <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut
                         ad
@@ -110,38 +113,80 @@
                     <div class="row gy-5 gx-lg-5">
 
                         <!-- The Form -->
-                        <div class="col-lg-7 info">
-                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="col-lg-7 bg-white"
+                            style="href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css'">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form bg-white">
+                                <div class="form-group">
+                                    <label for="text" class="mb-1">Position Applying For</label>
+                                    <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+
+                                        <input type="text" name="name" required class="form-control form-control-lg"
+                                            disabled>
+                                        <!-- class sa input form-control -->
+                                        <label for="designation" class="form-label fw-bold">Position<span
+                                                class="text-danger"></span></label>
+                                        <!-- class sa label form-label -->
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+                                        <input type="text" name="name" required class="form-control form-control-lg">
+                                        <!-- class sa input form-control -->
+                                        <label for="designation" class="form-label">Name<span
+                                                class="text-danger"></span></label>
+                                        <!-- class sa label form-label -->
+                                    </div>
+                                </div>
                                 <div class="row">
-                                    <div class="form-group"> <!-- Position Applying For -->
-                                        <label for="text" class="mb-2">Position Applying Form</label>
-                                        <input type="text" name="position" class="form-control" id="position"
-                                            placeholder="Position" style="font-weight: bold;" disabled>
+                                    <label for="text" class="mb-1">Contact Information</label>
+                                    <div class="col-md-6 form-group">
+                                        <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+                                            <input type="email" name="email" required
+                                                class="form-control form-control-lg">
+                                            <!-- class sa input form-control -->
+                                            <label for="designation" class="form-label">Email<span
+                                                    class="text-danger"></span></label>
+                                            <!-- class sa label form-label -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                                        <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+                                            <input type="text" name="pnumber" required
+                                                class="form-control form-control-lg">
+                                            <!-- class sa input form-control -->
+                                            <label for="designation" class="form-label">Contact Number<span
+                                                    class="text-danger"></span></label>
+                                            <!-- class sa label form-label -->
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group mt-3">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name"
-                                        required>
-                                </div>
-                                <div class="row"> <!-- Contact information-->
-                                    <label for="text" class="mb-2">Contact Information</label>
-                                    <div class="col-md-6 form-group">
-                                        <input type="email" name="email" class="form-control" id="email"
-                                            placeholder="Your Name" required>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <input type="tel" class="form-control" name="phoneNum" id="phoneNum"
-                                            placeholder="Phone Number">
+                                    <div class="form-outline">
+                                        <textarea class="form-control form-control-lg" name="message"
+                                            style="height: 100px; required"></textarea>
+                                        <label for="designation" class="form-label">Cover Letter<span
+                                                class="text-danger"></span></label>
+                                        <!-- class sa label form-label -->
                                     </div>
                                 </div>
-                                <div class="form-group mt-3">
-                                    <textarea class="form-control" name="message" placeholder="Message" required
-                                        style="height: 100px"></textarea>
+                                <label for="text" class="mb-1">Submit your resume here</label>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <div class="form-outline"> <!-- Adding form-outline class for outline -->
+                                            <input type="file" name="fileupload" value="fileupload" id="fileupload"
+                                                class="form-control form-control-lg" onchange="previewImage(event)">
+                                            <!-- Adding form-control class for consistent styling and onchange event to trigger preview -->
+                                            <img id="preview" src="#" alt="Image Preview"
+                                                style="display: none; max-width: 100%; height: auto;">
+                                            <!-- Image preview placeholder, initially hidden -->
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div class="text-center appointments-btn"><button type="submit">Send
                                         Message</button></div>
                             </form>
-                        </div><!-- End Contact Form -->
+                        </div> <!-- End Contact Form -->
                         <div class="col-lg-5">
                             <div class="info">
                                 <h3 class="mb-3">Get in touch</h3>
@@ -190,6 +235,7 @@
                                 href="https://mail.google.com/mail/?view=cm&fs=1&to=angelmaecarpeso@gmail.com&su=Application%20Form'">send</a>
                             it to: hrd@unihealthbaypointe.com</p>
                     </div>
+
             </section><!-- End Contact Section -->
 
         </main> <!-- End of the main content of Career Details -->
@@ -214,8 +260,6 @@
     <script src="assets/js/main.js"></script>
 
 
-
-
     <!-- <script>
         function sendEmail() {
             $.ajax({
@@ -236,6 +280,7 @@
             });
         }
     </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 </body>
 
 </html>
