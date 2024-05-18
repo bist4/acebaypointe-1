@@ -173,13 +173,19 @@
                                 <div class="form-group">
                                     <div class="form-group">
                                         <div class="form-outline"> <!-- Adding form-outline class for outline -->
-                                            <input type="file" name="fileupload" value="fileupload" id="fileupload"
-                                                class="form-control form-control-lg" onchange="previewImage(event)">
+                                            <input type="file" name="fileupload" id="fileupload" accept=".pdf" onchange="checkFileSize(this)"
+                                                class="form-control form-control-lg">
                                             <!-- Adding form-control class for consistent styling and onchange event to trigger preview -->
                                             <img id="preview" src="#" alt="Image Preview"
                                                 style="display: none; max-width: 100%; height: auto;">
                                             <!-- Image preview placeholder, initially hidden -->
                                         </div>
+
+                                    </div>
+
+                                    <!-- Maximum file size allowed is 1000MB, and you can upload a maximum of one file. -->
+                                    <div class="note" style="font-size: 0.8em;">
+                                        <p><strong>Note: </strong>Only PDF files are accepted, and the maximum file size allowed is 2MB.</p>
                                     </div>
 
                                 </div>
@@ -280,7 +286,26 @@
             });
         }
     </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+     function checkFileSize(input) {
+        if (input.files.length > 0) {
+            const fileSize = input.files[0].size; // in bytes
+            const maxSize = 2 * 1024 * 1024; // 2MB in bytes
+            if (fileSize > maxSize) {
+                // Use SweetAlert2 for alert
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'File size exceeds the maximum limit of 2MB.'
+                });
+                input.value = ''; // Clear the file input
+            }
+        }
+    }
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    
 </body>
 
 </html>

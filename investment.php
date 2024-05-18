@@ -86,11 +86,11 @@
                             <h2 class="fw-bolder mb-3">MANAGEMENT DISCOUNTS FOR INVESTORS</h2>
                             <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button"
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2"
                                             aria-expanded="true" aria-controls="collapseOne2">I. STOCKHOLDERS AND
                                             SPOUSES</button></h3>
-                                    <div class="accordion-collapse collapse show" id="collapseOne2"
+                                    <div class="accordion-collapse collapse" id="collapseOne2"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body">
                                             <p>1. Free board and lodging up to suite room accommodation.</p>

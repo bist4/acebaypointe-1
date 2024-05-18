@@ -80,8 +80,22 @@
                         <tbody>
                             <tr>
                                 <td>scelerisque</td>
+                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                    <ul>
+                                        <li>dasfasdfsdf</li>
+                                        <li>dasfasdfsdf</li>
+                                        <li>dasfasdfsdf</li>
+                                        <li>dasfasdfsdf</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>adadjfiashfadsuhf</td>
                                 <td>
                                     <ul>
+                                        <li>dasfasdfsdf</li>
+                                        <li>dasfasdfsdf</li>
+                                        <li>dasfasdfsdf</li>
                                         <li>dasfasdfsdf</li>
                                     </ul>
                                 </td>
