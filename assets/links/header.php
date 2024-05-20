@@ -65,7 +65,7 @@
             <li><a href="philhealth_requirements.php">PHILHEALTH REQUIREMENTS</a></li>
             <li><a href="billing_and_payment.php">BILLING & PAYMENT</a></li>
             <li><a href="getting_to_acemcbaypointe.php">GETTING TO ACEMCBAYPOINTE</a></li>
-            <li><a href="#">EMERGENCY & SERVICES.</a></li>
+            <li><a href="emergency_and_services.php">EMERGENCY & SERVICES.</a></li>
           </ul>
         </li>
         <li><a class="nav-link scrollto" href="contact_us.php">CONTACT US</a></li>

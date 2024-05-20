@@ -58,7 +58,7 @@
             </div>
         </div> <!-- End of Page Title -->
 
-        <!-- Main content of About Us -->
+        <!-- Main content of Job Announcement -->
 
         <section id="team" class="team section-bg">
             <div class="md:max-w-lg mx-auto text-center mb-20">

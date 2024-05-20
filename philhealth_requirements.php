@@ -43,6 +43,26 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+    <style>
+        /* Adjustments for the bullet points */
+        .table ul {
+            padding: 10px;
+            margin: 0;
+            list-style-type: disc;
+            text-align: left;
+        }
+
+        /* Additional CSS for list item markers */
+        ::marker {
+            unicode-bidi: isolate;
+            font-variant-numeric: tabular-nums;
+            text-transform: none;
+            text-indent: 0px !important;
+            text-align: start !important;
+            text-align-last: start !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -80,27 +100,23 @@
                         <tbody>
                             <tr>
                                 <td>Employed</td>
-                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                <td style="text-align: left;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
-                                        <li>Consectetur adipiscing elit</li>
-                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
-                                        <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Individually Paying (Self-Employed/Voluntary Members)</td>
-                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                <td style="text-align: left;">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Overseas’ Workers</td>
-                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                <td style="text-align: left;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
@@ -109,7 +125,7 @@
                             </tr>
                             <tr>
                                 <td>Sponsored</td>
-                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                <td style="text-align: left;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
@@ -118,7 +134,7 @@
                             </tr>
                             <tr>
                                 <td>Lifetime (Qualified Retirees)</td>
-                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                <td style="text-align: left;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
@@ -127,19 +143,28 @@
                             </tr>
                             <tr>
                                 <td>Individually Paying (BUNTIS / MANGANGANAK)</td>
-                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                <td style="text-align: left;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>
+                        </tbody>
                     </table>
+
+                    <div class="content mt-5">
+                        <p class="mb-4">Iba pang detalye:</p>
+                        <p>Kung sakaling hindi nakalista sa MDR and qualified dependent, magsubmit lamang ng proof of
+                            relationship sa Philhealth Officer ng ospital:</p>
+                        <!--                     
+
+                        Legal na ASAWA – Marriage Contract
+                        ANAK na 20 anyos pababa (walang asawa at walang trabaho) –Birth Certificate
+                        ANAK na 21 anyos pataas na may angking kapansanan (mental/pisikal) – Birth Certificate at
+                        Medical Certificate -->
+                    </div>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
         </main> <!-- End of the main content of Philhealth Requirements -->
     </main> <!-- End Main -->
 

@@ -163,7 +163,7 @@
                           <img class="img mb-3 core-logo" src="assets/img/icons/mission.png" alt="icon" />
                         </section>
                         <h5 class="py-3">Altruism</h5>
-                        <p>Care for the patient where and when he needs it most</p>
+                        <!-- <p>Care for the patient where and when he needs it most</p> -->
                       </div>
                     </div> <!-- First Icon -->
                   </div> <!-- End of col-lg-4 -->
@@ -174,7 +174,7 @@
                           <img class="img mb-3 core-logo" src="assets/img/icons/mission.png" alt="icon" />
                         </section>
                         <h5 class="py-3">Compassion</h5>
-                        <p>Care for the patient where and when he needs it most</p>
+                        <!-- <p>Care for the patient where and when he needs it most</p> -->
                       </div>
                     </div> <!-- Second Icon -->
                   </div>
@@ -185,7 +185,7 @@
                           <img class="img mb-3 core-logo" src="assets/img/icons/mission.png" alt="icon" />
                         </section>
                         <h5 class="py-3">Excellence</h5>
-                        <p>Care for the patient where and when he needs it most</p>
+                        <!-- <p>Care for the patient where and when he needs it most</p> -->
                       </div>
                     </div> <!-- Third Icon -->
                   </div>
@@ -199,12 +199,32 @@
         <div class="container" data-aos="fade-up">
           <div class="container section-title aos-init aos-animate px-5" data-aos="fade-up">
             <h2>Quality, Environment, Health and Safety Policy</h2>
+          </div>
+          <div>
             <p>ACEMCB is a secondary hospital dedicated to the total satisfaction of its patients, and the welfare of
               its employees and the environment, through its Integrated Management System. A firm commitment is made to:
             </p>
+            <p><strong>ACQUIRE</strong> a competitive workforce by collaborating with highly skilled and competent
+              professionals.</p>
+            <p><strong>COMPLY</strong> with organizational, legal and statutory, and national and international
+              standards to sustain Quality, Environmental and Occupational Health and Safety Management Systems</p>
+            <p><strong>ELEVATE</strong> the quality of care to deliver safe and satisfactory healthcare services for
+              all,.</p>
+            <p>Enhanced by education, training and research, ACEMCB shall ensure effective
+              implementation of the Integrated Management System in the community it serves.
+              Our QEHS Policy Statement indicates our commitment to continually improve
+              processes, personnel and services consistently meeting or exceeding the requirements
+              of International Standards. It is aligned towards the prevention of pollution, proper
+              waste segregation and disposal of harmful and infectious waste, prevention of injury
+              and ill health in the workplace, protection and promotion of health and safety and
+              compliance with applicable legal and other requirements.</p>
+
+
+
+
           </div>
       </section><!-- End Services Section -->
-
+    </div>
 
   </main> <!-- End Main -->
 

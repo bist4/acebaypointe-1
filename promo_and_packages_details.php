@@ -100,15 +100,19 @@
                                     interdum varius. Fermentum dui faucibus in ornare quam viverra orci sagittis. Eget
                                     est lorem ipsum dolor sit amet consectetur. Tellus in metus vulputate eu scelerisque
                                     felis imperdiet.</p>
-                            </>
+                                <a href="contact_us.php" class="appointments-btn"
+                                    style="display: block; text-align: center; background-color: #3fbbc0; padding: 10px; color: white; width: fit-content; margin: 0 auto;">Have
+                                    a question? Get in touch</a>
+
+                            </div>
                         </article>
 
                     </div>
                     <!-- Side widgets-->
                     <div class="col-lg-4 radiantthemes-contact-box rt412613828 element-one"
                         style="font-family: poppins;">
-                        <figure class="mb-4"><img class="img-fluid rounded"
-                                src="assets/img/slide/slide-3.png" alt="..." /></figure>
+                        <figure class="mb-4"><img class="img-fluid rounded" src="assets/img/slide/slide-3.png"
+                                alt="..." /></figure>
                         <h3 style="font-size: 18px;color: #000000;line-height: 24px;text-align: left"
                             class="vc_custom_heading font-weight-bold vc_custom_1546582444223">Quick Contact</h3>
                         <ul>
