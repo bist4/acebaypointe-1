@@ -92,7 +92,8 @@
                                 <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <a class="text-decoration-none link-dark stretched-link" href="promo_and_packages_details.php">
+                                    <a class="text-decoration-none link-dark stretched-link"
+                                        href="promo_and_packages_details.php">
                                         <div class="h5 card-title mb-3">Promo & Packages</div>
                                         <!-- Title of the promo -->
                                         <div class="small">
@@ -108,7 +109,8 @@
                                 <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
                                 <div class="card-body p-4">
                                     <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <a class="text-decoration-none link-dark stretched-link" href="promo_and_packages_details.php">
+                                    <a class="text-decoration-none link-dark stretched-link"
+                                        href="promo_and_packages_details.php">
                                         <div class="h5 card-title mb-3">Promo & Packages</div>
                                         <!-- Title of the promo -->
                                         <div class="small">
@@ -129,7 +131,7 @@
                         <h2 class="mb-4 font-heading font-semibold text-gray-900 text-4xl mb-5">Finished Promo</h2>
                         <p class="text-lg text-gray-500"></p>
                     </div>
-                    <div class="row gx-5">
+                    <div class="row gx-5" id="cardContainer">
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0 ">
                                 <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
@@ -227,6 +229,9 @@
                         </div>
 
                     </div>
+                    <div class="text-center mt-4">
+                        <a id="seeMoreBtn" class="btn">See More</a>
+                    </div>
                 </div>
             </section>
         </main> <!-- End of the main content -->
@@ -249,6 +254,30 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var cardContainer = document.getElementById("cardContainer");
+            var cards = cardContainer.querySelectorAll(".col-lg-4");
+            var seeMoreBtn = document.getElementById("seeMoreBtn");
+            var hidden = true;
+
+            // Initially hide extra cards
+            for (var i = 3; i < cards.length; i++) {
+                cards[i].classList.add("d-none");
+            }
+
+            // Toggle visibility of extra cards
+            seeMoreBtn.addEventListener("click", function () {
+                hidden = !hidden;
+                for (var i = 3; i < cards.length; i++) {
+                    cards[i].classList.toggle("d-none");
+                }
+                seeMoreBtn.textContent = hidden ? "See More" : "See Less";
+            });
+        });
+
+    </script>
 
 </body>
 

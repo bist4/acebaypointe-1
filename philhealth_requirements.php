@@ -67,7 +67,7 @@
             <div class="col-lg-16 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
                 data-aos="fade-up" data-aos-delay="100">
                 <div class="content">
-                    <p class="mb-4">Kindly see list below of requirements</p>
+                    <p class="mb-4">Kindly see list below of requirements:</p>
                 </div>
                 <div class="table-responsive">
                     <table class="table">
@@ -79,24 +79,58 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>scelerisque</td>
+                                <td>Employed</td>
                                 <td style="text-align: left;" class="d-flex justify-content-center">
                                     <ul>
-                                        <li>dasfasdfsdf</li>
-                                        <li>dasfasdfsdf</li>
-                                        <li>dasfasdfsdf</li>
-                                        <li>dasfasdfsdf</li>
+                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
-                                <td>adadjfiashfadsuhf</td>
-                                <td>
+                                <td>Individually Paying (Self-Employed/Voluntary Members)</td>
+                                <td style="text-align: left;" class="d-flex justify-content-center">
                                     <ul>
-                                        <li>dasfasdfsdf</li>
-                                        <li>dasfasdfsdf</li>
-                                        <li>dasfasdfsdf</li>
-                                        <li>dasfasdfsdf</li>
+                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Overseas’ Workers</td>
+                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sponsored</td>
+                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lifetime (Qualified Retirees)</td>
+                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Individually Paying (BUNTIS / MANGANGANAK)</td>
+                                <td style="text-align: left;" class="d-flex justify-content-center">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>

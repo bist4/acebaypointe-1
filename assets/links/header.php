@@ -64,7 +64,7 @@
             <li><a href="hmos.php">HMO PARTNERS</a></li>
             <li><a href="philhealth_requirements.php">PHILHEALTH REQUIREMENTS</a></li>
             <li><a href="billing_and_payment.php">BILLING & PAYMENT</a></li>
-            <li><a href="#">GETTING TO ACEMCBAYPOINTE</a></li>
+            <li><a href="getting_to_acemcbaypointe.php">GETTING TO ACEMCBAYPOINTE</a></li>
             <li><a href="#">EMERGENCY & SERVICES.</a></li>
           </ul>
         </li>
