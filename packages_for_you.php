@@ -188,7 +188,7 @@
         </div>
         <!-- The Rows -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 mb-5">
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packagesbasic">
             <a>
               <p>BASIC EXECUTIVE PACKAGE </p> <!-- title -->
@@ -196,7 +196,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_family">
             <a>
               <p>FAMILY* HEALTH SCREENING</p> <!-- title -->
@@ -204,7 +204,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_family">
             <a>
               <p>FAMILY* HEALTH SCREENING</p> <!-- title -->
@@ -212,7 +212,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_screening">
             <a>
               <p>EXECUTIVE SCREENING</p> <!-- title -->
@@ -221,7 +221,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_screening">
             <a>
               <p>EXECUTIVE SCREENING</p> <!-- title -->
@@ -230,7 +230,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_screening">
             <a>
               <p>EXECUTIVE SCREENING</p> <!-- title -->
@@ -239,7 +239,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_preventives">
             <a>
               <p>BELOW 40 PREVENTIVES</p> <!-- title -->
@@ -247,7 +247,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_male_sur">
             <a>
               <p>MALE SURVEILLANCE</p> <!-- title -->
@@ -256,7 +256,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_male_sur">
             <a>
               <p>MALE SURVEILLANCE</p> <!-- title -->
@@ -265,7 +265,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_female_sur">
             <a>
               <p>FEMALE SURVEILLANCE</p> <!-- title -->
@@ -274,7 +274,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_female_sur">
             <a>
               <p>FEMALE SURVEILLANCE</p> <!-- title -->
@@ -283,7 +283,7 @@
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center box" data-bs-toggle="modal"
+          <div class="col d-flex justify-content-center align-items-center box cursor" data-bs-toggle="modal"
             data-bs-target="#modal_packages_female_sur">
             <a>
               <p>FEMALE SURVEILLANCE</p> <!-- title -->

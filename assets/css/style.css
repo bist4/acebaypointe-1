@@ -1618,7 +1618,9 @@ section {
   }
 }
 
-
+.cursor {
+  cursor: pointer;
+}
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
@@ -3689,7 +3691,7 @@ hr {
 
 .bullet ul {
   list-style-type: disc !important;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
 }
 
 .form-select{

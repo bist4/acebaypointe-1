@@ -17,7 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-
+   
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -43,10 +43,10 @@
   ======================================================== -->
 </head>
 
+
 <body>
   <?php require ('assets/links/header.php')?> <!-- The Header -->
   <!-- Main -->
-  
   <main>
   <div class="bg-dark py-5 my-5" style="background-image: url('assets/img/slide/slide-1.png'); background-size: cover; background-position: center; filter: brightness(50%); height: 50%;">
     <div class="py-5">
@@ -66,7 +66,7 @@
         </div>
     </div>
 </div>
-
+ 
   <main id="main">
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
@@ -932,7 +932,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+ 
+  
 </body>
 
 </html>

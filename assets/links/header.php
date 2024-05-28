@@ -51,7 +51,7 @@
           </ul>
         </li>
         <li><a href="doctors.php">DOCTORS</a></li>
-        <li><a href="#">DEPARTMENT & SERVICES</a></li>
+        <li><a href="departmet_and_services.php">DEPARTMENT & SERVICES</a></li>
         <li><a href="careers.php">CAREERS</a></li>
         <li class="dropdown"><a href="#"><span>PATIENT GUIDE & FEATURES</span> <i class="bi bi-chevron-down"></i></a>
           <ul>

@@ -26,6 +26,46 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+    <style>
+        .search-bar {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-bar .form-select,
+        .search-bar .form-control {
+            height: 45px;
+            border-radius: 5px;
+        }
+
+        .search-bar .btn-search {
+            height: 45px;
+            border-radius: 5px;
+            --bs-btn-color: #3fbbc0;
+            --bs-btn-border-color: #3fbbc0;
+            --bs-btn-hover-color: #ffffff;
+            --bs-btn-hover-bg: #3fbbc0;
+            --bs-btn-hover-border-color: #D1EFF4;
+            --bs-btn-focus-shadow-rgb: 13, 110, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #D9D9D9;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-bg: transparent;
+            background-color: var(--bs-btn-color);
+            border-color: var(--bs-btn-border-color);
+        }
+
+        .search-bar .btn-search:hover {
+            background-color: var(--bs-btn-hover-bg);
+            color: var(--bs-btn-hover-color);
+            border-color: var(--bs-btn-hover-border-color);
+        }
+    </style>
+
+    </style>
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -62,14 +102,37 @@
         <section id="team" class="team section-bg">
             <div class="container">
 
-                <div class="section-title aos-init aos-animate" data-aos="fade-up">
-                    <h2>Our <strong>Team</strong></h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <div class="section-title aos-init aos-animate mt-0" data-aos="fade-up">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="search-bar">
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <select class="form-select" id="department" required>
+                                                <option selected disabled value="">Choose Department...</option>
+                                                <option value="cardiology">Cardiology</option>
+                                                <option value="neurology">Neurology</option>
+                                                <option value="orthopedics">Orthopedics</option>
+                                                <option value="pediatrics">Pediatrics</option>
+                                                <option value="general">General Medicine</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="doctorName"
+                                                placeholder="Enter Doctor's Name" required>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="submit" class="doctor-btn btn-search w-100">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Doctor section-->
-                <section class="bg-light py-5">
+                <div class="bg-light">
                     <div class="container px-5 my-5">
                         <div class="text-center "></div>
                         <div class="row gx-5 justify-content-center">
@@ -193,62 +256,64 @@
                             </div>
                         </div>
                         <!-- End pagination -->
-                </section>
+                    </div>
 
 
-                <!-- MODAL OF THE VIEW SCHEDULE -->
-                <div class="modal fade gray-shadow" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModal"
-                    tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl modal-dialog-centered">
-                        <div class="modal-content px-4 mx-4 my-5">
-                            <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row gx-5 justify-content-center align-items-center">
-                                    <div class="col-md-6 zoom-in">
-                                        <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
-                                            class="img-fluid rounded" alt="Doctor Image">
-                                    </div> <!-- End of the image -->
-                                    <div class="col-md-6">
-                                        <div class="appointment-item-two-right">
-                                            <h2 class="doctor-name display-6 text-center text-md-start">Dr. Juan Dela
-                                                Cruz</h2>
-                                            <div class="appointment-item-content">
-                                                <p class="fs-6"><strong>Department:</strong> <span
-                                                        class="department">Cardiology</span></p>
-                                                <p class="fs-6"><strong>Status:</strong> <span
-                                                        class="status">Active</span></p>
-                                                <h6 class="fs-6"><strong>Clinic hours</strong></h6>
-                                                <div class="doctor-details-work">
-                                                    <ul class="list-unstyled" style="padding-left: 0;">
-                                                        <li>Monday <span>10:00AM - 01:00PM</span></li>
-                                                        <li>Tuesday <span>10:00AM - 01:00PM</span></li>
-                                                        <li>Wednesday <span>10:00AM - 01:00PM</span></li>
-                                                        <li>Thursday <span>10:00AM - 01:00PM</span></li>
-                                                        <li>Friday <span>10:00AM - 01:00PM</span></li>
-                                                        <li>Saturday <span>10:00AM - 01:00PM</span></li>
-                                                        <li>Sunday<span>10:00AM - 01:00PM</span></li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p><strong>Note: </strong>For <strong>On Call</strong> and
-                                                        <strong>By
-                                                            Appointment</strong> Status, <br>
-                                                        <strong>0939-915-7633 </strong>Local
-                                                        200 for Smart <br> <strong>0917-545-1566</strong> Local 200 for
-                                                        Globe
-                                                    </p>
-                                                </div>
-                                            </div> <!-- End of Appointment item content -->
-                                        </div> <!-- End of appointment item two right -->
-                                    </div> <!-- End of the right column -->
+                    <!-- MODAL OF THE VIEW SCHEDULE -->
+                    <div class="modal fade gray-shadow" data-bs-backdrop="static" data-bs-keyboard="false"
+                        id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content px-4 mx-4 my-5">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row gx-5 justify-content-center align-items-center">
+                                        <div class="col-md-6 zoom-in">
+                                            <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
+                                                class="img-fluid rounded" alt="Doctor Image">
+                                        </div> <!-- End of the image -->
+                                        <div class="col-md-6">
+                                            <div class="appointment-item-two-right">
+                                                <h2 class="doctor-name display-6 text-center text-md-start">Dr. Juan
+                                                    Dela
+                                                    Cruz</h2>
+                                                <div class="appointment-item-content">
+                                                    <p class="fs-6"><strong>Department:</strong> <span
+                                                            class="department">Cardiology</span></p>
+                                                    <p class="fs-6"><strong>Status:</strong> <span
+                                                            class="status">Active</span></p>
+                                                    <h6 class="fs-6"><strong>Clinic hours</strong></h6>
+                                                    <div class="doctor-details-work">
+                                                        <ul class="list-unstyled" style="padding-left: 0;">
+                                                            <li>Monday <span>10:00AM - 01:00PM</span></li>
+                                                            <li>Tuesday <span>10:00AM - 01:00PM</span></li>
+                                                            <li>Wednesday <span>10:00AM - 01:00PM</span></li>
+                                                            <li>Thursday <span>10:00AM - 01:00PM</span></li>
+                                                            <li>Friday <span>10:00AM - 01:00PM</span></li>
+                                                            <li>Saturday <span>10:00AM - 01:00PM</span></li>
+                                                            <li>Sunday<span>10:00AM - 01:00PM</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p><strong>Note: </strong>For <strong>On Call</strong> and
+                                                            <strong>By
+                                                                Appointment</strong> Status, <br>
+                                                            <strong>0939-915-7633 </strong>Local
+                                                            200 for Smart <br> <strong>0917-545-1566</strong> Local 200
+                                                            for
+                                                            Globe
+                                                        </p>
+                                                    </div>
+                                                </div> <!-- End of Appointment item content -->
+                                            </div> <!-- End of appointment item two right -->
+                                        </div> <!-- End of the right column -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> <!-- End of the Modal -->
+                    </div> <!-- End of the Modal -->
     </main>
 
     <!-- Footer -->

@@ -13,7 +13,6 @@
     <link href="assets/img/logos/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -33,17 +32,6 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/styles1.css" rel="stylesheet"> <!-- Form animation -->
 
-    <!-- Script of the Header -->
-    <!-- <script src="assets/js/header.js" defer></script> -->
-
-    <!-- =======================================================
-  * Template Name: Medicio
-  * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
     <style>
         /* Adjustments for the bullet points */
         .table ul {
@@ -62,6 +50,12 @@
             text-align: start !important;
             text-align-last: start !important;
         }
+
+        /* Center align the first td in each row */
+        .main .table tbody tr td:first-child {
+            text-align: center;
+            vertical-align: middle;
+        }
     </style>
 </head>
 
@@ -70,11 +64,10 @@
     <main> <!-- Main -->
         <!-- Title -->
         <div class="bg-dark py-5 my-5">
-            <div class="py-5">
-            </div>
+            <div class="py-5"></div>
             <div class="container">
                 <div class="col-lg-6">
-                    <div class=" display-5 fw-bolder text-center text-xl-start my-5">
+                    <div class="display-5 fw-bolder text-center text-xl-start my-5">
                         <h1 class="display-5 fw-bolder text-white mb-lg-2">PHILHEALTH REQUIREMENTS</h1>
                         <!-- <p class="lead text-white-50 mb-0 mb-lg-3">QUICK CONTACT</p> -->
                     </div>
@@ -84,31 +77,30 @@
 
         <!-- Main content of Philhealth Requirements -->
         <main id="main" class="main container">
-            <div class="col-lg-16 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
-                data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-16 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                 <div class="content">
                     <p class="mb-4">Kindly see list below of requirements:</p>
                 </div>
-                <div class="table-responsive">
+                <div class="table-responsive" data-aos="fade-up" data-aos-delay="100">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>sdvdas</th>
+                                <th>Category</th>
                                 <th>Documents Needed</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Employed</td>
-                                <td style="text-align: left;">
+                                <td style="text-align: left; padding-left: 50px;">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Individually Paying (Self-Employed/Voluntary Members)</td>
-                                <td style="text-align: left;">
+                                <td style="text-align: left; padding-left: 50px;">
                                     <ul>
                                         <li>Consectetur adipiscing elit</li>
                                     </ul>
@@ -116,58 +108,56 @@
                             </tr>
                             <tr>
                                 <td>Overseas’ Workers</td>
-                                <td style="text-align: left;">
+                                <td style="text-align: left; padding-left: 50px;">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Sponsored</td>
-                                <td style="text-align: left;">
+                                <td style="text-align: left; padding-left: 50px;">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Lifetime (Qualified Retirees)</td>
-                                <td style="text-align: left;">
+                                <td style="text-align: left; padding-left: 50px;">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Individually Paying (BUNTIS / MANGANGANAK)</td>
-                                <td style="text-align: left;">
+                                <td style="text-align: left; padding-left: 50px;">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet(consectetur adipiscing elit)</li>
+                                        <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-
-                    <div class="content mt-5">
-                        <p class="mb-4">Iba pang detalye:</p>
-                        <p>Kung sakaling hindi nakalista sa MDR and qualified dependent, magsubmit lamang ng proof of
-                            relationship sa Philhealth Officer ng ospital:</p>
-                        <!--                     
-
-                        Legal na ASAWA – Marriage Contract
-                        ANAK na 20 anyos pababa (walang asawa at walang trabaho) –Birth Certificate
-                        ANAK na 21 anyos pataas na may angking kapansanan (mental/pisikal) – Birth Certificate at
-                        Medical Certificate -->
-                    </div>
+                </div>
+                <div class="content mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <p class="mb-4">Iba pang detalye:</p>
+                    <p>Kung sakaling hindi nakalista sa MDR and qualified dependent, magsubmit lamang ng proof of
+                        relationship sa Philhealth Officer ng ospital:</p>
+                    <ul>
+                        <li>Legal na ASAWA – Marriage Contract</li>
+                        <li>ANAK na 20 anyos pababa (walang asawa at walang trabaho) –Birth Certificate</li>
+                        <li> ANAK na 21 anyos pataas na may angking kapansanan (mental/pisikal) – Birth Certificate at
+                            Medical Certificate</li>
+                    </ul>
                 </div>
         </main> <!-- End of the main content of Philhealth Requirements -->
     </main> <!-- End Main -->
-
 
 </body>
 <!-- Footer -->
