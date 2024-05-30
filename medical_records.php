@@ -79,7 +79,7 @@ include ("config/db_con.php"); //Connection to database
                                 <h4 class="fw-bolder mb-3">MEDICAL DOCUMENTS</h4>
                                 <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
                                     <?php
-                                    $medical = mysqli_query($conn, "SELECT * FROM medical_records WHERE Active =1");
+                                    $medical = mysqli_query($conn, "SELECT * FROM Medical_records WHERE Active = 1");
 
                                     if (mysqli_num_rows($medical) > 0) {
                                         $counter = 1;
@@ -91,7 +91,7 @@ include ("config/db_con.php"); //Connection to database
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#<?php echo $uniqueId; ?>"
                                                         aria-expanded="false" aria-controls="<?php echo $uniqueId; ?>">
-                                                        <?php echo $row['medical_name']; ?>
+                                                        <?php echo strtoupper($row['Medical_name']); ?>
                                                     </button>
                                                 </h3>
                                                 <div class="accordion-collapse collapse" id="<?php echo $uniqueId; ?>"
@@ -103,7 +103,7 @@ include ("config/db_con.php"); //Connection to database
                                                                 <p class="mb-0"><strong>IF CLAIMED BY THE PATIENT</strong></p>
                                                                 <ul>
                                                                     <?php
-                                                                    $patientItems = explode("\n", $row['medical_patient']);
+                                                                    $patientItems = explode("\n", $row['Medical_patient']);
                                                                     foreach ($patientItems as $item) {
                                                                         echo '<li>' . htmlspecialchars(trim($item)) . '</li>';
                                                                     }
@@ -115,7 +115,7 @@ include ("config/db_con.php"); //Connection to database
                                                                         REPRESENTATIVE</strong></p>
                                                                 <ul>
                                                                     <?php
-                                                                    $representativeItems = explode("\n", $row['medical_representative']);
+                                                                    $representativeItems = explode("\n", $row['Medical_representative']);
                                                                     foreach ($representativeItems as $item) {
                                                                         echo '<li>' . htmlspecialchars(trim($item)) . '</li>';
                                                                     }

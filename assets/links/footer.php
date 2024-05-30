@@ -30,7 +30,8 @@
             <!-- Third column content -->
             <li><a href="pricelist.php">Price List</a></li>
             <li><i class="bx bx-chevron-right"></i><a href="pricelist.php #room_rates">Room Rates</a></li>
-            <li><i class="bx bx-chevron-right"></i><a href="http://localhost/acebaypointeFinal/pricelist.php">Philhealth Case Rate Packages<span class="align-text-bottom"></span></a></li>
+            <li><i class="bx bx-chevron-right"></i><a href="http://localhost/acebaypointeFinal/pricelist.php">Philhealth
+                Case Rate Packages<span class="align-text-bottom"></span></a></li>
             <li><i class="bx bx-chevron-right"></i><a href="pricelist.php/#departmental_item">Department Item</a></li>
             <li><a href="packages_for_you.php">Packages For You</a></li>
           </ul>
@@ -46,20 +47,29 @@
             <li><a href="hmos.php">Accredited HMOS</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-6 radiantthemes-contact-box rt412613828 element-one" style="font-family: poppins;">
+        <?php
+        include ("config/db_con.php"); // Connection to database
+        
+        $medical = mysqli_query($conn, "SELECT * FROM Contact_Information WHERE Active = 1");
+        $row = mysqli_fetch_assoc($medical)
+          ?>
+        <div class="col-lg-4 radiantthemes-contact-box rt412613828 element-one" style="font-family: poppins;">
           <h3 style="font-size: 18px;color: #000000;line-height: 24px;text-align: left"
             class="vc_custom_heading font-weight-bold vc_custom_1546582444223">Quick Contact</h3>
           <ul>
-            <li class="address no-bullet"><i class="fa fa-map-marker"></i><strong>Address</strong> Block 8,
-              Lot 1A and 1B Dewey Avenue Subic Bay Freeport Zone, Olongapo, 2222 Zambales</li>
-            <li class="email"><i
-                class="fa fa-envelope"></i><strong>Email</strong>baypointehospitalmedicalcenter@yahoo.com</li>
-            <li class="phone"><i class="fa fa-phone"></i><strong>Phone</strong>(047) 250-6070 Local 100</li>
+            <li class="address no-bullet"><i class="fa fa-map-marker"></i><strong>Address</strong>
+              <?php echo $row['Address']; ?></li>
+            <li class="email"><i class="fa fa-envelope"></i><strong>Email</strong> <?php echo $row['Email']; ?>
+            </li>
+            <li class="phone"><i class="fa fa-phone"></i><strong>Phone</strong> <?php echo $row['Phone']; ?></li>
             <li class="mobile" style="list-style-type: none; margin:0;"><i
                 class="fa fa-mobile"></i><strong>Mobile</strong>
-              Smart: 0939-915-7633 <br>
-              Globe: 0917-545-1566 <br>
-              Sun: 0922-812-8623 <br>
+              <?php
+              $patientItems = explode("\n", $row['Mobile']);
+              foreach ($patientItems as $item) {
+                echo htmlspecialchars(trim($item)) . "<br>";
+              }
+              ?>
             </li>
           </ul>
         </div>
@@ -79,7 +89,8 @@
     </div>
     <div class="footer-info">
       <div class="social-links mt-3 d-flex align-items-center justify-content-center">
-        <a href="https://www.facebook.com/people/Allied-Care-Experts-Medical-Center-Baypointe/100064028532593/" class="facebook me-2"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/people/Allied-Care-Experts-Medical-Center-Baypointe/100064028532593/"
+          class="facebook me-2"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram me-2"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
