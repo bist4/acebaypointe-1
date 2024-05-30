@@ -5,7 +5,7 @@ $medical = mysqli_query($conn, "SELECT * FROM Contact_Information WHERE Active =
 $row = mysqli_fetch_assoc($medical)
     ?>
 <div class="col-lg-4 radiantthemes-contact-box rt412613828 element-one" style="font-family: poppins;">
-    <figure class="mb-4"><img class="img-fluid rounded" src="assets/img/slide/slide-3.png" alt="..." /></figure>
+    <figure class="mb-4"><img class="img-fluid rounded" src="assets/img/slide/<?php echo $row['Image_contact']; ?>" alt="..." /></figure>
     <h3 style="font-size: 18px;color: #000000;line-height: 24px;text-align: left"
         class="vc_custom_heading font-weight-bold vc_custom_1546582444223">Quick Contact</h3>
     <ul>
