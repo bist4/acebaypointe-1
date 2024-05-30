@@ -1,3 +1,7 @@
+<?php
+include ("config/db_con.php"); //Connection to database
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,189 +78,65 @@
                                     claiming documents:</p>
                                 <h4 class="fw-bolder mb-3">MEDICAL DOCUMENTS</h4>
                                 <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="headingOne"><button
-                                                class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseOne2"
-                                                aria-expanded="true" aria-controls="collapseOne2">BIRTH
-                                                CERTIFICATE</button></h3>
-                                        <div class="accordion-collapse collapse" id="collapseOne2"
-                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
-                                            <div class="accordion-body">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE PATIENT</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE
-                                                                REPRESENTATIVE</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <?php
+                                    $medical = mysqli_query($conn, "SELECT * FROM medical_records WHERE Active =1");
 
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="headingTwo"><button
-                                                class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo2"
-                                                aria-expanded="false" aria-controls="collapseTwo2">DISCHARGE
-                                                SUMMARY/CLINICAL ABSTRACT</button></h3>
-                                        <div class="accordion-collapse collapse" id="collapseTwo2"
-                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
-                                            <div class="accordion-body">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE PATIENT</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE
-                                                                REPRESENTATIVE</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="headingThree"><button
-                                                class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">LABORATORY
-                                                RESULT</button>
-                                        </h3>
-                                        <div class="accordion-collapse collapse" id="collapseThree"
-                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
-                                            <div class="accordion-body">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE PATIENT</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE
-                                                                REPRESENTATIVE</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
+                                    if (mysqli_num_rows($medical) > 0) {
+                                        $counter = 1;
+                                        while ($row = mysqli_fetch_assoc($medical)) {
+                                            $uniqueId = "collapseMedical" . $counter;
+                                            ?>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="heading<?php echo $counter; ?>">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#<?php echo $uniqueId; ?>"
+                                                        aria-expanded="false" aria-controls="<?php echo $uniqueId; ?>">
+                                                        <?php echo $row['medical_name']; ?>
+                                                    </button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="<?php echo $uniqueId; ?>"
+                                                    aria-labelledby="heading<?php echo $counter; ?>"
+                                                    data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <p class="mb-0"><strong>IF CLAIMED BY THE PATIENT</strong></p>
+                                                                <ul>
+                                                                    <?php
+                                                                    $patientItems = explode("\n", $row['medical_patient']);
+                                                                    foreach ($patientItems as $item) {
+                                                                        echo '<li>' . htmlspecialchars(trim($item)) . '</li>';
+                                                                    }
+                                                                    ?>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p class="mb-0"><strong>IF CLAIMED BY THE
+                                                                        REPRESENTATIVE</strong></p>
+                                                                <ul>
+                                                                    <?php
+                                                                    $representativeItems = explode("\n", $row['medical_representative']);
+                                                                    foreach ($representativeItems as $item) {
+                                                                        echo '<li>' . htmlspecialchars(trim($item)) . '</li>';
+                                                                    }
+                                                                    ?>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <?php
+                                            $counter++;
+                                        }
+                                    } else {
+                                        ?>
+                                        <div class="text-center">
+                                            No medical records
                                         </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="headingFour"><button
-                                                class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                                aria-expanded="false" aria-controls="collapseFour">OPERATIVE
-                                                TECHNIQUE</button>
-                                        </h3>
-                                        <div class="accordion-collapse collapse" id="collapseFour"
-                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample2">
-                                            <div class="accordion-body">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE PATIENT</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE
-                                                                REPRESENTATIVE</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="headingFive"><button
-                                                class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                                aria-expanded="false" aria-controls="collapseFive">MEDICAL
-                                                CERTIFICATE</button>
-                                        </h3>
-                                        <div class="accordion-collapse collapse" id="collapseFive"
-                                            aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
-                                            <div class="accordion-body">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE PATIENT</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE
-                                                                REPRESENTATIVE</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="headingSix"><button
-                                                class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                                aria-expanded="false" aria-controls="collapseSix">CONFINEMENT
-                                                CERTIFICATE</button>
-                                        </h3>
-                                        <div class="accordion-collapse collapse" id="collapseSix"
-                                            aria-labelledby="headingSix" data-bs-parent="#accordionExample2">
-                                            <div class="accordion-body">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE PATIENT</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0"><strong>IF CLAIMED BY THE
-                                                                REPRESENTATIVE</strong></p>
-                                                        <ul>
-                                                            <li>fuydshfbui</li>
-                                                            <li>dushfushd</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <?php
+                                    }
+                                    ?>
                                 </div>
                             </div>
                             <!-- Side widgets-->
