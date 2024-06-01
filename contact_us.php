@@ -1,3 +1,21 @@
+<?php
+include ("config/db_con.php"); //Connection to database
+?>
+
+<?php
+$sql = "SELECT * FROM maintenance ORDER BY MaintenanceID DESC LIMIT 1";
+$q = $conn -> query($sql);
+$row = $q->fetch_assoc();
+$checkStatus = $row['Status']; 
+
+if($_SESSION['UserRoleName'] != '0'){
+  if ($checkStatus == 0) {
+    header('location: undermaintenance.php');
+    session_destroy();
+  } 
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,9 +27,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/logos/logo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <?php require ('assets/links/favicons.php') ?>
 
 
   <!-- Google Fonts -->
@@ -77,6 +94,12 @@
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div> -->
+          <?php
+          include ("config/db_con.php"); // Connection to database
+          
+          $medical = mysqli_query($conn, "SELECT * FROM Contact_Information WHERE Active = 1");
+          $row = mysqli_fetch_assoc($medical)
+            ?>
           <div class="row gy-5 gx-lg-5">
             <div class="col-lg-5">
               <div class="info">
@@ -85,7 +108,7 @@
                   <i class="fa fa-map-marker flex-shrink-0"></i>
                   <div>
                     <h4>Location:</h4>
-                    <p>Block 8, Lot 1A and 1B Dewey Avenue Subic Bay Freeport Zone, Olongapo, 2222 Zambales</p>
+                    <p> <?php echo $row['Address']; ?></p>
                   </div>
                 </div><!-- End Info Item -->
 
@@ -93,7 +116,7 @@
                   <i class="fa fa-envelope flex-shrink-0"></i>
                   <div>
                     <h4>Email:</h4>
-                    <p>baypointehospitalmedicalcenter@yahoo.com</p>
+                    <p> <?php echo $row['Email']; ?></p>
                   </div>
                 </div><!-- End Info Item -->
 
@@ -101,7 +124,12 @@
                   <i class="fa fa-phone flex-shrink-0"></i>
                   <div>
                     <h4>Phone:</h4>
-                    <p>(047) 250-6070 Local 100</p>
+                    <?php
+                    $tele_num = explode("\n", $row['Phone']);
+                    foreach ($tele_num as $phone) {
+                      echo htmlspecialchars(trim($phone)) . "<br>";
+                    }
+                    ?>
                   </div>
                 </div><!-- End Info Item -->
 
@@ -109,12 +137,18 @@
                   <i class="fa fa-mobile flex-shrink-0"></i>
                   <div>
                     <h4>Call:</h4>
-                    <p>Smart: 0939-915-7633</p>
-                    <p>Globe: 0917-545-1566</p>
-                    <p>Sun: 0922-812-8623</p>
+                    <?php
+                    $mobile_num = explode("\n", $row['Mobile']);
+                    foreach ($mobile_num as $mobile) {
+                      echo '<p>'. htmlspecialchars(trim($mobile)) . '</p>';
+                    }
+                    ?>
                   </div>
                 </div>
               </div> <!-- End Info Item -->
+
+
+
 
             </div>
             <div class="col-lg-7 bg-white"
@@ -131,15 +165,19 @@
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
                     <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
-                      <input type="text" name="email" required class="form-control form-control-lg"> <!-- class sa input form-control -->
-                      <label for="designation" class="form-label">Email<span class="text-danger"></span></label> <!-- class sa label form-label -->
+                      <input type="text" name="email" required class="form-control form-control-lg">
+                      <!-- class sa input form-control -->
+                      <label for="designation" class="form-label">Email<span class="text-danger"></span></label>
+                      <!-- class sa label form-label -->
                     </div>
                   </div>
                 </div>
                 <div class="form-group mt-3">
                   <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
-                    <input type="email" name="subject" required class="form-control form-control-lg"> <!-- class sa input form-control -->
-                    <label for="designation" class="form-label">Subject<span class="text-danger"></span></label> <!-- class sa label form-label -->
+                    <input type="email" name="subject" required class="form-control form-control-lg">
+                    <!-- class sa input form-control -->
+                    <label for="designation" class="form-label">Subject<span class="text-danger"></span></label>
+                    <!-- class sa label form-label -->
                   </div>
                 </div>
                 <!-- Department Dropdown -->
@@ -159,7 +197,8 @@
                 </div>
                 <div class="form-group mt-3">
                   <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
-                    <textarea class="form-control form-control-lg" name="message" style="height: 230px; required"></textarea>
+                    <textarea class="form-control form-control-lg" name="message"
+                      style="height: 230px; required"></textarea>
                     <label for="designation" class="form-label">Message<span class="text-danger"></span></label>
                     <!-- class sa label form-label -->
                   </div>

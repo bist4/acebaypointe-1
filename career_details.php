@@ -173,8 +173,8 @@
                                 <div class="form-group">
                                     <div class="form-group">
                                         <div class="form-outline"> <!-- Adding form-outline class for outline -->
-                                            <input type="file" name="fileupload" id="fileupload" accept=".pdf" onchange="checkFileSize(this)"
-                                                class="form-control form-control-lg">
+                                            <input type="file" name="fileupload" id="fileupload" accept=".pdf"
+                                                onchange="checkFileSize(this)" class="form-control form-control-lg">
                                             <!-- Adding form-control class for consistent styling and onchange event to trigger preview -->
                                             <img id="preview" src="#" alt="Image Preview"
                                                 style="display: none; max-width: 100%; height: auto;">
@@ -185,7 +185,8 @@
 
                                     <!-- Maximum file size allowed is 1000MB, and you can upload a maximum of one file. -->
                                     <div class="note" style="font-size: 0.8em;">
-                                        <p><strong>Note: </strong>Only PDF files are accepted, and the maximum file size allowed is 2MB.</p>
+                                        <p><strong>Note: </strong>Only PDF files are accepted, and the maximum file size
+                                            allowed is 2MB.</p>
                                     </div>
 
                                 </div>
@@ -193,6 +194,12 @@
                                         Message</button></div>
                             </form>
                         </div> <!-- End Contact Form -->
+                        <?php
+                        include ("config/db_con.php"); // Connection to database
+                        
+                        $medical = mysqli_query($conn, "SELECT * FROM Contact_Information WHERE Active = 1");
+                        $row = mysqli_fetch_assoc($medical)
+                            ?>
                         <div class="col-lg-5">
                             <div class="info">
                                 <h3 class="mb-3">Get in touch</h3>
@@ -200,8 +207,7 @@
                                     <i class="fa fa-map-marker flex-shrink-0"></i>
                                     <div>
                                         <h4>Location:</h4>
-                                        <p>Block 8, Lot 1A and 1B Dewey Avenue Subic Bay Freeport Zone, Olongapo,
-                                            2222 Zambales</p>
+                                        <p> <?php echo $row['Address']; ?></p>
                                     </div>
                                 </div><!-- End Info Item -->
 
@@ -209,7 +215,7 @@
                                     <i class="fa fa-envelope flex-shrink-0"></i>
                                     <div>
                                         <h4>Email:</h4>
-                                        <p>baypointehospitalmedicalcenter@yahoo.com</p>
+                                        <p> <?php echo $row['Email']; ?></p>
                                     </div>
                                 </div><!-- End Info Item -->
 
@@ -217,7 +223,14 @@
                                     <i class="fa fa-phone flex-shrink-0"></i>
                                     <div>
                                         <h4>Phone:</h4>
-                                        <p>(047) 250-6070 Local 100</p>
+                                        <p>
+                                            <?php
+                                            $tele_num = explode("\n", $row['Phone']);
+                                            foreach ($tele_num as $phone) {
+                                                echo htmlspecialchars(trim($phone)) . "<br>";
+                                            }
+                                            ?>
+                                        </p>
                                     </div>
                                 </div><!-- End Info Item -->
 
@@ -225,9 +238,14 @@
                                     <i class="fa fa-mobile flex-shrink-0"></i>
                                     <div>
                                         <h4>Call:</h4>
-                                        <p>Smart: 0939-915-7633</p>
-                                        <p>Globe: 0917-545-1566</p>
-                                        <p>Sun: 0922-812-8623</p>
+                                        <p>
+                                            <?php
+                                            $mobile_num = explode("\n", $row['Mobile']);
+                                            foreach ($mobile_num as $mobile) {
+                                                echo '<p>' . htmlspecialchars(trim($mobile)) . '</p>';
+                                            }
+                                            ?>
+                                        </p>
                                     </div>
                                 </div>
 
@@ -288,24 +306,24 @@
     </script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-     function checkFileSize(input) {
-        if (input.files.length > 0) {
-            const fileSize = input.files[0].size; // in bytes
-            const maxSize = 2 * 1024 * 1024; // 2MB in bytes
-            if (fileSize > maxSize) {
-                // Use SweetAlert2 for alert
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'File size exceeds the maximum limit of 2MB.'
-                });
-                input.value = ''; // Clear the file input
+        function checkFileSize(input) {
+            if (input.files.length > 0) {
+                const fileSize = input.files[0].size; // in bytes
+                const maxSize = 2 * 1024 * 1024; // 2MB in bytes
+                if (fileSize > maxSize) {
+                    // Use SweetAlert2 for alert
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'File size exceeds the maximum limit of 2MB.'
+                    });
+                    input.value = ''; // Clear the file input
+                }
             }
         }
-    }
-</script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
-    
+
 </body>
 
 </html>

@@ -91,7 +91,7 @@ include ("config/db_con.php"); //Connection to database
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#<?php echo $uniqueId; ?>"
                                                         aria-expanded="false" aria-controls="<?php echo $uniqueId; ?>">
-                                                        <?php echo strtoupper($row['Medical_name']); ?>
+                                                        <?php echo strtoupper($row['Medical_Name']); ?>
                                                     </button>
                                                 </h3>
                                                 <div class="accordion-collapse collapse" id="<?php echo $uniqueId; ?>"
@@ -103,7 +103,7 @@ include ("config/db_con.php"); //Connection to database
                                                                 <p class="mb-0"><strong>IF CLAIMED BY THE PATIENT</strong></p>
                                                                 <ul>
                                                                     <?php
-                                                                    $patientItems = explode("\n", $row['Medical_patient']);
+                                                                    $patientItems = explode("\n", $row['Medical_Patient']);
                                                                     foreach ($patientItems as $item) {
                                                                         echo '<li>' . htmlspecialchars(trim($item)) . '</li>';
                                                                     }
@@ -115,7 +115,7 @@ include ("config/db_con.php"); //Connection to database
                                                                         REPRESENTATIVE</strong></p>
                                                                 <ul>
                                                                     <?php
-                                                                    $representativeItems = explode("\n", $row['Medical_representative']);
+                                                                    $representativeItems = explode("\n", $row['Medical_Representative']);
                                                                     foreach ($representativeItems as $item) {
                                                                         echo '<li>' . htmlspecialchars(trim($item)) . '</li>';
                                                                     }

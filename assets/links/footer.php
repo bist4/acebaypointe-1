@@ -3,7 +3,7 @@ include ("config/db_con.php"); // Connection to database
 
 $medical = mysqli_query($conn, "SELECT * FROM copyright WHERE Active = 1");
 $row = mysqli_fetch_assoc($medical)
-?>
+  ?>
 <!-- Footer -->
 <footer id="footer">
   <div class="footer-top">
@@ -32,7 +32,7 @@ $row = mysqli_fetch_assoc($medical)
         <div class="col-lg-2 col-md-6 footer-links"> <!-- OUR SERVICES -->
           <h4>Service Offerings</h4>
           <ul>
-             <!-- Third column content  -->
+            <!-- Third column content  -->
             <li><a href="pricelist.php">Price List</a></li>
             <li><i class="bx bx-chevron-right"></i><a href="pricelist.php #room_rates">Room Rates</a></li>
             <li><i class="bx bx-chevron-right"></i><a href="http://localhost/acebaypointeFinal/pricelist.php">Philhealth
@@ -67,13 +67,19 @@ $row = mysqli_fetch_assoc($medical)
               <?php echo $row['Address']; ?></li>
             <li class="email"><i class="fa fa-envelope"></i><strong>Email</strong> <?php echo $row['Email']; ?>
             </li>
-            <li class="phone"><i class="fa fa-phone"></i><strong>Phone</strong> <?php echo $row['Phone']; ?></li>
-            <li class="mobile" style="list-style-type: none; margin:0;"><i
-                class="fa fa-mobile"></i><strong>Mobile</strong>
+            <li class="phone"><i class="fa fa-phone"></i><strong>Phone</strong>
               <?php
-              $patientItems = explode("\n", $row['Mobile']);
-              foreach ($patientItems as $item) {
-                echo htmlspecialchars(trim($item)) . "<br>";
+              $tele_num = explode("\n", $row['Phone']);
+              foreach ($tele_num as $phone) {
+                echo htmlspecialchars(trim($phone)) . "<br>";
+              }
+              ?>
+            </li>
+            <li class="mobile"><i class="fa fa-mobile"></i><strong>Mobile</strong>
+              <?php
+              $mobile_num = explode("\n", $row['Mobile']);
+              foreach ($mobile_num as $mobile) {
+                echo htmlspecialchars(trim($mobile)) . "<br>";
               }
               ?>
             </li>
@@ -89,41 +95,41 @@ $row = mysqli_fetch_assoc($medical)
       </div>
     </div>
     <div class="footer-info">
-     <?php
+      <?php
       $sql = "SELECT Media_Name, Link FROM social_media";
       $result = $conn->query($sql);
-      
+
       if ($result->num_rows > 0) {
-          echo '<div class="social-links mt-3 d-flex align-items-center justify-content-center">';
-          while($row = $result->fetch_assoc()) {
-              $media_name = $row["Media_Name"];
-              $url = $row["Link"];
-              $icon_class = "";
-      
-              switch ($media_name) {
-                  case "FB":
-                      $icon_class = "bx bxl-facebook";
-                      break;
-                  case "Youtube":
-                      $icon_class = "bx bxl-youtube";
-                      break;
-                  case "Instagram":
-                      $icon_class = "bx bxl-instagram";
-                      break;
-                  // Add more cases as needed for other social media platforms
-              }
-      
-              echo '<a href="' . $url . '" class="' . strtolower($media_name) . ' me-2"><i class="' . $icon_class . '"></i></a>';
+        echo '<div class="social-links mt-3 d-flex align-items-center justify-content-center">';
+        while ($row = $result->fetch_assoc()) {
+          $media_name = $row["Media_Name"];
+          $url = $row["Link"];
+          $icon_class = "";
+
+          switch ($media_name) {
+            case "FB":
+              $icon_class = "bx bxl-facebook";
+              break;
+            case "Youtube":
+              $icon_class = "bx bxl-youtube";
+              break;
+            case "Instagram":
+              $icon_class = "bx bxl-instagram";
+              break;
+            // Add more cases as needed for other social media platforms
           }
-          echo '</div>';
+
+          echo '<a href="' . $url . '" class="' . strtolower($media_name) . ' me-2"><i class="' . $icon_class . '"></i></a>';
+        }
+        echo '</div>';
       } else {
-          echo "0 results";
+        echo "0 results";
       }
-     ?>
+      ?>
     </div>
   </div>
 
   <footer id="footer" class="footer">
-        
 
-</footer><!-- End Footer -->
+
+  </footer><!-- End Footer -->

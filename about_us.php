@@ -2,7 +2,7 @@
 include ("config/db_con.php"); //Connection to database
 
 
-$sql = 'SELECT * FROM categories WHERE Active=1 ORDER BY CategoryID DESC LIMIT 1'; //SQL statement
+$sql = 'SELECT * FROM categories'; //SQL statement
 
 $q = $conn->query($sql); //Query of the database
 $row = $q->fetch_assoc(); // Fetching data
@@ -74,7 +74,7 @@ $row = $q->fetch_assoc(); // Fetching data
           <div class="mb-4">
             <!-- Title-->
             <!-- <h1 class="fw-bolder mb-1">Allied Care Experts (ACE) Medical Center - Baypointe</h1> -->
-            <h1 class="fw-bolder mb-1"><?php echo $row['CategoryName']?></h1>
+            <h1 class="fw-bolder mb-1">Allied Care Experts (ACE) Medical Center - Baypointe</h1>
             <!-- Date and Author-->
             <div class="text-muted fst-italic mb-2">Posted on January 1, 2023 by Start Bootstrap</div>
           </div>

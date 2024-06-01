@@ -1,7 +1,6 @@
 <?php
-include("config/db_con.php"); // Connection to the database
-$medical = mysqli_query($conn, "SELECT * FROM Social_Media WHERE Active = 1");
-$row = mysqli_fetch_assoc($medical)
+include ("config/db_con.php"); // Connection to the database
+
 ?>
 
 <!-- Top Navigation Bar -->
@@ -11,20 +10,48 @@ $row = mysqli_fetch_assoc($medical)
       <div class="col-md-auto mb-2 mb-md-0 text-md-start text-center"></div>
       <div class="col-md-auto text-md-end">
         <div class="row justify-content-center justify-content-md-end">
-          <div class="col-auto mb-2 mb-md-0">
-            <i class="bi bi-telephone"></i> (047) 250-6070 Local 100
-          </div>
-          <div class="col-auto mb-2 mb-md-0">
-            <i class="bi bi-phone"></i> Smart: 0939-915-7633
-          </div>
-          <div class="col-auto mb-2 mb-md-0">
-            <i class="bi bi-phone"></i> Globe: 0917-545-1566
-          </div>
-          <div class="col-auto">
-            <i class="bi bi-phone"></i> Sun: 0922-812-8623
-          </div>
+          <?php
+          $contact_info = mysqli_query($conn, "SELECT * FROM contact_information WHERE Active = 1");
+
+          if (mysqli_num_rows($contact_info) > 0) {
+
+            while ($row = mysqli_fetch_assoc($contact_info)) {
+              ?>
+
+              <?php
+              $tele_num = explode("\n", $row['Phone']);
+              foreach ($tele_num as $phone) {
+                echo ' <div class="col-auto mb-2 mb-md-0"> <i class="bi bi-telephone"> </i> ' . htmlspecialchars(trim($phone)) . ' </div>';
+              }
+              ?>
+
+            <?php }
+          }
+          ?>
+
+
+          <?php
+          $contact_info = mysqli_query($conn, "SELECT * FROM contact_information WHERE Active = 1");
+
+          if (mysqli_num_rows($contact_info) > 0) {
+            while ($row = mysqli_fetch_assoc($contact_info)) {
+              ?>
+
+              <?php
+              $mobile_num = explode("\n", $row['Mobile']);
+              foreach ($mobile_num as $mobile) {
+                echo ' <div class="col-auto mb-2 mb-md-0"> <i class="bi bi-phone"> </i> ' . htmlspecialchars(trim($mobile)) . ' </div>';
+              }
+              ?>
+
+            <?php }
+          }
+          ?>
+
+
+
           <div class="col-auto pfy">
-            <a href="<?php echo $row['Link']; ?>" target="_blank" class="messenger">
+            <a href="#" target="_blank" class="messenger">
               <i class="bi bi-messenger"></i><span>Say hi to ACEMCB on Messenger</span>
             </a>
           </div>
