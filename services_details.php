@@ -1,3 +1,21 @@
+<?php
+include ("config/db_con.php"); //Connection to database
+?>
+
+<?php
+$sql = "SELECT * FROM maintenance ORDER BY MaintenanceID DESC LIMIT 1";
+$q = $conn -> query($sql);
+$row = $q->fetch_assoc();
+$checkStatus = $row['Status']; 
+
+if($_SESSION['UserRoleName'] != '0'){
+  if ($checkStatus == 0) {
+    header('location: undermaintenance.php');
+    session_destroy();
+  } 
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +23,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact Us | ACEMC - Baypointe</title>
+  <title>Services Details | ACEMC - Baypointe</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -54,21 +72,21 @@
       <div class="container">
         <div class="col-lg-6">
           <div class=" display-5 fw-bolder text-center text-xl-start my-5">
-            <h1 class="display-5 fw-bolder text-white mb-lg-2">CONTACT US</h1>
+            <h1 class="display-5 fw-bolder text-white mb-lg-2">Services Details</h1>
             <p class="lead text-white-50 mb-0 mb-lg-3">QUICK CONTACT</p>
           </div>
         </div>
       </div>
     </div> <!-- End of Page Title -->
 
-    <!-- Main content of Contact Us -->
+    <!-- Main content of Services Details -->
     <main id="main" class="main">
       <div>
         <iframe style="border:0; width: 100%; height: 350px;"
           src="https://maps.google.com/maps?q=Block%208,%20Lot%201A%20and%201B%20Dewey%20Avenue%20Subic%20Bay%20Freeport%20Zone,%20Olongapo,%202222%20Zambales&t=&z=13&ie=UTF8&iwloc=&output=embed"
           frameborder="0" allowfullscreen></iframe>
       </div>
-      <!-- Contact Us Section -->
+      <!-- Services Details Section -->
       <section id="contact" class="contact">
         <div class="container">
           <!-- <div class="my-3"> Message
@@ -191,7 +209,7 @@
           </div>
         </div>
       </section><!-- End Contact Section -->
-    </main> <!-- End of the main content of Contact Us -->
+    </main> <!-- End of the main content of Services Details -->
   </main> <!-- End Main -->
 
 

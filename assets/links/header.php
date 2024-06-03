@@ -28,28 +28,21 @@ include ("config/db_con.php"); // Connection to the database
             <?php }
           }
           ?>
-
-
           <?php
           $contact_info = mysqli_query($conn, "SELECT * FROM contact_information WHERE Active = 1");
 
           if (mysqli_num_rows($contact_info) > 0) {
             while ($row = mysqli_fetch_assoc($contact_info)) {
               ?>
-
-              <?php
-              $mobile_num = explode("\n", $row['Mobile']);
-              foreach ($mobile_num as $mobile) {
-                echo ' <div class="col-auto mb-2 mb-md-0"> <i class="bi bi-phone"> </i> ' . htmlspecialchars(trim($mobile)) . ' </div>';
-              }
-              ?>
-
+                <?php
+                  $mobile_num = explode("\n", $row['Mobile']);
+                  foreach ($mobile_num as $mobile) {
+                    echo ' <div class="col-auto mb-2 mb-md-0"> <i class="bi bi-phone"> </i> ' . htmlspecialchars(trim($mobile)) . ' </div>';
+                  }
+                ?>
             <?php }
           }
           ?>
-
-
-
           <div class="col-auto pfy">
             <a href="#" target="_blank" class="messenger">
               <i class="bi bi-messenger"></i><span>Say hi to ACEMCB on Messenger</span>
@@ -79,7 +72,7 @@ include ("config/db_con.php"); // Connection to the database
             <li><a class="nav-link scrollto" href="privacy_policy.php#quality_policy">QUALITY POLICY</a></li>
           </ul>
         </li>
-        <li class="dropdown"><a href="#"><span>NEWS & EVENTS</span> <i class="bi bi-chevron-down"></i></a>
+        <li class="dropdown"><a href="#"><span>WHAT'S NEW</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="news_and_events.php">NEWS & EVENTS</a></li>
             <li><a href="promo_and_packages.php">PROMOS & PACKAGES</a></li>

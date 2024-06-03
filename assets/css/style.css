@@ -3830,7 +3830,7 @@ hr {
   text-align: center;
   width: 72px;
   height: 72px;
-  background: #f03c02;
+  background: #3fbbc0;
 }
 
 .services .icon i {
@@ -3852,15 +3852,15 @@ hr {
 
 .services .icon-box:hover .icon {
   background: #fff;
-  border: 2px solid #f03c02;
+  border: 2px solid #3fbbc0;
 }
 
 .services .icon-box:hover .icon i {
-  color: #f03c02;
+  color: #3fbbc0;
 }
 
 .services .icon-box:hover .title a {
-  color: #f03c02;
+  color: #3fbbc0;
 }
 
 .services .description {
