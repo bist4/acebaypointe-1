@@ -3,40 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Sir Rollen</title>
+    <title>Cookie Consent Modal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="col-lg-6 col-md-12 shadow p-3 mb-5 bg-white rounded m-auto">
-            <form>
-                <h5 class="h3 mb-4 text-primary"><b>Customer Details</b></h5>
-                <div class="row">
-                    <div class="col-md-12 mb-3">
-                        <div class="form-outline">
-                            <input type="text" name="username"  required class="form-control form-control-lg">
-                            <label for="designation" class="form-label">Username<span class="text-danger">*</span></label>
-                        </div>
-                    </div>
-                    <div class="d-grid gap-2">  
-                        <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
-                    </div>
-                </div>    
-            </form>
+
+<!-- Cookie Consent Modal -->
+<div class="modal fade" id="cookieConsentModal" tabindex="-1" aria-labelledby="cookieConsentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cookieConsentModalLabel">Cookie Consent</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>This website uses cookies to ensure you get the best experience on our website.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reject</button>
+                <button type="button" class="btn btn-primary" onclick="acceptCookies()">Accept</button>
+            </div>
         </div>
     </div>
+</div>
 
+<!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- Your custom JavaScript file -->
+<script src="cookies.js"></script>
 
+<script>
+    // Show the cookie consent modal when the page loads
+    $(document).ready(function() {
+        $('#cookieConsentModal').modal('show');
+    });
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    // Function to accept cookies
+    function acceptCookies() {
+        setCookie("cookie_consent", "accepted");
+        $('#cookieConsentModal').modal('hide');
+    }
 
+    // Function to set cookie
+    function setCookie(name, value) {
+        document.cookie = name + "=" + value;
+    }
+</script>
 
-
-</body>
-</html>
-    
 </body>
 </html>

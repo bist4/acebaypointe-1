@@ -579,9 +579,8 @@
                             <div class="entry-img">
                                 <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
                             </div>
-                            <h2 class="entry-title mb-5">
-                                <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui
-                                    quibusdam quia</a>
+                            <h2 class="entry-title mb-5"> Dolorum optio tempore voluptas dignissimos cumque fuga
+                                quiquibusdam quia</a>
                             </h2>
                             <div class="entry-img">
                                 <img src="assets/img/slide/slide-3.png" alt="" class="img-fluid">
@@ -599,9 +598,23 @@
                                     Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda
                                     perferendis dolore.
                                 </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Nisl condimentum id venenatis a.
+                                    Scelerisque purus semper eget duis. Habitasse platea dictumst quisque sagittis.
+                                    Pharetra vel turpis nunc eget lorem dolor sed viverra. Et ligula ullamcorper
+                                    malesuada proin libero nunc consequat interdum. Adipiscing tristique risus nec
+                                    feugiat in fermentum posuere urna. Eu sem integer vitae justo eget magna fermentum
+                                    iaculis eu. Quisque non tellus orci ac auctor augue mauris augue neque. Est
+                                    ullamcorper eget nulla facilisi. Blandit volutpat maecenas volutpat blandit. Nisi
+                                    quis eleifend quam adipiscing. Rhoncus aenean vel elit scelerisque. Tellus rutrum
+                                    tellus pellentesque eu tincidunt tortor aliquam nulla. Consectetur libero id
+                                    faucibus nisl tincidunt eget nullam. Morbi leo urna molestie at elementum eu
+                                    facilisis sed. Aliquam sem fringilla ut morbi.
+                                </p>
                             </div>
 
-                            <div class="entry-footer">
+                            <!-- <div class="entry-footer">
                                 <i class="bi bi-folder"></i>
                                 <ul class="cats">
                                     <li><a href="#">Business</a></li>
@@ -613,7 +626,7 @@
                                     <li><a href="#">Tips</a></li>
                                     <li><a href="#">Marketing</a></li>
                                 </ul>
-                            </div>
+                            </div> -->
 
                         </article><!-- End blog entry -->
                     </div><!-- End blog entries list -->
@@ -622,7 +635,6 @@
                     <div class="col-lg-4">
                         <div class="sidebar">
                             <h3 class="sidebar-title">Search</h3>
-                            <!-- Search Form -->
                             <!-- Search Form -->
                             <div class="sidebar-item search-form">
                                 <form action="">
@@ -693,9 +705,7 @@
                                             <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                                             <div class="side-bardate">
                                                 <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News &
-                                                        Events <span>&#47; by
-                                                            MIS
-                                                            Department</p>
+                                                        Events <span>&#47; by MIS Department</p>
                                             </div>
                                         </div>
 
@@ -704,9 +714,7 @@
                                             <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                                             <div class="side-bardate">
                                                 <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News &
-                                                        Events <span>&#47; by
-                                                            MIS
-                                                            Department</p>
+                                                        Events <span>&#47; by MIS Department</p>
                                             </div>
                                         </div>
 
@@ -715,9 +723,7 @@
                                             <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                                             <div class="side-bardate">
                                                 <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News &
-                                                        Events <span>&#47; by
-                                                            MIS
-                                                            Department</p>
+                                                        Events <span>&#47; by MIS Department</p>
                                             </div>
                                         </div>
 

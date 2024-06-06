@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Services Details | ACEMC - Baypointe</title>
+  <title>Department Services | ACEMC - Baypointe</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -54,24 +54,23 @@
       <div class="container">
         <div class="col-lg-6">
           <div class=" display-5 fw-bolder text-center text-xl-start my-5">
-            <h1 class="display-5 fw-bolder text-white mb-lg-2">SERVICES DETAILS</h1>
+            <h1 class="display-5 fw-bolder text-white mb-lg-2">DEPARTMENT SERVICES</h1>
             <!-- <p class="lead text-white-50 mb-0 mb-lg-3">QUICK CONTACT</p> -->
           </div>
         </div>
       </div>
     </div> <!-- End of Page Title -->
 
-    <!-- Main content of Services Details -->
+    <!-- Main content of Department Services -->
     <main id="main" class="main">
-      <!-- Services Details Section -->
+      <!-- Department Services Section -->
       <main class="flex-shrink-0">
         <!-- Page Content-->
         <section class="py-5 mb-0">
           <div class="container">
             <div class="row gx-5">
               <div class="col-xl-8">
-              <img class="img-fluid rounded mb-3" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="...">
-                <h2 class="fw-bolder mb-3">SERVICES NAME</h2>
+                <h2 class="fw-bolder mb-3">DEPARTMENT NAME</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                   et dolore magna aliqua. Elementum nisi quis eleifend quam adipiscing vitae proin. Luctus venenatis
                   lectus magna fringilla urna porttitor rhoncus dolor. Posuere urna nec tincidunt praesent semper
@@ -85,6 +84,8 @@
                   varius duis at consectetur lorem donec. Felis eget velit aliquet sagittis id consectetur. Varius duis
                   at consectetur lorem donec massa sapien faucibus.
                 </p>
+                <p class="mb-0"><strong>Department Head</strong></p>
+                <p>Juan Dela Cruz</p>
 
                 <h4 class="fw-bolder mb-3">Services</h4>
                 <p>
@@ -102,8 +103,8 @@
           </div>
         </section>
       </main>
-      <!-- End Services Details -->
-    </main> <!-- End of the main content of Services Details -->
+      <!-- End Department Services -->
+    </main> <!-- End of the main content of Department Services -->
   </main> <!-- End Main -->
 
 

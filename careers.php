@@ -257,25 +257,27 @@
           </div>
         </div>
       </div>
-      <!-- Footer -->
-      <footer>
-        <?php require ('assets/links/footer.php') ?>
-      </footer> <!-- End Footer -->
 
-      <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
+    </section>
+    <!-- Footer -->
+    <footer>
+      <?php require ('assets/links/footer.php') ?>
+    </footer> <!-- End Footer -->
 
-      <!-- Vendor JS Files -->
-      <!-- Vendor JS Files -->
-      <script src="assets/vendor_OnePage/purecounter/purecounter_vanilla.js"></script>
-      <script src="assets/vendor_OnePage/aos/aos.js"></script>
-      <script src="assets/vendor_OnePage/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/vendor_OnePage/glightbox/js/glightbox.min.js"></script>
-      <script src="assets/vendor_OnePage/isotope-layout/isotope.pkgd.min.js"></script>
-      <script src="assets/vendor_OnePage/swiper/swiper-bundle.min.js"></script>
-      <script src="assets/vendor_OnePage/php-email-form/validate.js"></script>
+    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
-      <!-- Template Main JS File -->
-      <script src="assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor_OnePage/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor_OnePage/aos/aos.js"></script>
+    <script src="assets/vendor_OnePage/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor_OnePage/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor_OnePage/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor_OnePage/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor_OnePage/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
