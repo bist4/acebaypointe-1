@@ -202,13 +202,29 @@
       <!-- Call now Section -->
       <section id="cta" class="cta">
         <div class="container" data-aos="zoom-in">
-
           <div class="text-center">
             <h3>Make an appointment with one of our professional Doctors.</h3>
-            <a class="cta-btn scrollto" href="#">Call now</a>
+            <?php
+            include ("config/db_con.php"); // Connection to database
+            
+            $contact = mysqli_query($conn, "SELECT * FROM contact_information WHERE Active = 1");
+            $row = mysqli_fetch_assoc($contact)
+              ?>
+            <?php
+            if (!empty($row['Phone'])) {
+              $tele_num = explode("\n", $row['Phone']);
+              foreach ($tele_num as $phone) {
+                echo '<a style="color: black;" class="cta-btn scrollto" href="tel:' . htmlspecialchars(trim($phone)) . '">Call now</a><br>';
+              }
+            } else {
+              // Handle case when $row['Phone'] is empty or null
+              echo "No phone numbers available.";
+            }
+            ?>
           </div>
-
         </div>
+
+
       </section><!-- End Cta Section -->
 
       <!-- Services -->
@@ -261,7 +277,7 @@
                 tempore, cum
                 soluta nobis est eligendi</p>
             </div>
-            <a href="department_and_services.php" class="d-flex justify-content-center">See More</a>
+            <a href="department_and_services.php" class="d-flex justify-content-center">Show More</a>
           </div>
 
         </div>

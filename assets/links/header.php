@@ -21,10 +21,9 @@ include ("config/db_con.php"); // Connection to the database
               <?php
               $tele_num = explode("\n", $row['Phone']);
               foreach ($tele_num as $phone) {
-                echo ' <div class="col-auto mb-2 mb-md-0"> <i class="bi bi-telephone"> </i> ' . htmlspecialchars(trim($phone)) . ' </div>';
+                echo '<div class="col-auto mb-2 mb-md-0"> <i class="bi bi-telephone"> </i> <a style="color: white;" href="tel:' . htmlspecialchars(trim($phone)) . '">' . htmlspecialchars(trim($phone)) . '</a></div><br>';
               }
               ?>
-
             <?php }
           }
           ?>
@@ -34,12 +33,12 @@ include ("config/db_con.php"); // Connection to the database
           if (mysqli_num_rows($contact_info) > 0) {
             while ($row = mysqli_fetch_assoc($contact_info)) {
               ?>
-                <?php
-                  $mobile_num = explode("\n", $row['Mobile']);
-                  foreach ($mobile_num as $mobile) {
-                    echo ' <div class="col-auto mb-2 mb-md-0"> <i class="bi bi-phone"> </i> ' . htmlspecialchars(trim($mobile)) . ' </div>';
-                  }
-                ?>
+              <?php
+              $mobile_num = explode("\n", $row['Mobile']);
+              foreach ($mobile_num as $mobile) {
+                echo '<div class="col-auto mb-2 mb-md-0"> <i class="bi bi-telephone"> </i> <a style="color: white;" href="tel:' . htmlspecialchars(trim($mobile)) . '">' . htmlspecialchars(trim($mobile)) . '</a></div><br>';
+              }
+              ?>
             <?php }
           }
           ?>
