@@ -44,7 +44,7 @@
 </head>
 
 <body>
-    <?php require ('assets/links/header.php')?> <!-- The Header -->
+    <?php require ('assets/links/header.php') ?> <!-- The Header -->
     <main> <!-- Main -->
         <!-- Title -->
         <div class="bg-dark py-5 my-5">
@@ -68,6 +68,10 @@
     </main> <!-- End Main -->
 
 
+    <!-- Footer -->
+    <footer>
+        <?php require ('assets/links/footer.php') ?>
+    </footer> <!-- End Footer -->
 
     <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 

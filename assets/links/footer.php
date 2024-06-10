@@ -47,7 +47,7 @@ $row = mysqli_fetch_assoc($medical)
             <!-- Fourth column content  -->
             <li><a href="admission_guide.php">Admission Guide</a></li>
             <li><a href="investment.php">Investments</a></li>
-            <li><a href="job_announcement.php">Job Announcements</a></li>
+            <!-- <li><a href="job_announcement.php">Job Announcements</a></li> -->
             <li><a href="equipment_acquisition.php">Equipment Acquisition</a></li>
             <li><a href="hmos.php">Accredited HMOS</a></li>
           </ul>

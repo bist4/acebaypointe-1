@@ -1,3 +1,7 @@
+<?php
+include ("config/db_con.php"); //Connection to database
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -543,6 +547,14 @@
       color: #c8bab5;
       font-size: 14px;
     }
+
+    .entry-meta.event {
+      color: blue;
+    }
+
+    .entry-meta.news {
+      color: red;
+    }
   </style>
 
 </head>
@@ -570,59 +582,57 @@
 
           <div class="col-lg-8 entries">
 
-            <article class="entry">
-              <div class="entry-img">
-                <img src="assets/img/slide/slide-3.png" alt="" class="img-fluid">
-              </div>
-              <h2 class="entry-title">
-                <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui
-                  quibusdam quia</a>
-              </h2>
-              <div class="entry-meta">
-                <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events <span>&#47; by MIS
-                      Department</p>
-              </div>
+            <?php
+            $news_and_events = mysqli_query($conn, "SELECT * FROM news_and_events WHERE Active = 1");
 
-              <div class="entry-content">
-                <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi
-                  praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta.
-                  Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda
-                  perferendis dolore.
-                </p>
-                <div class="read-more">
-                  <a href="news_and_events_details.php">Read More</a>
-                </div>
-              </div>
-            </article><!-- End blog entry -->
+            if (mysqli_num_rows($news_and_events) > 0) {
+              $counter = 1;
+              while ($row = mysqli_fetch_assoc($news_and_events)) {
+                $uniqueId = "collapsenews_and_events" . $counter;
+                ?>
+                <article class="entry">
+                  <div class="entry-img">
+                    <img src="assets/img/slide/slide-3.png" alt="" class="img-fluid">
+                  </div>
+                  <h2 class="entry-title mb-0">
+                    <a href="blog-single.html"><?php echo trim($row['Title_News']); ?></a>
+                  </h2>
+                  <div class="entry-meta">
+                    <h6><span
+                        style="color: <?php echo strtolower($row['News_or_Events']) === 'events' ? 'blue' : 'red'; ?>"><?php echo ucfirst($row['News_or_Events']); ?></span>
+                    </h6>
+                    <p>Posted on <?php echo date('F j, Y', strtotime($row['CreatedAt'])); ?> by
+                      <?php echo $row['Author_News']; ?></p>
+                  </div>
 
-            <article class="entry">
-              <div class="entry-img">
-                <img src="assets/img/slide/slide-3.png" alt="" class="img-fluid">
-              </div>
-              <h2 class="entry-title">
-                <a href="news_and_events_details.php">Dolorum optio tempore voluptas dignissimos cumque fuga qui
-                  quibusdam quia</a>
-              </h2>
-              <div class="entry-meta">
-                <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events <span>&#47; by MIS
-                      Department</p>
-              </div>
 
-              <div class="entry-content">
-                <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi
-                  praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta.
-                  Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda
-                  perferendis dolore.
-                </p>
-                <div class="read-more">
-                  <a href="news_and_events_details.php">Read More</a>
-                </div>
+                  <div class="entry-content">
+                    <p>
+                      Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi
+                      praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                      Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta.
+                      Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda
+                      perferendis dolore.
+                    </p>
+                    <div class="read-more">
+                      <a href="news_and_events_details.php">Read More</a>
+                    </div>
+                  </div>
+                </article><!-- End of the entry -->
+
+                <?php
+                $counter++;
+              }
+            } else {
+              ?>
+              <div class="text-center">
+                No news_and_events records
               </div>
-            </article><!-- End blog entry -->
+              <?php
+            }
+            ?>
+
+
 
             <!-- Pagination -->
             <div class="row justify-content-center justify-content-md-between mt-4">
@@ -670,7 +680,7 @@
                     <img src="assets/img/slide/slide-3.png" alt="">
                     <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                     <div class="side-bardate">
-                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events <span>&#47; by MIS
+                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News <span>&#47; by MIS
                             Department</p>
                     </div>
                   </div>
@@ -679,7 +689,7 @@
                     <img src="assets/img/slide/slide-3.png" alt="">
                     <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                     <div class="side-bardate">
-                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events <span>&#47; by MIS
+                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in Events <span>&#47; by MIS
                             Department</p>
                     </div>
                   </div>
@@ -688,7 +698,7 @@
                     <img src="assets/img/slide/slide-3.png" alt="">
                     <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                     <div class="side-bardate">
-                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events <span>&#47; by MIS
+                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News <span>&#47; by MIS
                             Department</p>
                     </div>
                   </div>
@@ -697,7 +707,7 @@
                     <img src="assets/img/slide/slide-3.png" alt="">
                     <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                     <div class="side-bardate">
-                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events <span>&#47; by MIS
+                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in Events <span>&#47; by MIS
                             Department</p>
                     </div>
                   </div>
@@ -716,7 +726,7 @@
                       <img src="assets/img/slide/slide-3.png" alt="">
                       <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                       <div class="side-bardate">
-                        <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events <span>&#47; by
+                        <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News <span>&#47; by
                               MIS
                               Department</p>
                       </div>
@@ -726,7 +736,7 @@
                       <img src="assets/img/slide/slide-3.png" alt="">
                       <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                       <div class="side-bardate">
-                        <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events <span>&#47; by
+                        <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in Events <span>&#47; by
                               MIS
                               Department</p>
                       </div>
@@ -736,7 +746,7 @@
                       <img src="assets/img/slide/slide-3.png" alt="">
                       <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
                       <div class="side-bardate">
-                        <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events <span>&#47; by
+                        <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News <span>&#47; by
                               MIS
                               Department</p>
                       </div>

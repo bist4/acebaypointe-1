@@ -63,6 +63,12 @@
             color: var(--bs-btn-hover-color);
             border-color: var(--bs-btn-hover-border-color);
         }
+
+        .search-description {
+            padding-left: 0;
+            text-align: left;
+            /* Align the text to the left */
+        }
     </style>
 
     </style>
@@ -106,6 +112,8 @@
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <div class="search-bar">
+                                <p class="search-description mt-2 mb-2">Find doctors quickly by selecting a department and
+                                    entering the doctor's name:</p>
                                 <form>
                                     <div class="row g-3">
                                         <div class="col-md-4">
@@ -118,16 +126,17 @@
                                                 <option value="general">General Medicine</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-8">
                                             <input type="text" class="form-control" id="doctorName"
                                                 placeholder="Enter Doctor's Name" required>
                                         </div>
-                                        <div class="col-md-2">
-                                            <button type="submit" class="doctor-btn btn-search w-100">Search</button>
-                                        </div>
+                                        <!-- <div class="col-md-2">
+                <button type="submit" class="doctor-btn btn-search w-100">Search</button>
+            </div> -->
                                     </div>
                                 </form>
                             </div>
+
                         </div>
                     </div>
                 </div>
