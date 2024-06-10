@@ -110,6 +110,13 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 
+<!-- reload and back to the top -->
+<script>
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    }
+  </script>
+
 </body>
 
 </html>

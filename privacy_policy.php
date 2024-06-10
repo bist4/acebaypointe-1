@@ -59,7 +59,7 @@
         </div> <!-- End of Page Title -->
 
         <!-- Main content of About Us -->
-        
+
         <div class="container mt-5">
             <p><strong>Allied Care Experts (ACE) Medical Center - Baypointe</strong>, your well-being is at the heart
                 of everything we do. We understand the importance of quality healthcare delivered with compassion and
@@ -71,7 +71,7 @@
                 sensitive data remains secure and confidential at all times.</p>
         </div>
 
-        <div class="container mt-5">
+        <div class="container mt-5" id="data-privacy">
             <h3>Data Privacy</h3> <!-- Data Privacy -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
                 nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus
@@ -93,7 +93,8 @@
             </ul>
             <p>&nbsp;</p>
 
-            <h3>Data Privacy for Online Job Applicants</h3> <!-- Data Privacy for Online Job Applicants -->
+            <h3 id="online-job-applicants">Data Privacy for Online Job Applicants</h3>
+            <!-- Data Privacy for Online Job Applicants -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
                 nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus
                 possimus, veniam magni quis!</p>
@@ -114,7 +115,7 @@
             </ul>
             <p>&nbsp;</p>
 
-            <h3>Website Privacy Policy</h3> <!-- WEBSITE PRIVACY POLICY -->
+            <h3 id="website-privacy-policy">Website Privacy Policy</h3> <!-- WEBSITE PRIVACY POLICY -->
             <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit</strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
                 nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus
@@ -139,7 +140,7 @@
                     voluptatibus
                     possimus, veniam magni quis!</p>
             </div>
-        </div>      
+        </div>
     </main> <!-- End Main -->
     <!-- Footer -->
     <footer>
@@ -159,6 +160,12 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <!-- reload and back to the top -->
+    <script>
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 
 </html>

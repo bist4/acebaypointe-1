@@ -86,9 +86,10 @@
                             <h2 class="fw-bolder mb-3">MANAGEMENT DISCOUNTS FOR INVESTORS</h2>
                             <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2"
-                                            aria-expanded="true" aria-controls="collapseOne2">I. STOCKHOLDERS AND
+                                    <h3 class="accordion-header" id="headingOne"><button
+                                            class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne2" aria-expanded="true"
+                                            aria-controls="collapseOne2">I. STOCKHOLDERS AND
                                             SPOUSES</button></h3>
                                     <div class="accordion-collapse collapse" id="collapseOne2"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
@@ -175,9 +176,9 @@
                                                 and Dumaguete.
                                             </p>
                                             <p>
-                                            2. Medical stockholders will have the privilege, subject to pertinent
-                                            credentialing policies/requirements, to admit and/or manage patients in
-                                            other ACEMCs.
+                                                2. Medical stockholders will have the privilege, subject to pertinent
+                                                credentialing policies/requirements, to admit and/or manage patients in
+                                                other ACEMCs.
                                             </p>
                                         </div>
                                     </div>
@@ -209,6 +210,12 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <!-- reload and back to the top -->
+    <script>
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 
 </html>

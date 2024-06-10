@@ -134,7 +134,7 @@
             </div>
 
             <h3>Culture of Safety</h3> <!-- Culture of Safety -->
-            <div class="mb-5"> 
+            <div class="mb-5">
                 <p><strong>I Speak Up, I Own Campaign</strong></p> <!-- I Speak Up, I Own Campaign-->
                 <p> Et malesuada fames ac turpis. Aliquam nulla
                     facilisi cras fermentum odioUrna condimentum mattis pellentesque id nibh tortor id. Eget mi proin
@@ -154,7 +154,7 @@
                     facilisi cras fermentum odioUrna condimentum mattis pellentesque id nibh tortor id. Eget mi proin
                     sed libero enim sed faucibus turpis in. Gravida dictum fusce ut placerat orci nulla pellentesque
                     dignissim enim. Amet venenatis urna cursus eget. Et malesuada fames ac turpis. Aliquam nulla
-                    facilisi cras fermentum odio.</p>  
+                    facilisi cras fermentum odio.</p>
             </div>
 
         </main> <!-- End Main -->
@@ -181,6 +181,12 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 
+<!-- reload and back to the top -->
+<script>
+    window.onload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
 </body>
 
 </html>

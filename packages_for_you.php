@@ -312,7 +312,7 @@
             <ul>
               <li>Complete History and Physical</li>
               <li>Examination with Visual Acuity Screening</li>
-              
+
               <li>Complete Blood Count</li>
               <li>Urinalysis (Routine)</li>
               <li>Fecalysis (Routine Stool Exam)</li>
@@ -350,11 +350,11 @@
               <li>Option of either ECG or Blood Typing</li>
               <li>Interpretation of Results
                 <ul>
-              <li>Recommended for dependents, siblings, other immediate family members</li>
-            </ul>
+                  <li>Recommended for dependents, siblings, other immediate family members</li>
+                </ul>
               </li>
             </ul>
-            
+
           </div>
         </div>
       </div>
@@ -579,6 +579,12 @@
     });
   </script>
 
+  <!-- reload and back to the top -->
+  <script>
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    }
+  </script>
 
 </body>
 

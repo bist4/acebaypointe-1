@@ -9,8 +9,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <?php require ('assets/links/favicons.php') ?>
+  <!-- Favicons -->
+  <?php require ('assets/links/favicons.php') ?>
 
 
   <!-- Google Fonts -->
@@ -122,7 +122,7 @@
                     <?php
                     $mobile_num = explode("\n", $row['Mobile']);
                     foreach ($mobile_num as $mobile) {
-                      echo '<p>'. htmlspecialchars(trim($mobile)) . '</p>';
+                      echo '<p>' . htmlspecialchars(trim($mobile)) . '</p>';
                     }
                     ?>
                   </div>
@@ -215,6 +215,13 @@
 <script src="assets/js/main.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+<!-- reload and back to the top -->
+<script>
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  }
+</script>
 
 </body>
 

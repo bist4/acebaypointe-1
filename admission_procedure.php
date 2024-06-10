@@ -81,7 +81,8 @@
                 <p><strong>Step 8: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. </p>
                 <p><strong>Step 9: </strong>Scelerisque felis imperdiet proin fermentum leo vel.</p>
-                <p><strong>Step 10: </strong>Et ligula ullamcorper malesuada proin. Id aliquet risus feugiat in ante.</p>
+                <p><strong>Step 10: </strong>Et ligula ullamcorper malesuada proin. Id aliquet risus feugiat in ante.
+                </p>
             </div>
 
             <div class="mt-5 mb-5">
@@ -132,8 +133,9 @@
                 </div>
             </div>
 
-            <div class="text-center">
-                <p>For further inquiries or clarifications, kindly visit or call the admitting office (045) 000 000 local 00000/00000 or 09000000000 we are open 24/7.</p>
+            <div class="text-center" style="color: #3fbbc0;">
+                <p>For further inquiries or clarifications, kindly visit or call the admitting office (045) 000 000
+                    local 00000/00000 or 09000000000 we are open 24/7.</p>
             </div>
 
         </main> <!-- End of the main content of Admission Procedure -->
@@ -159,6 +161,12 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 
+<!-- reload and back to the top -->
+<script>
+    window.onload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
 </body>
 
 </html>

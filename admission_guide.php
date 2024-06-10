@@ -101,15 +101,15 @@
 
                 </div>
                 <!-- Side widgets-->
-                <?php require ('assets/links/sidebar_contact.php')?>
-        </div>
+                <?php require ('assets/links/sidebar_contact.php') ?>
+            </div>
     </main> <!-- End Main -->
     <!-- Footer -->
     <footer>
-        <?php require ('assets/links/footer.php')?>
+        <?php require ('assets/links/footer.php') ?>
     </footer> <!-- End Footer -->
 
-    <?php require ('assets/links/back-to-top.php')?> <!-- Back to Top -->
+    <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -122,6 +122,12 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <!-- reload and back to the top -->
+    <script>
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 
 </html>

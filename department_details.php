@@ -90,9 +90,9 @@
                 <h4 class="fw-bolder mb-3">Services</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Vitae congue eu consequat ac. 
+                  dolore magna aliqua. Vitae congue eu consequat ac.
                 </p>
-                
+
                 <h4 class="fw-bolder mb-3">Doctors</h4>
                 <p>Dr. Juan Dela Cruz</p>
 
@@ -128,7 +128,12 @@
 <script src="assets/js/main.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
-
+<!-- reload and back to the top -->
+<script>
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  }
+</script>
 </body>
 
 </html>

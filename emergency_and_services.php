@@ -141,9 +141,10 @@
                             </div>
                         </div>
                     </div>
-                </div> <!-- End of the Column -->
-                <!-- Side widgets-->
-                <?php require ('assets/links/sidebar_contact.php') ?>
+                </div>
+            </div> <!-- End of the Column -->
+            <!-- Side widgets-->
+            <?php require ('assets/links/sidebar_contact.php') ?>
         </main> <!-- End of the main content of EMERGENCY SERVICES -->
     </main> <!-- End Main -->
 </body>
@@ -167,6 +168,12 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 
+<!-- reload and back to the top -->
+<script>
+    window.onload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
 </body>
 
 </html>

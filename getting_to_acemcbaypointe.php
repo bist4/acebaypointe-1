@@ -71,7 +71,7 @@
                     Google Location: <a
                         href="https://www.google.com/maps/dir/Victory+Liner,+Inc.,+Anonas+Street,+Olongapo,+Zambales/Allied+Care+Experts+(ACE)+Medical+Center+-+Baypointe,+Block+8,+Lot+1A+and+1B+Dewey+Avenue+Subic+Bay+Freeport+Zone,+Olongapo,+2222+Zambales/@14.8311937,120.2699955,15.75z/data=!4m14!4m13!1m5!1m1!1s0x339670e2e25c2971:0x8bb400cdff3635ef!2m2!1d120.2842662!2d14.839724!1m5!1m1!1s0x3396713dc6158cd5:0xce084c90e0457df1!2m2!1d120.2721641!2d14.8238888!3e2?authuser=2&entry=ttu"><strong>click
                             here.</strong>
-                        </a>
+                    </a>
                 </li>
             </ul>
 
@@ -82,7 +82,7 @@
                     Google Location: <a
                         href="https://www.google.com/maps/dir/SM+City+Olongapo+Downtown,+Gordon+Avenue,+Olongapo,+Zambales/Allied+Care+Experts+(ACE)+Medical+Center+-+Baypointe,+Block+8,+Lot+1A+and+1B+Dewey+Avenue+Subic+Bay+Freeport+Zone,+Olongapo,+2222+Zambales/@14.8244744,120.2749022,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x33967124b18f22bd:0x403c65951060241b!2m2!1d120.2827958!2d14.8267307!1m5!1m1!1s0x3396713dc6158cd5:0xce084c90e0457df1!2m2!1d120.2721641!2d14.8238888!3e2?authuser=2&entry=ttu"><strong>click
                             here.</strong>
-                        </a>
+                    </a>
                 </li>
             </ul>
 
@@ -111,6 +111,12 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 
+<!-- reload and back to the top -->
+<script>
+    window.onload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
 </body>
 
 </html>

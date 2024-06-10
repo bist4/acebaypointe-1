@@ -260,6 +260,12 @@ $row = $q->fetch_assoc(); // Fetching data
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- reload and back to the top -->
+  <script>
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    }
+  </script>
 </body>
 
 </html>

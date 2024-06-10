@@ -619,7 +619,7 @@
                   perferendis dolore.
                 </p>
                 <div class="read-more">
-                  <a href="blog-single.html">Read More</a>
+                  <a href="news_and_events_details.php">Read More</a>
                 </div>
               </div>
             </article><!-- End blog entry -->
@@ -774,6 +774,12 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- reload and back to the top -->
+  <script>
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    }
+  </script>
 </body>
 
 </html>

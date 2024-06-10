@@ -298,84 +298,108 @@
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Aesthetic & Cosmetic</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Anesthesiology</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Cardiology</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Dental Medicine</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Dermatology</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Endocrinology</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Family Medicine</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Gastroenterology</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Infectious Diseases</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Nephrology</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Occupational</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item mb-0">
                 <h3 style="cursor: pointer;"><a href="department_details.php">Ophthalmology</a></h3>
-                <a href="department_details.php"><h4>Read More</h4></a>
+                <a href="department_details.php">
+                  <h4>Read More</h4>
+                </a>
               </div>
             </div><!-- End Department item -->
 
@@ -419,6 +443,12 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
+  <!-- reload and back to the top -->
+  <script>
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    }
+  </script>
 </body>
 
 </html>

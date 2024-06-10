@@ -56,12 +56,73 @@
             text-align: center;
             vertical-align: middle;
         }
+
+        /* Define Philhealth colors */
+        .bg-philhealth-green {
+            background-color: #63a400;
+            /* Philhealth Green */
+        }
+
+        .bg-philhealth-yellow {
+            background-color: #FEED23;
+            /* Philhealth Yellow */
+        }
+
+        /* Define text color */
+        body {
+            color: #333;
+            /* Dark Gray */
+        }
+
+        /* Table styles */
+        .table {
+            background-color: #fff;
+            /* White */
+            color: #333;
+            /* Dark Gray */
+        }
+
+        /* Table header styles */
+        .table thead {
+            background-color: #63a400;
+            /* Philhealth Green */
+            color: #fff;
+            /* White */
+        }
+
+        /* Table body row styles */
+        .table tbody th,
+        .table tbody tr {
+            background-color: #f8f9fa;
+            /* Light Gray */
+        }
+
+        /* Table body cell styles */
+        .table tbody tr td {
+            border-color: #dee2e6;
+            /* Lighter Gray */
+        }
+
+        /* Specific styles for Philhealth color scheme */
+        .philhealth-category {
+            background-color: #FEED23;
+            /* Philhealth Yellow */
+            color: #333;
+            /* Dark Gray */
+        }
+
+        .philhealth-documents {
+            background-color: #E8F5E9;
+            /* Light Green */
+            color: #333;
+            /* Dark Gray */
+        }
     </style>
 </head>
 
 <body>
     <?php require ('assets/links/header.php') ?> <!-- The Header -->
-    <main> <!-- Main -->
+    <main class="bg-philhealth-green"> <!-- Main -->
         <!-- Title -->
         <div class="bg-dark py-5 my-5">
             <div class="py-5"></div>
@@ -76,7 +137,8 @@
         </div> <!-- End of Page Title -->
 
         <!-- Main content of Philhealth Requirements -->
-        <main id="main" class="main container">
+        <main id="main" class="main container" style="background-color: #63a400; color: #fff;">
+            <!-- Apply Philhealth colors here -->
             <div class="col-lg-16 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                 <div class="content">
                     <p class="mb-4">Kindly see list below of requirements:</p>
@@ -91,33 +153,25 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Employed</td>
-                                <td style="text-align: left; padding-left: 50px;">
+                                <td class="philhealth-category">Employed</td>
+                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Individually Paying (Self-Employed/Voluntary Members)</td>
-                                <td style="text-align: left; padding-left: 50px;">
+                                <td class="philhealth-category">Individually Paying (Self-Employed/Voluntary Members)
+                                </td>
+                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px;">
                                     <ul>
                                         <li>Consectetur adipiscing elit</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Overseas’ Workers</td>
-                                <td style="text-align: left; padding-left: 50px;">
-                                    <ul>
-                                        <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
-                                        <li>Consectetur adipiscing elit</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sponsored</td>
-                                <td style="text-align: left; padding-left: 50px;">
+                                <td class="philhealth-category">Overseas’ Workers</td>
+                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
@@ -125,8 +179,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Lifetime (Qualified Retirees)</td>
-                                <td style="text-align: left; padding-left: 50px;">
+                                <td class="philhealth-category">Sponsored</td>
+                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
@@ -134,8 +188,17 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Individually Paying (BUNTIS / MANGANGANAK)</td>
-                                <td style="text-align: left; padding-left: 50px;">
+                                <td class="philhealth-category">Lifetime (Qualified Retirees)</td>
+                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px;">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="philhealth-category">Individually Paying (BUNTIS / MANGANGANAK)</td>
+                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
@@ -180,6 +243,12 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 
+<!-- reload and back to the top -->
+<script>
+    window.onload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
 </body>
 
 </html>

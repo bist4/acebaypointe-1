@@ -2019,8 +2019,9 @@ section {
 .pagination span:hover {
   background-color: #24a2b6;
   color: #ffffff;
-  border-color: #069a8e;
-  padding: 8px 14px;
+  border: 1px solid #069a8e; /* Added border */
+  border-radius: 5px; /* Added border radius for box effect */
+  padding: 8px 14px; /* Adjusted padding */
 }
 
 
