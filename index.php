@@ -185,7 +185,7 @@
               in all of the currently operational centers in Luzon Subic, Valenzuela, Baliwag, Pateros, Quezon City,
               Marinduque, Legaspi, Malolos, San Jose Del Monte, San Jose Bulacan and Tuguegarao-Palawan. In Visayas
               Bohol, Tacloban, Cebu, Dumaguete and Bayawan. In Mindanao, Cagayan de Oro, Dipolog and Zamboanga.</p>
-            <a href="about_us.php" class="btn-get-started mb-sm-2">Read More</a>
+              <button><a href="about_us.php#who_we_are" class="btn btn-primary btn-get-started mb-sm-2">Read More</a></button>
           </div>
         </div>
       </div>
@@ -197,7 +197,6 @@
         <div class="container" data-aos="fade-up">
           <div class="container">
             <h2>Welcome to <span>Ace Medical Center Baypointe</span></h2>
-           
 
             <p>Baypointe Hospital and Medical Center is a member of the ACE (Allied Care Experts) Group of Hospitals
               which is now around 40 medical centers, half of which are fully operational. Doctors and investors at
@@ -205,10 +204,9 @@
               in all of the currently operational centers in Luzon Subic, Valenzuela, Baliwag, Pateros, Quezon City,
               Marinduque, Legaspi, Malolos, San Jose Del Monte, San Jose Bulacan and Tuguegarao-Palawan. In Visayas
               Bohol, Tacloban, Cebu, Dumaguete and Bayawan. In Mindanao, Cagayan de Oro, Dipolog and Zamboanga.</p>
-            <a href="#about" class="btn-get-started mb-sm-2">Read More</a>
+            <a href="about_us.php" class="btn-get-started mb-sm-2">Read More</a>
           </div>
-        </div>
-        </div>
+        </div>  
       </section><!-- End Featured Services Section -->
 
       <!-- Call now Section -->
@@ -226,7 +224,7 @@
             if (!empty($row['Phone'])) {
               $tele_num = explode("\n", $row['Phone']);
               foreach ($tele_num as $phone) {
-                echo '<a style="color: black;" class="cta-btn scrollto" href="tel:' . htmlspecialchars(trim($phone)) . '">Call now</a><br>';
+                echo '<a class="cta-btn scrollto" href="tel:' . htmlspecialchars(trim($phone)) . '">Call now</a><br>';
               }
             } else {
               // Handle case when $row['Phone'] is empty or null
@@ -235,7 +233,6 @@
             ?>
           </div>
         </div>
-
 
       </section><!-- End Cta Section -->
 

@@ -8,8 +8,6 @@ $q = $conn->query($sql); //Query of the database
 $row = $q->fetch_assoc(); // Fetching data
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
