@@ -543,6 +543,49 @@
             color: #c8bab5;
             font-size: 14px;
         }
+
+        /*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+        .gallery {
+            overflow: hidden;
+        }
+
+        .gallery .swiper-pagination {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .gallery .swiper-pagination .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            opacity: 1;
+            border: 1px solid #3fbbc0;
+        }
+
+        .gallery .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: #3fbbc0;
+        }
+
+        .gallery .swiper-slide-active {
+            text-align: center;
+        }
+
+        @media (min-width: 992px) {
+            .gallery .swiper-wrapper {
+                padding: 40px 0;
+            }
+
+            .gallery .swiper-slide-active {
+                border: 6px solid #3fbbc0;
+                padding: 4px;
+                background: #fff;
+                z-index: 1;
+                transform: scale(1.2);
+                margin-top: 10px;
+            }
+        }
     </style>
     <!-- =======================================================
   * Template Name: Medicio
@@ -577,14 +620,14 @@
                     <div class="col-lg-8 entries">
                         <article class="entry entry-single">
                             <div class="entry-img">
-                                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                                <div class="swiper-slide"><a class="gallery-lightbox"
+                                        href="assets/img/gallery/gallery-1.jpg"><img
+                                            src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
                             </div>
                             <h2 class="entry-title mb-5"> Dolorum optio tempore voluptas dignissimos cumque fuga
                                 quiquibusdam quia</a>
                             </h2>
-                            <div class="entry-img">
-                                <img src="assets/img/slide/slide-3.png" alt="" class="img-fluid">
-                            </div>
+
                             <div class="entry-meta">
                                 <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News & Events
                                         <span>&#47; by MIS Department</p>

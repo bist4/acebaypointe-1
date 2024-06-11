@@ -129,6 +129,7 @@
       align-items: center;
       margin-top: 20px;
     }
+
   </style>
 
   <!-- Vendor CSS Files -->
@@ -161,14 +162,23 @@
   <?php require ('assets/links/header.php') ?> <!-- The Header -->
   <!-- Main -->
   <main>
-    <div class="bg-dark py-5 my-5"
-      style="background-image: url('assets/img/slide/slide-1.png'); background-size: cover; background-position: center; filter: brightness(50%); height: 50%;">
-      <div class="py-5">
+  <!-- gallery-item gallery-lightbox -->
+  <div class="bg-dark py-5 my-5 position-relative" style="height: 50%;">
+    <img class="gallery-item gallery-lightbox position-absolute top-0 start-0 w-100 h-100" src="assets/img/slide/slide-1.png" style="filter: brightness(50%); object-fit: cover;" />
+ 
+ 
+
+      
+    <div class="py-5">
       </div>
+
+
       <div class="container">
         <div class="col-lg-6">
           <div class="indexHidden">
+
             <h2>Welcome to <span>Ace Medical Center Baypointe</span></h2>
+            
             <p>Baypointe Hospital and Medical Center is a member of the ACE (Allied Care Experts) Group of Hospitals
               which is now around 40 medical centers, half of which are fully operational. Doctors and investors at
               Baypointe enjoy portability of privileges and benefits like professional practice and management discounts
@@ -182,11 +192,13 @@
     </div>
 
     <main id="main">
-      <!-- ======= Featured Services Section ======= -->
+      <!-- Services Section -->
       <section id="featured-services" class="featured-services">
         <div class="container" data-aos="fade-up">
           <div class="container">
             <h2>Welcome to <span>Ace Medical Center Baypointe</span></h2>
+           
+
             <p>Baypointe Hospital and Medical Center is a member of the ACE (Allied Care Experts) Group of Hospitals
               which is now around 40 medical centers, half of which are fully operational. Doctors and investors at
               Baypointe enjoy portability of privileges and benefits like professional practice and management discounts
@@ -370,10 +382,22 @@
 
     <!-- reload and back to the top -->
     <script>
-        window.onload = function () {
-            window.scrollTo(0, 0);
-        }
+      window.onload = function () {
+        window.scrollTo(0, 0);
+      }
     </script>
+
+<script>
+  function openLightbox(imageUrl) {
+    document.getElementById('lightbox-image').src = imageUrl;
+    document.getElementById('lightbox').style.display = 'flex';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
+
 </body>
 
 </html>

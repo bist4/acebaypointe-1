@@ -592,14 +592,14 @@ include ("config/db_con.php"); //Connection to database
                 ?>
                 <article class="entry">
                   <div class="entry-img">
-                    <img src="assets/img/slide/slide-3.png" alt="" class="img-fluid">
+                    <a href="news_and_events_details.php"><img src="assets/img/slide/slide-3.png" alt="" class="img-fluid"></a>
                   </div>
                   <h2 class="entry-title mb-0">
-                    <a href="blog-single.html"><?php echo trim($row['Title_News']); ?></a>
+                    <a href="news_and_events_details.php"><?php echo trim($row['Title_News']); ?></a>
                   </h2>
                   <div class="entry-meta">
                     <h6><span
-                        style="color: <?php echo strtolower($row['News_or_Events']) === 'events' ? 'blue' : 'red'; ?>"><?php echo ucfirst($row['News_or_Events']); ?></span>
+                        style="color: <?php echo strtolower($row['News_or_Events']) === 'events' ? '#146635' : '#991B1E'; ?>"><?php echo ucfirst($row['News_or_Events']); ?></span>
                     </h6>
                     <p>Posted on <?php echo date('F j, Y', strtotime($row['CreatedAt'])); ?> by
                       <?php echo $row['Author_News']; ?></p>

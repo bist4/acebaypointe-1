@@ -161,6 +161,150 @@
       align-items: center;
       margin-top: 20px;
     }
+
+    /*--------------------------------------------------------------
+# Why Us Section
+--------------------------------------------------------------*/
+    .why-us {
+      --background-color: color-mix(in srgb, var(--default-color), transparent 94%);
+    }
+
+    .why-us .why-box {
+      color: var(--contrast-color);
+      background: var(--accent-color);
+
+    }
+
+    .why-us .why-box h3 {
+      color: var(--contrast-color);
+      font-family: var(--default-font);
+      font-weight: 700;
+      font-size: 34px;
+    }
+
+    .why-us .why-box p {
+      margin-bottom: 30px;
+    }
+
+    .why-us .why-box .more-btn {
+      display: inline-block;
+      background: color-mix(in srgb, var(--contrast-color), transparent 85%);
+      /* padding: 8px 40px 10px 40px; */
+      color: var(--contrast-color);
+      transition: all ease-in-out 0.4s;
+      border-radius: 50px;
+    }
+
+    .why-us .why-box .more-btn i {
+      font-size: 14px;
+    }
+
+    .why-us .why-box .more-btn:hover {
+      color: var(--accent-color);
+      background: var(--contrast-color);
+    }
+
+    .why-us .icon-box {
+      background-color: var(--contrast-color);
+      text-align: center;
+      /* padding: 40px 30px; */
+      width: 100%;
+      height: 100%;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    }
+
+    .why-us .icon-box i {
+      color: var(--accent-color);
+      font-size: 32px;
+      margin-bottom: 30px;
+      background: color-mix(in srgb, var(--accent-color), transparent 95%);
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      transition: 0.3s;
+    }
+
+    .why-us .icon-box h4 {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0 0 30px 0;
+      font-family: var(--default-font);
+    }
+
+    .why-us .icon-box p {
+      font-size: 15px;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+    }
+
+    .why-us .icon-box:hover i {
+      color: var(--contrast-color);
+      background: var(--accent-color);
+    }
+
+
+    /*--------------------------------------------------------------
+# Featured Services Section
+--------------------------------------------------------------*/
+    .featured-services .service-item {
+      /* box-shadow: 0px 0 25px 0 color-mix(in srgb, var(--default-color), transparent 90%); */
+      padding: 50px 30px;
+      transition: all 0.3s ease-in-out;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .featured-services .service-item:before {
+      content: "";
+      position: absolute;
+      background: var(--accent-color);
+      inset: 100% 0 0 0;
+      transition: all 0.3s;
+      z-index: -1;
+    }
+
+    .featured-services .service-item .icon {
+      margin-bottom: 10px;
+    }
+
+    .featured-services .service-item .icon i {
+      color: var(--accent-color);
+      font-size: 36px;
+      transition: ease-in-out 0.3s;
+    }
+
+    .featured-services .service-item h4 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .featured-services .service-item h4 a {
+      color: var(--heading-color);
+      transition: ease-in-out 0.3s;
+    }
+
+    .featured-services .service-item p {
+      line-height: 24px;
+      font-size: 14px;
+      margin-bottom: 0;
+      transition: ease-in-out 0.3s;
+    }
+
+    .featured-services .service-item:hover h4 a,
+    .featured-services .service-item:hover .icon i,
+    .featured-services .service-item:hover p {
+      color: white;
+    }
+
+    .featured-services .service-item:hover:before {
+      background: #3fbbc0;
+      inset: 0;
+      border-radius: 0px;
+    }
   </style>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -211,6 +355,7 @@
         <div class="section-title">
           <h2>Our Services</h2>
         </div>
+
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"><i class="fas fa-heartbeat"></i></div>
@@ -282,131 +427,165 @@
     </section><!-- End Services Section -->
 
     <!-- Department -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="fade-up">
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
 
         <div class="section-title">
-          <h2>Department</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-            sit in iste officiis commodi quidem hic quas.</p>
+          <h2>The Departments</h2>
         </div>
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
+        <div class="row gy-4">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Aesthetic & Cosmetic</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-activity icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Anesthesiology</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Cardiology</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-calendar4-week icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Dental Medicine</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-broadcast icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Dermatology</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-activity icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Endocrinology</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Family Medicine</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-calendar4-week icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Gastroenterology</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-broadcast icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Infectious Diseases</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-activity icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Nephrology</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Occupational</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-calendar4-week icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item mb-0">
-                <h3 style="cursor: pointer;"><a href="department_details.php">Ophthalmology</a></h3>
-                <a href="department_details.php">
-                  <h4>Read More</h4>
-                </a>
-              </div>
-            </div><!-- End Department item -->
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-broadcast icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
 
-          </div>
-          <div class="swiper-pagination mt-0"></div>
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-calendar4-week icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-broadcast icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-broadcast icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
-    </section><!-- End Department Section -->
+
+      </div>
+
+    </section>
   </main> <!-- End Main -->
   <!-- Footer -->
   <footer>

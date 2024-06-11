@@ -131,8 +131,8 @@
                                                 placeholder="Enter Doctor's Name" required>
                                         </div>
                                         <!-- <div class="col-md-2">
-                <button type="submit" class="doctor-btn btn-search w-100">Search</button>
-            </div> -->
+                                        <button type="submit" class="doctor-btn btn-search w-100">Search</button>
+                                        </div> -->
                                     </div>
                                 </form>
                             </div>
