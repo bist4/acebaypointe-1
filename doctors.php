@@ -111,138 +111,214 @@
                 <div class="section-title aos-init aos-animate mt-0" data-aos="fade-up">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
-                            <div class="search-bar">
-                                <p class="search-description mt-2 mb-2">Find doctors quickly by selecting a department and
+                            <!-- <div class="search-bar">
+                                <p class="search-description mt-2 mb-2">Find doctors quickly by selecting a department
+                                    and
                                     entering the doctor's name:</p>
                                 <form>
                                     <div class="row g-3">
                                         <div class="col-md-4">
-                                            <select class="form-select" id="department" required>
+                                            <select class="form-select" id="department" name="department" required>
                                                 <option selected disabled value="">Choose Department...</option>
-                                                <option value="cardiology">Cardiology</option>
-                                                <option value="neurology">Neurology</option>
-                                                <option value="orthopedics">Orthopedics</option>
-                                                <option value="pediatrics">Pediatrics</option>
-                                                <option value="general">General Medicine</option>
+                                                <?php
+
+                                                $query = "SELECT Department FROM doctors WHERE Active = 1";
+                                                $result = mysqli_query($conn, $query);
+
+                                                if (mysqli_num_rows($result) > 0) {
+                                                    while ($row = mysqli_fetch_assoc($result)) {
+                                                        echo '<option value="' . $row['Department'] . '">' . $row['Department'] . '</option>';
+                                                    }
+                                                } else {
+                                                    echo '<option value="">No active departments found</option>';
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="doctorName" name="doctorName"
+                                                placeholder="Enter Doctor's Name" required>
+                                        </div>
+                                       
+                                    </div>
+                                </form>
+                            </div> -->
+                            <div class="search-bar">
+                                <p class="search-description mt-2 mb-2">Find doctors quickly by selecting a department
+                                    and entering the doctor's name:</p>
+                                <form id="searchForm">
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <select class="form-select" id="department" name="department" required>
+                                                <option selected disabled value="">Choose Department...</option>
+                                                <?php
+
+                                                $query = "SELECT Department FROM doctors WHERE Active = 1";
+                                                $result = mysqli_query($conn, $query);
+
+                                                if (mysqli_num_rows($result) > 0) {
+                                                    while ($row = mysqli_fetch_assoc($result)) {
+                                                        echo '<option value="' . $row['Department'] . '">' . $row['Department'] . '</option>';
+                                                    }
+                                                } else {
+                                                    echo '<option value="">No active departments found</option>';
+                                                }
+                                                ?>
                                             </select>
                                         </div>
                                         <div class="col-md-8">
-                                            <input type="text" class="form-control" id="doctorName"
+                                            <input type="text" class="form-control" id="doctorName" name="doctorName"
                                                 placeholder="Enter Doctor's Name" required>
                                         </div>
-                                        <!-- <div class="col-md-2">
-                                        <button type="submit" class="doctor-btn btn-search w-100">Search</button>
-                                        </div> -->
                                     </div>
                                 </form>
                             </div>
+
+                            <!-- Container to display doctor's information -->
+                            <!-- <div id="doctorInfo"></div> -->
+
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                            <script>
+                                $(document).ready(function () {
+                                    // Event handler for department selection or doctor name input
+                                    $('#department').on('change keyup', function () {
+                                        var department = $('#department').val();
+
+
+                                        // AJAX call to fetch doctor's information
+                                        $.ajax({
+                                            url: 'fetch_doctors.php', // Update with your PHP script path
+                                            type: 'POST',
+                                            data: {
+                                                department: department
+
+                                            },
+                                            success: function (response) {
+                                                $('#doctorInfo').html(response);
+                                            }
+                                        });
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    // Event handler for department selection or doctor name input
+                                    $('#doctorName').on('change keyup', function () {
+
+                                        var doctorName = $('#doctorName').val();
+
+                                        // AJAX call to fetch doctor's information
+                                        $.ajax({
+                                            url: 'fetch_doctorname.php', // Update with your PHP script path
+                                            type: 'POST',
+                                            data: {
+
+                                                doctorName: doctorName
+                                            },
+                                            success: function (response) {
+                                                $('#doctorInfo').html(response);
+                                            }
+                                        });
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    // Function to fetch doctor's information based on department and/or doctor's name
+                                    function fetchDoctorInfo() {
+                                        var department = $('#department').val();
+                                        var doctorName = $('#doctorName').val();
+
+                                        // AJAX call to fetch doctor's information
+                                        $.ajax({
+                                            url: 'fetch_DocdepName.php', // Update with your PHP script path
+                                            type: 'POST',
+                                            data: {
+                                                department: department,
+                                                doctorName: doctorName
+                                            },
+                                            success: function (response) {
+                                                $('#doctorInfo').html(response);
+                                            }
+                                        });
+                                    }
+
+                                    // Event handler for department selection change
+                                    $('#department').on('change', function () {
+                                        fetchDoctorInfo();
+                                    });
+
+                                    // Event handler for doctor name input change
+                                    $('#doctorName').on('keyup', function () {
+                                        fetchDoctorInfo();
+                                    });
+                                });
+
+                            </script>
+
+
+
+
+
+
 
                         </div>
                     </div>
                 </div>
                 <!-- Doctor section-->
                 <div class="bg-light">
-                    <div class="container px-5 my-5">
-                        <div class="text-center "></div>
-                        <div class="row gx-5 justify-content-center">
-                            <!-- Doctor-->
-                            <div class="col-lg-5 col-xl-4 mb-lg-5">
-                                <div class="card mb-5 mb-xl-0">
-                                    <div class="card-body p-5 gray-shadow">
-                                        <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
-                                            alt="" class="img-fluid mb-4">
-                                        <div class="mb-3 text-center">
-                                            <h5>Dr. FIRSTNAME LASTNAME</h5>
-                                            <div class="member-info text-center mb-2">
-                                                <span>Specialization</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-grid"><a class="btn doctors-btn" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">View Schedule</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4 mb-lg-5">
-                                <div class="card mb-5 mb-xl-0">
-                                    <div class="card-body p-5 gray-shadow">
-                                        <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
-                                            alt="" class="img-fluid mb-4">
-                                        <div class="mb-3 text-center">
-                                            <h5>Dr. FIRSTNAME LASTNAME</h5>
-                                            <div class="member-info text-center mb-2">
-                                                <span>Specialization</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-grid"><a class="btn doctors-btn" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">View Schedule</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4 mb-lg-5">
-                                <div class="card mb-5 mb-xl-0">
-                                    <div class="card-body p-5 gray-shadow">
-                                        <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
-                                            alt="" class="img-fluid mb-4">
-                                        <div class="mb-3 text-center">
-                                            <h5>Dr. FIRSTNAME LASTNAME</h5>
-                                            <div class="member-info text-center mb-2">
-                                                <span>Specialization</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-grid"><a class="btn doctors-btn" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">View Schedule</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4 mb-lg-5">
-                                <div class="card mb-5 mb-xl-0">
-                                    <div class="card-body p-5 gray-shadow">
-                                        <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
-                                            alt="" class="img-fluid mb-4">
-                                        <div class="mb-3 text-center">
-                                            <h5>Dr. FIRSTNAME LASTNAME</h5>
-                                            <div class="member-info text-center mb-2">
-                                                <span>Specialization</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-grid"><a class="btn doctors-btn" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">View Schedule</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4 mb-lg-5">
-                                <div class="card mb-5 mb-xl-0">
-                                    <div class="card-body p-5 gray-shadow">
-                                        <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
-                                            alt="" class="img-fluid mb-4">
-                                        <div class="mb-3 text-center">
-                                            <h5>Dr. FIRSTNAME LASTNAME</h5>
-                                            <div class="member-info text-center mb-2">
-                                                <span>Specialization</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-grid"><a class="btn doctors-btn" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">View Schedule</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4 mb-lg-5">
-                                <div class="card mb-5 mb-xl-0">
-                                    <div class="card-body p-5 gray-shadow">
-                                        <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
-                                            alt="" class="img-fluid mb-4">
-                                        <div class="mb-3 text-center">
-                                            <h5>Dr. FIRSTNAME LASTNAME</h5>
-                                            <div class="member-info text-center mb-2">
-                                                <span>Specialization</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-grid"><a class="btn doctors-btn" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">View Schedule</a></div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="container px-5 my-5" >
+                        <div class="text-center"></div>
+                        <div class="row gx-5 justify-content-center"  id="doctorInfo">
+                            <!-- Doctors -->
+                            <?php
+                            include ("config/db_con.php");
 
+                            // Pagination logic
+                            $items_per_page = 6; // Number of doctors per page
+                            $current_page = isset($_GET['page']) ? $_GET['page'] : 1; // Get current page number, default to 1
+                            
+                            // Calculate the starting point for the query
+                            $start = ($current_page - 1) * $items_per_page;
+
+                            $doctors_query = "SELECT * FROM doctors WHERE Active = 1 LIMIT $start, $items_per_page";
+                            $doctors_result = mysqli_query($conn, $doctors_query);
+
+                            if (mysqli_num_rows($doctors_result) > 0) {
+                                while ($row = mysqli_fetch_assoc($doctors_result)) {
+                                    ?>
+                                    <div class="col-lg-5 col-xl-4 mb-lg-5">
+                                        <div class="card mb-5 mb-xl-0">
+                                            <div class="card-body p-5 gray-shadow">
+                                                <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
+                                                    alt="" class="img-fluid mb-4">
+                                                <div class="mb-3 text-center">
+                                                    <h5>Dr. <?php echo htmlspecialchars(trim($row['Doctor_Name'])) ?></h5>
+                                                    <div class="member-info text-center mb-2">
+                                                        <span><?php echo htmlspecialchars(trim($row['Specialization'])) ?></span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <a class="btn doctors-btn" data-bs-toggle="modal"
+                                                        data-doctor-id="<?php echo $row['DoctorID'] ?>"
+                                                        data-bs-target="#exampleModal">View Schedule</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                            } else {
+                                ?>
+                                <div class="col-12 text-center">
+                                    No Doctors Available
+                                </div>
+                                <?php
+                            }
+                            ?>
                         </div>
 
                         <!-- Pagination -->
@@ -251,22 +327,45 @@
                                 <hr class="my-4" color="">
                             </div>
                             <div class="col-12 col-md-auto d-flex justify-content-center justify-content-md-start">
-                                <!-- Added ID to the pagination nav -->
                                 <nav class="pagination" id="paginationNav">
-                                    <span href="inactive" class="current">1</span>
-                                    <a href="#" class="inactive">2</a>
-                                    <a href="#" class="inactive">3</a> <!-- page where it was chosen -->
-                                    <a href="#">4</a>
-                                    <a href="#" class="inactive">5</a>
+                                    <?php
+                                    // Previous page link
+                                    if ($current_page > 1) {
+                                        echo '<a href="?page=' . ($current_page - 1) . '">Previous</a>';
+                                    }
+
+                                    // Calculate total doctors count
+                                    $total_doctors_query = "SELECT COUNT(*) as total FROM doctors WHERE Active = 1";
+                                    $total_doctors_result = mysqli_query($conn, $total_doctors_query);
+                                    $total_doctors_row = mysqli_fetch_assoc($total_doctors_result);
+                                    $total_doctors = $total_doctors_row['total'];
+
+                                    // Calculate total pages
+                                    $total_pages = ceil($total_doctors / $items_per_page);
+
+                                    // Page numbers
+                                    for ($i = 1; $i <= $total_pages; $i++) {
+                                        if ($i == $current_page) {
+                                            echo '<span class="current">' . $i . '</span>';
+                                        } else {
+                                            echo '<a href="?page=' . $i . '">' . $i . '</a>';
+                                        }
+                                    }
+
+                                    // Next page link
+                                    if ($current_page < $total_pages) {
+                                        echo '<a href="?page=' . ($current_page + 1) . '">Next</a>';
+                                    }
+                                    ?>
                                 </nav>
                             </div>
                             <div class="page col-md-auto d-flex justify-content-center text-md-end mt-3 mt-md-0">
-                                <span class="page-number">Page 1 of 5</span>
+                                <span class="page-number">Page <?php echo $current_page; ?> of
+                                    <?php echo $total_pages; ?></span>
                             </div>
                         </div>
                         <!-- End pagination -->
                     </div>
-
 
                     <!-- MODAL OF THE VIEW SCHEDULE -->
                     <div class="modal fade gray-shadow" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -277,52 +376,13 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <div class="row gx-5 justify-content-center align-items-center">
-                                        <div class="col-md-6 zoom-in">
-                                            <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
-                                                class="img-fluid rounded" alt="Doctor Image">
-                                        </div> <!-- End of the image -->
-                                        <div class="col-md-6">
-                                            <div class="appointment-item-two-right">
-                                                <h2 class="doctor-name display-6 text-center text-md-start">Dr. Juan
-                                                    Dela
-                                                    Cruz</h2>
-                                                <div class="appointment-item-content">
-                                                    <p class="fs-6"><strong>Department:</strong> <span
-                                                            class="department">Cardiology</span></p>
-                                                    <p class="fs-6"><strong>Status:</strong> <span
-                                                            class="status">Active</span></p>
-                                                    <h6 class="fs-6"><strong>Clinic hours</strong></h6>
-                                                    <div class="doctor-details-work">
-                                                        <ul class="list-unstyled" style="padding-left: 0;">
-                                                            <li>Monday <span>10:00AM - 01:00PM</span></li>
-                                                            <li>Tuesday <span>10:00AM - 01:00PM</span></li>
-                                                            <li>Wednesday <span>10:00AM - 01:00PM</span></li>
-                                                            <li>Thursday <span>10:00AM - 01:00PM</span></li>
-                                                            <li>Friday <span>10:00AM - 01:00PM</span></li>
-                                                            <li>Saturday <span>10:00AM - 01:00PM</span></li>
-                                                            <li>Sunday<span>10:00AM - 01:00PM</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div>
-                                                        <p><strong>Note: </strong>For <strong>On Call</strong> and
-                                                            <strong>By
-                                                                Appointment</strong> Status, <br>
-                                                            <strong>0939-915-7633 </strong>Local
-                                                            200 for Smart <br> <strong>0917-545-1566</strong> Local 200
-                                                            for
-                                                            Globe
-                                                        </p>
-                                                    </div>
-                                                </div> <!-- End of Appointment item content -->
-                                            </div> <!-- End of appointment item two right -->
-                                        </div> <!-- End of the right column -->
-                                    </div>
+                                <div class="modal-body" id="modal-body">
+
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- End of the Modal -->
+                    </div>
+                    <!-- End of the Modal -->
     </main>
 
     <!-- Footer -->
@@ -343,11 +403,26 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-    <!-- reload and back to the top -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        window.onload = function () {
-            window.scrollTo(0, 0);
-        }
+        $(document).ready(function () {
+            $('.doctors-btn').click(function () {
+                var doctorID = $(this).data('doctor-id');
+
+                $.ajax({
+                    url: 'DataGet/get_doctors.php',
+                    method: 'POST',
+                    data: { doctorID: doctorID },
+                    success: function (response) {
+                        $('#modal-body').html(response);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            });
+        });
     </script>
 
 </body>

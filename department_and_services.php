@@ -18,6 +18,7 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
+
   <style>
     .carousel-inner {
       display: flex;
@@ -435,7 +436,7 @@
           <h2>The Departments</h2>
         </div>
 
-        <div class="row gy-4">
+        <div id="cardContainer" class="row gy-4">
 
           <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
             style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="100">
@@ -533,6 +534,42 @@
               <!-- <div class="icon"><i class="bi bi-calendar4-week icon"></i></div> -->
               <h4><a href="department_details.php" class="stretched-link">Magni Dolores</a></h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-broadcast icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-calendar4-week icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate"
+            style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-broadcast icon"></i></div> -->
+              <h4><a href="department_details.php" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -583,6 +620,11 @@
 
         </div>
 
+        <!-- "See More" button -->
+      <div class="text-center mt-4">
+        <a id="seeMoreBtn" class="btn">See More</a>
+      </div>
+      
       </div>
 
     </section>
@@ -621,6 +663,48 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var cardContainer = document.getElementById("cardContainer");
+    var cards = cardContainer.querySelectorAll(".col-xl-3");
+    var seeMoreBtn = document.getElementById("seeMoreBtn");
+
+    var rowsToShow = 1; // Number of rows to show on each "See More" click
+    var cardsPerRow = 4; // Assuming there are 4 cards per row
+    var initialVisibleRows = 3 // Initial number of rows to show
+    var currentVisibleRows = initialVisibleRows; // Track current number of visible rows
+
+    // Initially hide extra rows of cards beyond the initial visible rows
+    for (var i = initialVisibleRows * cardsPerRow; i < cards.length; i++) {
+      cards[i].classList.add("d-none");
+    }
+
+    // Toggle visibility of additional rows of cards
+    seeMoreBtn.addEventListener("click", function () {
+      if (seeMoreBtn.textContent === "See More") {
+        currentVisibleRows += rowsToShow; // Increase visible rows counter
+        for (var i = 0; i < currentVisibleRows * cardsPerRow; i++) {
+          if (cards[i]) {
+            cards[i].classList.remove("d-none"); // Remove d-none class for each card in the next row
+          }
+        }
+        // Update button text based on visibility
+        if (currentVisibleRows * cardsPerRow >= cards.length) {
+          seeMoreBtn.textContent = "See Less";
+        }
+      } else {
+        // Hide all rows beyond the initial visible rows and reset the counter
+        for (var i = initialVisibleRows * cardsPerRow; i < cards.length; i++) {
+          cards[i].classList.add("d-none");
+        }
+        currentVisibleRows = initialVisibleRows;
+        seeMoreBtn.textContent = "See More";
+      }
+    });
+  });
+</script>
+
 
   <!-- reload and back to the top -->
   <script>

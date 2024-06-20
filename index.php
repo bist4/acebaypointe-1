@@ -130,6 +130,27 @@
       margin-top: 20px;
     }
 
+    .text-center {
+      text-align: center;
+      /* Center align the text */
+    }
+
+    .btn-link {
+      background: none;
+      /* Remove background */
+      border: none;
+      /* Remove border */
+      padding: 0;
+      /* Remove padding */
+      font-size: inherit;
+      /* Inherit font size */
+      text-decoration: underline;
+      /* Underline text */
+      color: inherit;
+      /* Inherit text color */
+      cursor: pointer;
+      /* Change cursor to pointer on hover */
+    }
   </style>
 
   <!-- Vendor CSS Files -->
@@ -162,14 +183,15 @@
   <?php require ('assets/links/header.php') ?> <!-- The Header -->
   <!-- Main -->
   <main>
-  <!-- gallery-item gallery-lightbox -->
-  <div class="bg-dark py-5 my-5 position-relative" style="height: 50%;">
-    <img class="gallery-item gallery-lightbox position-absolute top-0 start-0 w-100 h-100" src="assets/img/slide/slide-1.png" style="filter: brightness(50%); object-fit: cover;" />
- 
- 
+    <!-- gallery-item gallery-lightbox -->
+    <div class="bg-dark py-5 my-5 position-relative" style="height: 50%;">
+      <img class="gallery-item gallery-lightbox position-absolute top-0 start-0 w-100 h-100"
+        src="assets/img/slide/slide-1.png" style="filter: brightness(50%); object-fit: cover;" />
 
-      
-    <div class="py-5">
+
+
+
+      <div class="py-5">
       </div>
 
 
@@ -178,14 +200,15 @@
           <div class="indexHidden">
 
             <h2>Welcome to <span>Ace Medical Center Baypointe</span></h2>
-            
+
             <p>Baypointe Hospital and Medical Center is a member of the ACE (Allied Care Experts) Group of Hospitals
               which is now around 40 medical centers, half of which are fully operational. Doctors and investors at
               Baypointe enjoy portability of privileges and benefits like professional practice and management discounts
               in all of the currently operational centers in Luzon Subic, Valenzuela, Baliwag, Pateros, Quezon City,
               Marinduque, Legaspi, Malolos, San Jose Del Monte, San Jose Bulacan and Tuguegarao-Palawan. In Visayas
               Bohol, Tacloban, Cebu, Dumaguete and Bayawan. In Mindanao, Cagayan de Oro, Dipolog and Zamboanga.</p>
-              <button><a href="about_us.php#who_we_are" class="btn btn-primary btn-get-started mb-sm-2">Read More</a></button>
+            <button><a href="about_us.php#who_we_are" class="btn btn-primary btn-get-started mb-sm-2">Read
+                More</a></button>
           </div>
         </div>
       </div>
@@ -206,7 +229,7 @@
               Bohol, Tacloban, Cebu, Dumaguete and Bayawan. In Mindanao, Cagayan de Oro, Dipolog and Zamboanga.</p>
             <a href="about_us.php" class="btn-get-started mb-sm-2">Read More</a>
           </div>
-        </div>  
+        </div>
       </section><!-- End Featured Services Section -->
 
       <!-- Call now Section -->
@@ -286,7 +309,12 @@
                 tempore, cum
                 soluta nobis est eligendi</p>
             </div>
-            <a href="department_and_services.php" class="d-flex justify-content-center">Show More</a>
+
+            <div class="text-center">
+              <a href="department_and_services.php" class="btn btn-link">Show More</a>
+            </div>
+
+
           </div>
 
         </div>
@@ -384,16 +412,16 @@
       }
     </script>
 
-<script>
-  function openLightbox(imageUrl) {
-    document.getElementById('lightbox-image').src = imageUrl;
-    document.getElementById('lightbox').style.display = 'flex';
-  }
+    <script>
+      function openLightbox(imageUrl) {
+        document.getElementById('lightbox-image').src = imageUrl;
+        document.getElementById('lightbox').style.display = 'flex';
+      }
 
-  function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-  }
-</script>
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+      }
+    </script>
 
 </body>
 

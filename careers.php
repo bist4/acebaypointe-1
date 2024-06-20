@@ -31,6 +31,14 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script>
+    // Scroll to the top of the page on page load/reload
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    };
+  </script>
+
+
   <style>
     .portfolio #portfolio-flters {
       padding: 0;
@@ -130,12 +138,12 @@
         </div>
       </div>
     </div> <!-- End of Page Title -->
-
-
     </section><!-- End Portfolio Section -->
+    
     <!-- Main Content of Careers -->
     <main id="main" class="main">
     </main> <!-- End Main -->
+
     <section id="portfolio" class="portfolio career">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -266,8 +274,7 @@
 
     <?php require ('assets/links/back-to-top.php') ?> <!-- Back to Top -->
 
-    <!-- Vendor JS Files -->
-    <!-- Vendor JS Files -->
+
     <script src="assets/vendor_OnePage/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor_OnePage/aos/aos.js"></script>
     <script src="assets/vendor_OnePage/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -279,12 +286,13 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-    <!-- reload and back to the top -->
     <script>
       window.onload = function () {
         window.scrollTo(0, 0);
       }
     </script>
+
+
 
 </body>
 

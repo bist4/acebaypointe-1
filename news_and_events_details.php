@@ -624,7 +624,7 @@
                                         href="assets/img/gallery/gallery-1.jpg"><img
                                             src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
                             </div>
-                            <h2 class="entry-title mb-5"> Dolorum optio tempore voluptas dignissimos cumque fuga
+                            <h2 class="entry-title mb-3"> Dolorum optio tempore voluptas dignissimos cumque fuga
                                 quiquibusdam quia</a>
                             </h2>
 

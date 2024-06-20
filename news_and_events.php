@@ -582,7 +582,7 @@ include ("config/db_con.php"); //Connection to database
 
           <div class="col-lg-8 entries">
 
-            <?php
+            <!-- <
             $news_and_events = mysqli_query($conn, "SELECT * FROM news_and_events WHERE Active = 1");
 
             if (mysqli_num_rows($news_and_events) > 0) {
@@ -590,70 +590,162 @@ include ("config/db_con.php"); //Connection to database
               while ($row = mysqli_fetch_assoc($news_and_events)) {
                 $uniqueId = "collapsenews_and_events" . $counter;
                 ?>
+
                 <article class="entry">
                   <div class="entry-img">
-                    <a href="news_and_events_details.php"><img src="assets/img/slide/slide-3.png" alt="" class="img-fluid"></a>
+                    <a href="news_and_events_details.php"><img src="assets/img/slide/slide-3.png" alt=""
+                        class="img-fluid"></a>
                   </div>
                   <h2 class="entry-title mb-0">
                     <a href="news_and_events_details.php"><?php echo trim($row['Title_News']); ?></a>
                   </h2>
                   <div class="entry-meta">
-                    <h6><span
-                        style="color: <?php echo strtolower($row['News_or_Events']) === 'events' ? '#146635' : '#991B1E'; ?>"><?php echo ucfirst($row['News_or_Events']); ?></span>
-                    </h6>
-                    <p>Posted on <?php echo date('F j, Y', strtotime($row['CreatedAt'])); ?> by
-                      <?php echo $row['Author_News']; ?></p>
-                  </div>
+                    <h6 class="mt-1 mb-2"><a href="news_and_events_details.php"><span
+                          style="background-color: #D3D3D3; border-radius: 5px; padding: 3px 6px 3px 6px; color: <?= strtolower($row['News_or_Events']) === 'events' ? '#146635' : '#991B1E'; ?>;">
+                          <?= ucfirst($row['News_or_Events']); ?>
+                        </span></a></h6>
 
+                    <p>Posted on <?php echo date('F j, Y', strtotime($row['CreatedAt'])); ?> by
+                      <?php echo $row['Author_News']; ?>
+                    </p>
+                  </div>
 
                   <div class="entry-content">
                     <p>
-                      Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi
-                      praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                      Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta.
-                      Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda
-                      perferendis dolore.
+                      sadasdsadasdasdas
+                      sadasdasd
+
+                      sadasdasdddddddddddddddddddddd
+                      asdasdasdasssssssssssssssssssss
+                      sdasdddddddddddddddddddddddddddddd
+                      asddddddddddddddddddddddddddddd
                     </p>
                     <div class="read-more">
                       <a href="news_and_events_details.php">Read More</a>
                     </div>
                   </div>
-                </article><!-- End of the entry -->
+                </article>
+             
 
-                <?php
+                <
                 $counter++;
               }
             } else {
-              ?>
+              ?
               <div class="text-center">
                 No news_and_events records
               </div>
+              <
+            }
+            ?> -->
+            <?php
+            // Assuming $conn is your database connection
+            
+            // Pagination logic
+            $items_per_page = 5; // Number of items per page
+            $current_page = isset($_GET['page']) ? $_GET['page'] : 1; // Get current page number, default to 1
+            
+            // Calculate the starting point for the query
+            $start = ($current_page - 1) * $items_per_page;
+
+            // Combined query for events and news with ordering by ID
+            $query = "(SELECT 'event' as type, EventID as ID, EventTitle as Title, Image1 as Image, Description, Date, Author
+           FROM events WHERE Status = 'APPROVED' AND Active = 1)
+          UNION ALL
+          (SELECT 'news' as type, NewsID as ID, Title_News as Title, Image_News as Image, Description_News as Description, Date, Author_News as Author
+           FROM news WHERE Status = 'APPROVED' AND Active = 1)
+          ORDER BY ID DESC
+          LIMIT $start, $items_per_page";
+
+            $result = mysqli_query($conn, $query);
+
+            while ($row = mysqli_fetch_assoc($result)) {
+              ?>
+              <article class="entry">
+                <div class="entry-img">
+                  <a href="news_and_events_details.php"><img src="assets/img/slide/<?php echo $row['Image']; ?>"
+                      alt="image" class="img-fluid"></a>
+                </div>
+                <h2 class="entry-title mb-0">
+                  <a href="news_and_events_details.php"><?php echo $row['Title']; ?></a>
+                </h2>
+                <div class="entry-meta">
+                  <h6 class="mt-1 mb-2"><a
+                      href="news_and_events_details.php"><span><?php echo ucfirst($row['type']); ?></span></a></h6>
+                  <p>Posted on <?php echo date('F j, Y', strtotime($row['Date'])); ?>
+                    by <?php echo $row['Author']; ?>
+                  </p>
+                </div>
+
+                <div class="entry-content">
+                  <p>
+                    <?php
+                    $message = htmlspecialchars($row['Description']);
+                    $max = 86;
+                    if (strlen($message) > $max) {
+                      $message = wordwrap($message, $max, "<br>\n", true);
+                    }
+                    echo $message;
+                    ?>
+                  </p>
+
+                  <div class="read-more">
+                    <a href="news_and_events_details.php">Read More</a>
+                  </div>
+                </div>
+              </article>
               <?php
             }
+
+            
+            // Pagination links
+            $total_query = "(SELECT COUNT(EventID) as total FROM events WHERE Status = 'APPROVED' AND Active = 1)
+                UNION ALL
+                (SELECT COUNT(NewsID) as total FROM news WHERE Status = 'APPROVED' AND Active = 1)";
+
+            $total_result = mysqli_query($conn, $total_query);
+            $total_row = mysqli_fetch_assoc($total_result);
+            $total_count = $total_row['total'];
+
+            $total_pages = ceil($total_count / $items_per_page);
+
             ?>
-
-
-
             <!-- Pagination -->
             <div class="row justify-content-center justify-content-md-between mt-4">
               <div class="col-12">
                 <hr class="my-4" color="">
               </div>
               <div class="col-12 col-md-auto d-flex justify-content-center justify-content-md-start">
-                <!-- Added ID to the pagination nav -->
                 <nav class="pagination" id="paginationNav">
-                  <span href="inactive" class="current">1</span>
-                  <a href="#" class="inactive">2</a>
-                  <a href="#" class="inactive">3</a> <!-- page where it was chosen -->
-                  <a href="#">4</a>
-                  <a href="#" class="inactive">5</a>
+                  <?php
+                  // Previous page link
+                  if ($current_page > 1) {
+                    echo '<a href="?page=' . ($current_page - 1) . '">Previous</a>';
+                  }
+
+                  // Page numbers
+                  for ($i = 1; $i <= $total_pages; $i++) {
+                    if ($i == $current_page) {
+                      echo '<span class="current">' . $i . '</span>';
+                    } else {
+                      echo '<a href="?page=' . $i . '">' . $i . '</a>';
+                    }
+                  }
+
+                  // Next page link
+                  if ($current_page < $total_pages) {
+                    echo '<a href="?page=' . ($current_page + 1) . '">Next</a>';
+                  }
+                  ?>
                 </nav>
               </div>
               <div class="page col-md-auto d-flex justify-content-center text-md-end mt-3 mt-md-0">
-                <span class="page-number">Page 1 of 5</span>
+                <span class="page-number">Page <?php echo $current_page; ?> of <?php echo $total_pages; ?></span>
               </div>
             </div>
             <!-- End pagination -->
+
+
 
           </div><!-- End blog entries list -->
 

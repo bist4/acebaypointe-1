@@ -125,6 +125,7 @@ strong {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  
 }
 
 
@@ -139,21 +140,36 @@ strong {
   font-weight: 600;
   z-index: 996;
   transition: all 0.5s;
-  padding: 10px 0 10px 30px;
+  padding: 10px 0 10px 0px;
 }
 
+@media screen and (max-width: 768px) {
+  #topbar {
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #topbar .container {
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  #topbar .row {
+    align-items: center;
+  }
+  
+}
 
 #topbar.topbar-scrolled {
-  top: -40px;
+  top: -70px;
 }
-
 
 #topbar i {
-  padding-right: 6px;
+  /* padding-right: 6px; */
   line-height: 0;
 }
-
-
 
 /*--------------------------------------------------------------
 # Header
@@ -167,23 +183,24 @@ strong {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-
 @media (max-width: 992px) {
   #header {
     padding: 5px 0;
-    top: 100px;
+    top: 130px;
   }
 
   #topbar {
-    height: 100px;
+    height: 140px;
   }
 }
+
 
 @media (max-width: 320px) {
   #topbar {
     font-size: 10px;
   }
 }
+
 
 #header.header-scrolled {
   top: 0;
@@ -3653,7 +3670,7 @@ hr {
 }
 
 .table th {
-  background-color: #f2f2f2;
+  background-color: #49BB4B;
 }
 
 .table tbody tr:hover {

@@ -88,9 +88,7 @@
 
     <!-- reload and back to the top -->
     <script>
-        window.onload = function () {
-            window.scrollTo(0, 0);
-        }
+
     </script>
 </body>
 

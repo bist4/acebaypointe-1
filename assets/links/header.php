@@ -44,7 +44,7 @@ include ("config/db_con.php"); // Connection to the database
           ?>
           <div class="col-auto pfy">
             <a href="#" target="_blank" class="messenger">
-              <i class="bi bi-messenger"></i><span>Say hi to ACEMCB on Messenger</span>
+              <i class="bi bi-messenger"></i><span>   Say hi to ACEMCB on Messenger</span>
             </a>
           </div>
         </div>
@@ -70,7 +70,7 @@ include ("config/db_con.php"); // Connection to the database
             <li><a class="nav-link scrollto" href="privacy_policy.php"><span>PRIVACY POLICY</span></a></li>
             <!-- under policy -->
             <li><a class="nav-link scrollto" href="privacy_policy.php#data-privacy"><span><i class="bx bx-chevron-right" style="padding-right: 5px;"></i>DATA PRIVACY</span></a></li>
-            <li><a class="nav-link scrollto" href="privacy_policy.php#online-job-applicants"><span><i class="bx bx-chevron-right" style="padding-right: 5px;"></i>ONLINE JON APPLICANTS</span></a></li>
+            <li><a class="nav-link scrollto" href="privacy_policy.php#online-job-applicants"><span><i class="bx bx-chevron-right" style="padding-right: 5px;"></i>ONLINE JOB APPLICANTS</span></a></li>
             <li><a class="nav-link scrollto" href="privacy_policy.php#website-privacy-policy"><span><i class="bx bx-chevron-right" style="padding-right: 5px;"></i>WEBSITE PRIVACY POLICY</span></a></li>
             <li><a class="nav-link scrollto" href="privacy_policy.php#quality_policy"><span><i class="bx bx-chevron-right" style="padding-right: 5px;"></i>QUALITY POLICY</span></a></li>
           </ul>

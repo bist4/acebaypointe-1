@@ -142,9 +142,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- Side widgets-->
+                <?php require ('assets/links/sidebar_contact.php') ?>
             </div> <!-- End of the Column -->
-            <!-- Side widgets-->
-            <?php require ('assets/links/sidebar_contact.php') ?>
+            
         </main> <!-- End of the main content of EMERGENCY SERVICES -->
     </main> <!-- End Main -->
 </body>

@@ -90,7 +90,9 @@
                   <i class="fa fa-map-marker flex-shrink-0"></i>
                   <div>
                     <h4>Location:</h4>
-                    <p> <?php echo '<a style="color: black;" href="https://www.google.com/maps/place/Allied+Care+Experts+(ACE)+Medical+Center+-+Baypointe/@14.8237799,120.2718323,19z/data=!4m14!1m7!3m6!1s0x3396713dc6158cd5:0xce084c90e0457df1!2sAllied+Care+Experts+(ACE)+Medical+Center+-+Baypointe!8m2!3d14.8238888!4d120.2721641!16s%2Fg%2F1w0h50z9!3m5!1s0x3396713dc6158cd5:0xce084c90e0457df1!8m2!3d14.8238888!4d120.2721641!16s%2Fg%2F1w0h50z9?authuser=2&entry=ttu">' . htmlspecialchars(trim($row['Address'])) . '</a><br>'; ?></p>
+                    <p>
+                      <?php echo '<a style="color: black;" href="https://www.google.com/maps/place/Allied+Care+Experts+(ACE)+Medical+Center+-+Baypointe/@14.8237799,120.2718323,19z/data=!4m14!1m7!3m6!1s0x3396713dc6158cd5:0xce084c90e0457df1!2sAllied+Care+Experts+(ACE)+Medical+Center+-+Baypointe!8m2!3d14.8238888!4d120.2721641!16s%2Fg%2F1w0h50z9!3m5!1s0x3396713dc6158cd5:0xce084c90e0457df1!8m2!3d14.8238888!4d120.2721641!16s%2Fg%2F1w0h50z9?authuser=2&entry=ttu">' . htmlspecialchars(trim($row['Address'])) . '</a><br>'; ?>
+                    </p>
                   </div>
                 </div><!-- End Info Item -->
 
@@ -98,7 +100,9 @@
                   <i class="fa fa-envelope flex-shrink-0"></i>
                   <div>
                     <h4>Email:</h4>
-                    <p><?php echo '<a style="color: black;" href="https://mail.google.com/mail/?view=cm&fs=1&to=baypointehospitalmedicalcenter@yahoo.com">' . htmlspecialchars(trim($row['Email'])) . '</a><br>'; ?></p>
+                    <p>
+                      <?php echo '<a style="color: black;" href="https://mail.google.com/mail/?view=cm&fs=1&to=baypointehospitalmedicalcenter@yahoo.com">' . htmlspecialchars(trim($row['Email'])) . '</a><br>'; ?>
+                    </p>
                   </div>
                 </div><!-- End Info Item -->
 
@@ -128,7 +132,7 @@
                   </div>
                 </div>
               </div> <!-- End Info Item -->
-              
+
             </div>
             <div class="col-lg-7 bg-white"
               style="href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css'">
@@ -138,11 +142,30 @@
                     <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
                       <input type="text" name="name" required class="form-control form-control-lg">
                       <!-- class sa input form-control -->
-                      <label for="designation" class="form-label">Username<span class="text-danger"></span></label>
+                      <label for="designation" class="form-label">Name<span class="text-danger"></span></label>
                       <!-- class sa label form-label -->
                     </div>
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <div class="form-outline">
+                      <input type="tel" name="number" required class="form-control form-control-lg" pattern="0\d{9}"
+                        inputmode="numeric" id="numberInput" maxlength="11" oninput="validateNumberInput()">
+                      <label for="designation" class="form-label">Number<span class="text-danger"></span></label>
+                    </div>
+                  </div>
+
+                  <script>
+                    function validateNumberInput() {
+                      const input = document.getElementById('numberInput');
+
+                      if (input.value.length > 11) {
+                        input.value = input.value.slice(0, 11);
+                      }
+                    }
+                  </script>
+
+
+                  <div class="form-group mt-3">
                     <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
                       <input type="text" name="email" required class="form-control form-control-lg">
                       <!-- class sa input form-control -->
@@ -150,39 +173,38 @@
                       <!-- class sa label form-label -->
                     </div>
                   </div>
-                </div>
-                <div class="form-group mt-3">
-                  <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
-                    <input type="email" name="subject" required class="form-control form-control-lg">
-                    <!-- class sa input form-control -->
-                    <label for="designation" class="form-label">Subject<span class="text-danger"></span></label>
-                    <!-- class sa label form-label -->
+                  <div class="form-group mt-3">
+                    <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+                      <input type="email" name="subject" required class="form-control form-control-lg">
+                      <!-- class sa input form-control -->
+                      <label for="designation" class="form-label">Subject<span class="text-danger"></span></label>
+                      <!-- class sa label form-label -->
+                    </div>
                   </div>
-                </div>
-                <!-- Department Dropdown -->
-                <div class="form-group mt-3">
-                  <select name="department" id="department" class="form-select">
-                    <option value="">Select Department</option>
-                    <option value="Department 1">Department 1</option>
-                    <option value="Department 2">Department 2</option>
-                    <option value="Department 3">Department 3</option>
-                    <option value="Department 1">Department 4</option>
-                    <option value="Department 2">Department 5</option>
-                    <option value="Department 3">Department 6</option>
-                    <option value="Department 1">Department 7</option>
-                    <option value="Department 2">Department 8</option>
-                    <option value="Department 3">Department 9</option>
-                  </select>
-                </div>
-                <div class="form-group mt-3">
-                  <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
-                    <textarea class="form-control form-control-lg" name="message"
-                      style="height: 230px; required"></textarea>
-                    <label for="designation" class="form-label">Message<span class="text-danger"></span></label>
-                    <!-- class sa label form-label -->
+                  <!-- Category Dropdown -->
+                  <div class="form-group mt-3">
+                    <select name="Category" id="Category" class="form-select">
+                      <option value="">Select Category</option>
+                      <option value="Category 1">Category 1</option>
+                      <option value="Category 2">Category 2</option>
+                      <option value="Category 3">Category 3</option>
+                      <option value="Category 1">Category 4</option>
+                      <option value="Category 2">Category 5</option>
+                      <option value="Category 3">Category 6</option>
+                      <option value="Category 1">Category 7</option>
+                      <option value="Category 2">Category 8</option>
+                      <option value="Category 3">Category 9</option>
+                    </select>
                   </div>
-                </div>
-                <div class="text-center appointments-btn"><button type="submit">Send Message</button></div>
+                  <div class="form-group mt-3">
+                    <div class="form-outline"> <!-- fifth div for outline tatas yung label -->
+                      <textarea class="form-control form-control-lg" name="message"
+                        style="height: 162px; required"></textarea>
+                      <label for="designation" class="form-label">Message<span class="text-danger"></span></label>
+                      <!-- class sa label form-label -->
+                    </div>
+                  </div>
+                  <div class="text-center appointments-btn"><button type="submit">Send Message</button></div>
               </form>
             </div><!-- End Contact Form -->
           </div>
@@ -219,6 +241,7 @@
     window.scrollTo(0, 0);
   }
 </script>
+
 
 </body>
 

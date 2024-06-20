@@ -58,15 +58,15 @@
         }
 
         /* Define Philhealth colors */
-        .bg-philhealth-green {
-            background-color: #63a400;
+        /* .bg-philhealth-green {
+            background-color: #63a400; */
             /* Philhealth Green */
-        }
+        /* } */
 
-        .bg-philhealth-yellow {
-            background-color: #FEED23;
+        /* .bg-philhealth-yellow {
+            background-color: #FEED23; */
             /* Philhealth Yellow */
-        }
+        /* } */
 
         /* Define text color */
         body {
@@ -137,7 +137,7 @@
         </div> <!-- End of Page Title -->
 
         <!-- Main content of Philhealth Requirements -->
-        <main id="main" class="main container" style="background-color: #63a400; color: #fff;">
+        <main id="main" class="main container" style="  color: #fff;">
             <!-- Apply Philhealth colors here -->
             <div class="col-lg-16 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                 <div class="content">
@@ -147,8 +147,8 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Category</th>
-                                <th>Documents Needed</th>
+                                <th style="color:#FFFFFF">Category</th>
+                                <th style="color:#FFFFFF">Documents Needed</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -161,9 +161,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="philhealth-category">Individually Paying (Self-Employed/Voluntary Members)
+                                <td class="philhealth-category" style="background-color:#FFFAB8;">Individually Paying (Self-Employed/Voluntary Members)
                                 </td>
-                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px;">
+                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px; background-color:#FFFAB8;">
                                     <ul>
                                         <li>Consectetur adipiscing elit</li>
                                     </ul>
@@ -179,8 +179,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="philhealth-category">Sponsored</td>
-                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px;">
+                                <td class="philhealth-category" style="background-color:#FFFAB8;">Sponsored</td>
+                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px; background-color:#FFFAB8;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
@@ -197,8 +197,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="philhealth-category">Individually Paying (BUNTIS / MANGANGANAK)</td>
-                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px;">
+                                <td class="philhealth-category" style="background-color:#FFFAB8;">Individually Paying (BUNTIS / MANGANGANAK)</td>
+                                <td class="philhealth-documents" style="text-align: left; padding-left: 50px; background-color:#FFFAB8;">
                                     <ul>
                                         <li>Lorem ipsum dolor sit amet (consectetur adipiscing elit)</li>
                                         <li>Consectetur adipiscing elit</li>
@@ -208,7 +208,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="content mt-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="content mt-5" data-aos="fade-up" data-aos-delay="100" style="color:#4F4F4F">
                     <p class="mb-4">Iba pang detalye:</p>
                     <p>Kung sakaling hindi nakalista sa MDR and qualified dependent, magsubmit lamang ng proof of
                         relationship sa Philhealth Officer ng ospital:</p>
