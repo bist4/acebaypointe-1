@@ -1,5 +1,72 @@
 <?php
 include ("config/db_con.php"); //Connection to database
+// Pagination logic
+$items_per_page = 5; // Number of items per page
+$current_page = isset($_GET['page']) ? $_GET['page'] : 1; // Get current page number, default to 1
+
+// Calculate the starting point for the query
+$start = ($current_page - 1) * $items_per_page;
+
+// Combined query for events and news with ordering by ID
+$query = "(SELECT 'event' as type, EventID as ID, EventTitle as Title, Image1 as Image, Description, Date, Author
+FROM events WHERE Status = 'APPROVED' AND Active = 1)
+UNION ALL
+(SELECT 'news' as type, NewsID as ID, Title_News as Title, Image_News as Image, Description_News as Description, Date, Author_News as Author
+FROM news WHERE Status = 'APPROVED' AND Active = 1)
+ORDER BY ID DESC
+LIMIT $start, $items_per_page";
+
+$result = mysqli_query($conn, $query);
+
+
+$header_type = 'NEWS & EVENTS';
+if (isset($_GET['type'])) {
+  if ($_GET['type'] == 'news') {
+    $header_type = 'NEWS';
+  } elseif ($_GET['type'] == 'event') {
+    $header_type = 'EVENTS';
+  }
+}
+
+
+if (isset($_GET['query'])) {
+  $searchQuery = $_GET['query'];
+  // Secure the input to prevent SQL injection
+  $searchQuery = htmlspecialchars($searchQuery, ENT_QUOTES, 'UTF-8');
+
+
+
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  // Prepare the SQL statement with the search query
+  $sql = "
+  (SELECT 'event' as type, EventID as ID, EventTitle as Title, Image1 as Image, Description, Date, Author
+   FROM events
+   WHERE Status = 'APPROVED' AND Active = 1 AND (EventTitle LIKE '%$searchQuery%' OR Description LIKE '%$searchQuery%'))
+  UNION ALL
+  (SELECT 'news' as type, NewsID as ID, Title_News as Title, Image_News as Image, Description_News as Description, Date, Author_News as Author
+   FROM news
+   WHERE Status = 'APPROVED' AND Active = 1 AND (Title_News LIKE '%$searchQuery%' OR Description_News LIKE '%$searchQuery%'))
+  ";
+
+  // Execute the query
+  $result = $conn->query($sql);
+
+  // Check if there are results
+  if ($result->num_rows > 0) {
+    // Output data of each row
+    while ($row = $result->fetch_assoc()) {
+      echo "Type: " . $row["type"] . " - ID: " . $row["ID"] . " - Title: " . $row["Title"] . " - Description: " . $row["Description"] . " - Date: " . $row["Date"] . " - Author: " . $row["Author"] . "<br>";
+    }
+  } else {
+    echo "0 results";
+  }
+
+  $conn->close();
+}
 ?>
 
 <!DOCTYPE html>
@@ -569,7 +636,8 @@ include ("config/db_con.php"); //Connection to database
       <div class="container">
         <div class="col-lg-6">
           <div class=" display-5 fw-bolder text-center text-xl-start my-5">
-            <h1 class="display-5 fw-bolder text-white mb-lg-2">NEWS & EVENTS</h1>
+            <h1 class="display-5 fw-bolder text-white mb-lg-2"><?php echo $header_type; ?></h1>
+            </header>
             <p class="lead text-white-50 mb-0 mb-lg-3"></p>
           </div>
         </div>
@@ -582,133 +650,59 @@ include ("config/db_con.php"); //Connection to database
 
           <div class="col-lg-8 entries">
 
-            <!-- <
-            $news_and_events = mysqli_query($conn, "SELECT * FROM news_and_events WHERE Active = 1");
 
-            if (mysqli_num_rows($news_and_events) > 0) {
-              $counter = 1;
-              while ($row = mysqli_fetch_assoc($news_and_events)) {
-                $uniqueId = "collapsenews_and_events" . $counter;
-                ?>
-
-                <article class="entry">
-                  <div class="entry-img">
-                    <a href="news_and_events_details.php"><img src="assets/img/slide/slide-3.png" alt=""
-                        class="img-fluid"></a>
-                  </div>
-                  <h2 class="entry-title mb-0">
-                    <a href="news_and_events_details.php"><?php echo trim($row['Title_News']); ?></a>
-                  </h2>
-                  <div class="entry-meta">
-                    <h6 class="mt-1 mb-2"><a href="news_and_events_details.php"><span
-                          style="background-color: #D3D3D3; border-radius: 5px; padding: 3px 6px 3px 6px; color: <?= strtolower($row['News_or_Events']) === 'events' ? '#146635' : '#991B1E'; ?>;">
-                          <?= ucfirst($row['News_or_Events']); ?>
-                        </span></a></h6>
-
-                    <p>Posted on <?php echo date('F j, Y', strtotime($row['CreatedAt'])); ?> by
-                      <?php echo $row['Author_News']; ?>
-                    </p>
-                  </div>
-
-                  <div class="entry-content">
-                    <p>
-                      sadasdsadasdasdas
-                      sadasdasd
-
-                      sadasdasdddddddddddddddddddddd
-                      asdasdasdasssssssssssssssssssss
-                      sdasdddddddddddddddddddddddddddddd
-                      asddddddddddddddddddddddddddddd
-                    </p>
-                    <div class="read-more">
-                      <a href="news_and_events_details.php">Read More</a>
-                    </div>
-                  </div>
-                </article>
-             
-
-                <
-                $counter++;
-              }
-            } else {
-              ?
-              <div class="text-center">
-                No news_and_events records
-              </div>
-              <
-            }
-            ?> -->
             <?php
-            // Assuming $conn is your database connection
-            
-            // Pagination logic
-            $items_per_page = 5; // Number of items per page
-            $current_page = isset($_GET['page']) ? $_GET['page'] : 1; // Get current page number, default to 1
-            
-            // Calculate the starting point for the query
-            $start = ($current_page - 1) * $items_per_page;
-
-            // Combined query for events and news with ordering by ID
-            $query = "(SELECT 'event' as type, EventID as ID, EventTitle as Title, Image1 as Image, Description, Date, Author
-           FROM events WHERE Status = 'APPROVED' AND Active = 1)
-          UNION ALL
-          (SELECT 'news' as type, NewsID as ID, Title_News as Title, Image_News as Image, Description_News as Description, Date, Author_News as Author
-           FROM news WHERE Status = 'APPROVED' AND Active = 1)
-          ORDER BY ID DESC
-          LIMIT $start, $items_per_page";
-
-            $result = mysqli_query($conn, $query);
-
             while ($row = mysqli_fetch_assoc($result)) {
               ?>
               <article class="entry">
                 <div class="entry-img">
-                  <a href="news_and_events_details.php"><img src="assets/img/slide/<?php echo $row['Image']; ?>"
-                      alt="image" class="img-fluid"></a>
+                  <a href="news_and_events_details.php?subid=<?php echo $row['ID']; ?>&type=<?php echo $row['type']; ?>">
+                    <img src="assets/img/slide/<?php echo $row['Image']; ?>" alt="image" class="img-fluid">
+                  </a>
                 </div>
                 <h2 class="entry-title mb-0">
-                  <a href="news_and_events_details.php"><?php echo $row['Title']; ?></a>
+                  <a href="news_and_events_details.php?subid=<?php echo $row['ID']; ?>&type=<?php echo $row['type']; ?>">
+                    <?php echo $row['Title']; ?>
+                  </a>
                 </h2>
                 <div class="entry-meta">
-                  <h6 class="mt-1 mb-2"><a
-                      href="news_and_events_details.php"><span><?php echo ucfirst($row['type']); ?></span></a></h6>
-                  <p>Posted on <?php echo date('F j, Y', strtotime($row['Date'])); ?>
-                    by <?php echo $row['Author']; ?>
-                  </p>
+                  <?php
+                  $type = ucfirst($row['type']);
+                  $backgroundColor = ($type == 'News') ? '#146635' : (($type == 'Event') ? '#991B1E' : '#D3D3D3');
+                  ?>
+                  <h6 class="mt-1 mb-2"
+                    style="background-color: <?php echo $backgroundColor; ?>; border-radius: 5px; padding: 3px 6px; width: 50px">
+                    <a href="news_and_events_details.php" style="color: white;"><span><?php echo $type; ?></span></a>
+                  </h6>
+                  <p>Posted on <?php echo date('F j, Y', strtotime($row['Date'])); ?> by <?php echo $row['Author']; ?></p>
                 </div>
-
                 <div class="entry-content">
-                  <p>
-                    <?php
-                    $message = htmlspecialchars($row['Description']);
-                    $max = 86;
-                    if (strlen($message) > $max) {
-                      $message = wordwrap($message, $max, "<br>\n", true);
-                    }
-                    echo $message;
-                    ?>
+                  <p
+                    style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                    <?php echo htmlspecialchars($row['Description']); ?>
                   </p>
-
                   <div class="read-more">
-                    <a href="news_and_events_details.php">Read More</a>
+                    <a
+                      href="news_and_events_details.php?subid=<?php echo $row['ID']; ?>&type=<?php echo $row['type']; ?>">Read
+                      More</a>
                   </div>
                 </div>
               </article>
               <?php
             }
 
-            
             // Pagination links
-            $total_query = "(SELECT COUNT(EventID) as total FROM events WHERE Status = 'APPROVED' AND Active = 1)
+            $total_query = "SELECT COUNT(*) as total FROM (
+                (SELECT EventID as ID FROM events WHERE Status = 'APPROVED' AND Active = 1)
                 UNION ALL
-                (SELECT COUNT(NewsID) as total FROM news WHERE Status = 'APPROVED' AND Active = 1)";
+                (SELECT NewsID as ID FROM news WHERE Status = 'APPROVED' AND Active = 1)
+               ) as combined";
 
             $total_result = mysqli_query($conn, $total_query);
             $total_row = mysqli_fetch_assoc($total_result);
             $total_count = $total_row['total'];
 
             $total_pages = ceil($total_count / $items_per_page);
-
             ?>
             <!-- Pagination -->
             <div class="row justify-content-center justify-content-md-between mt-4">
@@ -743,6 +737,8 @@ include ("config/db_con.php"); //Connection to database
                 <span class="page-number">Page <?php echo $current_page; ?> of <?php echo $total_pages; ?></span>
               </div>
             </div>
+
+
             <!-- End pagination -->
 
 
@@ -756,99 +752,98 @@ include ("config/db_con.php"); //Connection to database
               <!-- Search Form -->
               <!-- Search Form -->
               <div class="sidebar-item search-form">
-                <form action="">
-                  <div class="search-container">
-                    <input type="text" placeholder="Search..." name="search">
-                    <button type="submit"><i class="bi bi-search"></i></button>
-                  </div>
-                </form>
+
+                <?php include 'form_search.php' ?>
+
+
               </div>
               <!-- End Search Form -->
 
               <div>
                 <h3 class="sidebar-title">Recent News</h3>
                 <div class="sidebar-item recent-posts">
-                  <div class="post-item clearfix">
-                    <img src="assets/img/slide/slide-3.png" alt="">
-                    <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
-                    <div class="side-bardate">
-                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News <span>&#47; by MIS
-                            Department</p>
-                    </div>
-                  </div>
+                  <?php
+                  // Assuming you have already established a database connection ($conn) before this code segment
+                  
+                  // Query for recent news
+                  $recent_news_query = "SELECT NewsID as ID, Title_News as Title, Image_News as Image, Description_News as Description, Date, Author_News as Author
+                      FROM news WHERE Status = 'APPROVED' AND Active = 1
+                      ORDER BY Date DESC";
+                  $recent_news_result = mysqli_query($conn, $recent_news_query);
 
-                  <div class="post-item clearfix">
-                    <img src="assets/img/slide/slide-3.png" alt="">
-                    <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
-                    <div class="side-bardate">
-                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in Events <span>&#47; by MIS
-                            Department</p>
-                    </div>
-                  </div>
-
-                  <div class="post-item clearfix">
-                    <img src="assets/img/slide/slide-3.png" alt="">
-                    <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
-                    <div class="side-bardate">
-                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News <span>&#47; by MIS
-                            Department</p>
-                    </div>
-                  </div>
-
-                  <div class="post-item clearfix">
-                    <img src="assets/img/slide/slide-3.png" alt="">
-                    <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
-                    <div class="side-bardate">
-                      <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in Events <span>&#47; by MIS
-                            Department</p>
-                    </div>
-                  </div>
-
-                  <a href="#" class="d-flex justify-content-center" style="font-size: 15px;">See More</a>
-                  <!-- see more button -->
-
-
-                </div><!-- End sidebar recent news-->
-
-                <div>
-                  <h3 class="sidebar-title mt-5">Recent Events</h3>
-                  <div class="sidebar-item recent-posts">
-
+                  // Fetch all news IDs
+                  $news_ids = array();
+                  while ($news = mysqli_fetch_assoc($recent_news_result)) {
+                    $news_ids[] = $news['ID'];
+                    ?>
                     <div class="post-item clearfix">
-                      <img src="assets/img/slide/slide-3.png" alt="">
-                      <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
+                      <img src="assets/img/slide/<?php echo $news['Image']; ?>" alt="">
+                      <h4><a
+                          href="news_and_events_details.php?subid=<?php echo $news['ID']; ?>&type=news"><?php echo $news['Title']; ?></a>
+                      </h4>
                       <div class="side-bardate">
-                        <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News <span>&#47; by
-                              MIS
-                              Department</p>
+                        <p><time
+                            datetime="<?php echo date('Y-m-d', strtotime($news['Date'])); ?>"><?php echo date('M j, Y', strtotime($news['Date'])); ?></time>
+                          <span>&#47; in News <span>&#47; by <?php echo $news['Author']; ?></span></span>
+                        </p>
                       </div>
                     </div>
+                    <?php
+                  }
 
+                  // Generate URL for "See More" link
+                  $all_ids = implode(',', $news_ids); // Join IDs with comma
+                  $see_more_url = "news_and_events_details.php?subid=$all_ids&type=news";
+                  ?>
+
+                  <!-- Output "See More" link -->
+                  <a href="<?php echo $see_more_url; ?>" class="d-flex justify-content-center"
+                    style="font-size: 15px;">See More</a>
+
+                </div>
+              </div>
+
+
+              <div>
+                <h3 class="sidebar-title mt-5">Recent Events</h3>
+                <div class="sidebar-item recent-posts">
+                  <?php
+                  // Query for recent events
+                  $recent_events_query = "SELECT EventID as ID, EventTitle as Title, Image1 as Image, Description, Date, Author
+                                FROM events WHERE Status = 'APPROVED' AND Active = 1
+                                ORDER BY Date DESC LIMIT 5";
+                  $recent_events_result = mysqli_query($conn, $recent_events_query);
+
+                  $event_ids = array();
+                  while ($event = mysqli_fetch_assoc($recent_events_result)) {
+                    $event_ids[] = $event['ID'];
+                    ?>
                     <div class="post-item clearfix">
-                      <img src="assets/img/slide/slide-3.png" alt="">
-                      <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
+                      <img src="assets/img/slide/<?php echo $event['Image']; ?>" alt="">
+                      <h4><a
+                          href="news_and_events_details.php?subid=<?php echo $event['ID']; ?>&type=event"><?php echo $event['Title']; ?></a>
+                      </h4>
                       <div class="side-bardate">
-                        <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in Events <span>&#47; by
-                              MIS
-                              Department</p>
+                        <p><time
+                            datetime="<?php echo date('Y-m-d', strtotime($event['Date'])); ?>"><?php echo date('M j, Y', strtotime($event['Date'])); ?></time>
+                          <span>&#47; in Events <span>&#47; by <?php echo $event['Author']; ?>
+                        </p>
                       </div>
                     </div>
+                    <?php
+                  }
 
-                    <div class="post-item clearfix">
-                      <img src="assets/img/slide/slide-3.png" alt="">
-                      <h4><a href="blog-single.html">Nihil blanditiis at in nihil</a></h4>
-                      <div class="side-bardate">
-                        <p><time datetime="2020-01-01">Jan 1, 2020</time> <span>&#47; in News <span>&#47; by
-                              MIS
-                              Department</p>
-                      </div>
-                    </div>
+                  // Generate URL for "See More" link
+                  $all_ids = implode(',', $event_ids); // Join IDs with comma
+                  $see_more_url = "news_and_events_details.php?subid=$all_ids&type=event";
+                  ?>
 
-                    <a href="#" class="d-flex justify-content-center" style="font-size: 15px;">See More</a>
-                    <!-- see more button -->
-                  </div>
-                </div><!-- End sidebar recent posts-->
-              </div><!-- End sidebar -->
+                  <!-- Output "See More" link -->
+                  <a href="<?php echo $see_more_url; ?>" class="d-flex justify-content-center"
+                    style="font-size: 15px;">See More</a>
+                </div>
+              </div>
+
             </div><!-- End blog sidebar -->
           </div><!-- End sidebars -->
 

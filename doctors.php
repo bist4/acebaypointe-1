@@ -154,7 +154,7 @@
                                                 <option selected disabled value="">Choose Department...</option>
                                                 <?php
 
-                                                $query = "SELECT Department FROM doctors WHERE Active = 1";
+                                                $query = "SELECT DISTINCT Department FROM doctors WHERE Active = 1";
                                                 $result = mysqli_query($conn, $query);
 
                                                 if (mysqli_num_rows($result) > 0) {
@@ -188,7 +188,7 @@
 
                                         // AJAX call to fetch doctor's information
                                         $.ajax({
-                                            url: 'fetch_doctors.php', // Update with your PHP script path
+                                            url: 'FetchData/fetch_doctors.php', // Update with your PHP script path
                                             type: 'POST',
                                             data: {
                                                 department: department
@@ -211,7 +211,7 @@
 
                                         // AJAX call to fetch doctor's information
                                         $.ajax({
-                                            url: 'fetch_doctorname.php', // Update with your PHP script path
+                                            url: 'FetchData/fetch_doctorname.php', // Update with your PHP script path
                                             type: 'POST',
                                             data: {
 
@@ -234,7 +234,7 @@
 
                                         // AJAX call to fetch doctor's information
                                         $.ajax({
-                                            url: 'fetch_DocdepName.php', // Update with your PHP script path
+                                            url: 'FetchData/fetch_DocdepName.php', // Update with your PHP script path
                                             type: 'POST',
                                             data: {
                                                 department: department,
@@ -258,33 +258,27 @@
                                 });
 
                             </script>
-
-
-
-
-
-
-
                         </div>
                     </div>
                 </div>
+
                 <!-- Doctor section-->
                 <div class="bg-light">
-                    <div class="container px-5 my-5" >
+                    <div class="container px-5 my-5">
                         <div class="text-center"></div>
-                        <div class="row gx-5 justify-content-center"  id="doctorInfo">
+                        <div class="row gx-5 justify-content-center" id="doctorInfo">
                             <!-- Doctors -->
                             <?php
                             include ("config/db_con.php");
 
                             // Pagination logic
-                            $items_per_page = 6; // Number of doctors per page
+                            $items_per_page = 10; // Number of doctors per page
                             $current_page = isset($_GET['page']) ? $_GET['page'] : 1; // Get current page number, default to 1
                             
                             // Calculate the starting point for the query
                             $start = ($current_page - 1) * $items_per_page;
 
-                            $doctors_query = "SELECT * FROM doctors WHERE Active = 1 LIMIT $start, $items_per_page";
+                            $doctors_query = "SELECT d.*, ds.* FROM doctors_schedule ds INNER JOIN doctors d ON ds.DoctorID = d.DoctorID WHERE ds.Status = 'Active' AND d.Active = 1 LIMIT $start, $items_per_page";
                             $doctors_result = mysqli_query($conn, $doctors_query);
 
                             if (mysqli_num_rows($doctors_result) > 0) {
@@ -298,7 +292,7 @@
                                                 <div class="mb-3 text-center">
                                                     <h5>Dr. <?php echo htmlspecialchars(trim($row['Doctor_Name'])) ?></h5>
                                                     <div class="member-info text-center mb-2">
-                                                        <span><?php echo htmlspecialchars(trim($row['Specialization'])) ?></span>
+                                                        <span><?php echo htmlspecialchars(trim($row['Department'])) ?></span>
                                                     </div>
                                                 </div>
                                                 <div class="d-grid">
@@ -335,7 +329,7 @@
                                     }
 
                                     // Calculate total doctors count
-                                    $total_doctors_query = "SELECT COUNT(*) as total FROM doctors WHERE Active = 1";
+                                    $total_doctors_query = "SELECT COUNT(*) as total FROM doctors_schedule WHERE Status = 'Active'";
                                     $total_doctors_result = mysqli_query($conn, $total_doctors_query);
                                     $total_doctors_row = mysqli_fetch_assoc($total_doctors_result);
                                     $total_doctors = $total_doctors_row['total'];
@@ -343,8 +337,19 @@
                                     // Calculate total pages
                                     $total_pages = ceil($total_doctors / $items_per_page);
 
+                                    // Determine start and end of pagination links
+                                    $start = max(1, $current_page - 2); // Start with at least the first page
+                                    $end = min($start + 4, $total_pages); // Show up to 5 pages
+                                    
                                     // Page numbers
-                                    for ($i = 1; $i <= $total_pages; $i++) {
+                                    if ($start > 1) {
+                                        echo '<a href="?page=1">1</a>'; // Always show first page link
+                                        if ($start > 2) {
+                                            echo '<span class="ellipsis">...</span>'; // Show ellipsis if more than one page away from the first page
+                                        }
+                                    }
+
+                                    for ($i = $start; $i <= $end; $i++) {
                                         if ($i == $current_page) {
                                             echo '<span class="current">' . $i . '</span>';
                                         } else {
@@ -364,6 +369,9 @@
                                     <?php echo $total_pages; ?></span>
                             </div>
                         </div>
+
+
+
                         <!-- End pagination -->
                     </div>
 

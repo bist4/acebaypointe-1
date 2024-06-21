@@ -1,12 +1,12 @@
 <?php
 // Establish database connection (assuming $conn is already defined)
-include ("config/db_con.php");
+include ("../config/db_con.php");
  
 // $department = $_POST['department'];
 $doctorName = $_POST['doctorName'];
 
 // Query to fetch doctor's information
-$query = "SELECT Doctor_Name, Specialization, Department, Image, DoctorID FROM doctors WHERE Active = 1  AND Doctor_Name = ?";
+$query = "SELECT d.*, ds.* FROM doctors_schedule ds INNER JOIN doctors d ON ds.DoctorID = d.DoctorID WHERE ds.Status = 'Active' AND d.Doctor_Name = ?";
 $stmt = mysqli_prepare($conn, $query);
 mysqli_stmt_bind_param($stmt, 's',  $doctorName);
 mysqli_stmt_execute($stmt);
@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) {
                                              <div class="mb-3 text-center">';
         echo                                        '<h5>Dr.'. htmlspecialchars(trim($row['Doctor_Name'])).'</h5>';
         echo                                        '<div class="member-info text-center mb-2">';
-        echo                                             '<span>'.htmlspecialchars(trim($row['Specialization'])).'</span>';
+        echo                                             '<span>'.htmlspecialchars(trim($row['Department'])).'</span>';
         echo                                         ' </div>';
         echo                                    ' </div>';
         echo                                    '<div class="d-grid">';
@@ -39,7 +39,7 @@ if (mysqli_num_rows($result) > 0) {
   
     }
 } else {
-    echo '<p>No doctors found for the selected department and name.</p>';
+    echo '<p class="text-center">No doctors found for the selected department and name.</p>';
 }
 
 // Close statement and connection

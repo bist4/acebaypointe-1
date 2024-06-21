@@ -48,14 +48,30 @@ if ($row = mysqli_fetch_assoc($table)) {
                         </ul>
                     </div>
                     <div>
-                        <p><strong>Note: </strong>For <strong>On Call</strong> and
-                            <strong>By
-                                Appointment</strong> Status, <br>
-                            <strong>0939-915-7633 </strong>Local
-                            200 for Smart <br> <strong>0917-545-1566</strong> Local 200
-                            for
-                            Globe
+                        <p>Note: For <strong>On Call</strong> and By Appointment Status, <br>
+                        Call <strong><a href="tel:" style="color: black">0939-915-7633</a></strong> Local 200 for Smart <br>
+                        Call <strong><a href="tel:" style="color: black">0917-545-1566</a></strong> Local 200 for Globe
                         </p>
+                        
+                        <?php
+                        $query = "SELECT Sec_Number FROM doctors_schedule";
+                        $result = mysqli_query($conn, $query);
+                    
+        
+                        // Check if Sec_Number is not empty
+                        if (($row['Sec_Number'])) {
+                            // If the number exists in the database, display it
+                            echo '
+                                <p style="background: #3fbbc0; color: white; text-align: center">Secretary Contact Number
+                                <a href="tel:" style="color: white"> <strong>' . htmlspecialchars($row['Sec_Number']) . '</strong></a>
+                                </p>';
+                        } else {
+                            // If the database is null, display the default message
+                            echo '
+                                <p>
+                                </p>';
+                        }
+                        ?>
                     </div>
                 </div> <!-- End of Appointment item content -->
             </div> <!-- End of appointment item two right -->

@@ -1,84 +1,51 @@
 <?php
-include ("config/db_con.php"); //Connection to database
+include ("config/db_con.php"); // Connection to database
 
-if (isset($_GET['subid']) && !empty($_GET['subid']) && isset($_GET['type']) && !empty($_GET['type'])) {
+if (isset($_GET['query'])) {
+    $searchQuery = $_GET['query'];
 
-    $subid = explode(',', $_GET['subid']);
-    $allsubid = array();
-
-    $type = $_GET['type'];
-
-    if ($type == 'event') {
-        // Fetch details from the events table
-        $sql = "SELECT EventID as ID, EventTitle as Title, Image1 as Image, Description, Date, Author FROM events WHERE EventID IN (" . implode(',', array_fill(0, count($subid), '?')) . ")";
-    } elseif ($type == 'news') {
-        // Fetch details from the news table
-        $sql = "SELECT NewsID as ID, Title_News as Title, Image_News as Image, Description_News as Description, Date, Author_News as Author FROM news WHERE NewsID IN (" . implode(',', array_fill(0, count($subid), '?')) . ")";
-    } else {
-        echo "Invalid type provided.";
-        exit();
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
 
-    // Prepare and execute the query
-    $stmt = mysqli_prepare($conn, $sql);
-    if ($stmt) {
-        // Bind parameters dynamically based on the number of subids
-        $types = str_repeat('i', count($subid)); // Assuming subid contains integers
-        mysqli_stmt_bind_param($stmt, $types, ...$subid);
+    // Prepare the SQL statement with the search query using prepared statements
+    $sql = "
+    (SELECT 'event' as type, EventID as ID, EventTitle as Title, Image1 as Image, Description, Date, Author
+     FROM events
+     WHERE Status = 'APPROVED' AND Active = 1 AND (EventTitle LIKE ?))
+    UNION ALL
+    (SELECT 'news' as type, NewsID as ID, Title_News as Title, Image_News as Image, Description_News as Description, Date, Author_News as Author
+     FROM news
+     WHERE Status = 'APPROVED' AND Active = 1 AND (Title_News LIKE ?))
+    ";
 
-        mysqli_stmt_execute($stmt);
-        $resultdata = mysqli_stmt_get_result($stmt);
-        $alldata = [];  // Initialize an empty array to store all data
+    // Prepare the statement
+    $stmt = $conn->prepare($sql);
+    $searchTerm = "%$searchQuery%";
+    $stmt->bind_param('ss', $searchTerm, $searchTerm);
 
-        if ($resultdata) {
+    // Execute the query
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-            while ($row = mysqli_fetch_assoc($resultdata)) {
-                // Fetch each row and assign its values to variables
-                $title = $row['Title'];
-                $description = $row['Description'];
-                $author = $row['Author'];
-                $date = $row['Date'];
-                $image = $row['Image'];
-
-                // Create an associative array for each row
-                $alldata[] = [
-                    'Title' => $title,
-                    'Description' => $description,
-                    'Author' => $author,
-                    'Date' => $date,
-                    'Image' => $image
-                ];
-            }
-
-            if (empty($alldata)) {
-                echo 'No data found.';
-            } else {
-                // Do something with $alldata, such as displaying or processing it further
-            }
-
-
-        } else {
-            echo "Error fetching results: " . mysqli_error($conn);
+    // Fetch results into an array
+    $resultdata = [];
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $resultdata[] = $row;
         }
-        // Close the statement
-        mysqli_stmt_close($stmt);
     } else {
-        echo "Error preparing statement: " . mysqli_error($conn);
+        echo "0 results";
     }
-} else {
-    echo "Required parameters not provided.";
+
+    $stmt->close();
+    $conn->close();
 }
 
-$header_type = 'NEWS & EVENTS';
-if (isset($_GET['type'])) {
-    if ($_GET['type'] == 'news') {
-        $header_type = 'NEWS';
-    } elseif ($_GET['type'] == 'event') {
-        $header_type = 'EVENTS';
-    }
-}
+
+
 ?>
-
 
 
 
@@ -690,8 +657,7 @@ if (isset($_GET['type'])) {
             <div class="container">
                 <div class="col-lg-6">
                     <div class=" display-5 fw-bolder text-center text-xl-start my-5">
-                        <!-- <h1 class="display-5 fw-bolder text-white mb-lg-2">NEWS & EVENTS DETAILS</h1> -->
-                        <h1 class="display-5 fw-bolder text-white mb-lg-2"><?php echo $header_type; ?></h1>
+                        <h1 class="display-5 fw-bolder text-white mb-lg-2">NEWS & EVENTS DETAILS</h1>
                         <p class="lead text-white-50 mb-0 mb-lg-3"></p>
                     </div>
                 </div>
@@ -704,41 +670,66 @@ if (isset($_GET['type'])) {
 
 
                     <div class="col-lg-8 entries">
-                        <?php foreach ($alldata as $data): ?>
-                            <article class="entry entry-single">
-                                <div class="swiper-slide"><a class="gallery-lightbox"
-                                        href="assets/img/slide/<?php echo $data['Image']; ?>"><img
-                                            src="assets/img/slide/<?php echo $data['Image']; ?>" class="img-fluid"
-                                            alt=""></a>
-                                </div>
+                        <?php if (!empty($resultdata)): ?>
+                            <?php foreach ($resultdata as $data): ?>
+                                <article class="entry entry-single">
+                                    <div class="entry-img">
+                                        <div class="swiper-slide">
+                                            <a class="gallery-lightbox"
+                                                href="assets/img/slide/<?php echo htmlspecialchars($data['Image']); ?>">
+                                                <img src="assets/img/slide/<?php echo htmlspecialchars($data['Image']); ?>"
+                                                    class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h2 class="entry-title mb-3">
+                                        <a>
+                                            <?php echo htmlspecialchars($data['Title']); ?>
+                                        </a>
+                                    </h2>
 
-                                <h2 class="entry-title mt-3 mb-0">
-                                    <a><?php echo htmlspecialchars($data['Title']); ?></a>
-                                </h2>
-
-                                <div class="entry-meta">
-                                    <?php
-                                    $type = $_GET['type'];
-                                    $backgroundColor = ($type == 'news') ? '#146635' : (($type == 'event') ? '#991B1E' : '#D3D3D3');
-                                    ?>
-                                    <h6 class="mt-0 mb-2"
-                                        style="background-color: <?php echo $backgroundColor; ?>; border-radius: 5px; padding: 3px 6px; width: 50px">
-                                        <a href="news_and_events_details.php"
-                                            style="color: white;"><span><?php echo ucfirst($type); ?>
-                                            </span></a>
-                                    </h6>
-
-                                    <p> Posted on <?php echo date('F j, Y', strtotime($data['Date'])); ?>
-                                        by <?php echo $data['Author']; ?></p>
-                                </div>
-
-                                <div class="entry-content">
-                                    <p><?php echo $data['Description']; ?></p>
-                                </div>
+                                    <div class="entry-meta">
+                                        <h6 class="mt-0 mb-2" <?php
+                                        $style = '';
+                                        if ($data['type'] == 'news') {
+                                            $style = 'background-color: #146635; border-radius: 5px; padding: 3px 6px; width: 50px;';
+                                        } elseif ($data['type'] == 'event') {
+                                            $style = 'background-color: #991B1E; border-radius: 5px; padding: 3px 6px; width: 55px;';
+                                        }
+                                        echo 'style="' . htmlspecialchars($style) . '"';
+                                        ?>>
+                                            <a href="news_and_events_details.php"
+                                                style="color: <?php echo htmlspecialchars($textColor); ?>;">
+                                                <?php
+                                                if ($data['type'] == 'news') {
+                                                    echo '<span style="color: white;">News</span>';
+                                                } elseif ($data['type'] == 'event') {
+                                                    echo '<span style="color: white;">Events</span>';
+                                                }
+                                                ?>
+                                            </a>
+                                        </h6>
 
 
-                            </article><!-- End blog entry -->
-                        <?php endforeach; ?>
+
+
+                                        <p>Posted on <?php echo date('F j, Y', strtotime($data['Date'])); ?> by
+                                            <?php echo htmlspecialchars($data['Author']); ?>
+                                        </p>
+                                    </div>
+
+                                    <div class="entry-content">
+                                        <p>
+                                            <?php echo htmlspecialchars($data['Description']); ?>
+                                        </p>
+                                    </div>
+                                </article><!-- End blog entry -->
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <p class="text-center">No data found.</p>
+                        <?php endif; ?>
+
+
                     </div><!-- End blog entries list -->
 
                     <!-- SIDE BAR -->

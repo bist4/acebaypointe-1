@@ -1,7 +1,7 @@
 <?php
 // Include your database connection or any necessary files
 // Example assuming you have a $conn variable for database connection
-include ("config/db_con.php");
+include ("../config/db_con.php");
 // Check if department and doctorName parameters are set
 if (isset($_POST['department']) && isset($_POST['doctorName'])) {
     $department = $_POST['department'];
@@ -11,7 +11,7 @@ if (isset($_POST['department']) && isset($_POST['doctorName'])) {
 
     // Construct your SQL query based on the received parameters
     // Example query to fetch doctors based on department and/or doctor name
-    $query = "SELECT * FROM doctors WHERE Active = 1";
+    $query = "SELECT d.*, ds.* FROM doctors_schedule ds INNER JOIN doctors d ON ds.DoctorID = d.DoctorID WHERE ds.Status = 'Active'";
 
     if (!empty($department)) {
         $query .= " AND Department = '" . mysqli_real_escape_string($conn, $department) . "'";
@@ -38,7 +38,7 @@ if (isset($_POST['department']) && isset($_POST['doctorName'])) {
                                                 <div class="mb-3 text-center">';
            echo                                        '<h5>Dr.'. htmlspecialchars(trim($row['Doctor_Name'])).'</h5>';
            echo                                        '<div class="member-info text-center mb-2">';
-           echo                                             '<span>'.htmlspecialchars(trim($row['Specialization'])).'</span>';
+           echo                                             '<span>'.htmlspecialchars(trim($row['Department'])).'</span>';
            echo                                         ' </div>';
            echo                                    ' </div>';
            echo                                    '<div class="d-grid">';
@@ -53,7 +53,7 @@ if (isset($_POST['department']) && isset($_POST['doctorName'])) {
          
         }
     } else {
-        echo '<p>No doctors found matching the criteria.</p>';
+        echo '<p class="text-center">No doctors found matching the criteria.</p>';
     }
 
     // Free result set
