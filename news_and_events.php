@@ -657,7 +657,7 @@ if (isset($_GET['query'])) {
               <article class="entry">
                 <div class="entry-img">
                   <a href="news_and_events_details.php?subid=<?php echo $row['ID']; ?>&type=<?php echo $row['type']; ?>">
-                    <img src="assets/img/slide/<?php echo $row['Image']; ?>" alt="image" class="img-fluid">
+                    <img src="assets/img/uploads/<?php echo $row['Image']; ?>" alt="image" class="img-fluid">
                   </a>
                 </div>
                 <h2 class="entry-title mb-0">

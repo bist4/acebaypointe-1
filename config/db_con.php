@@ -4,7 +4,7 @@ $servername= "localhost";
 $username= "root";
 $password = "";
 
-$dbname = "acemcbaypointe";
+$dbname = "acemcb";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 

@@ -707,8 +707,8 @@ if (isset($_GET['type'])) {
                         <?php foreach ($alldata as $data): ?>
                             <article class="entry entry-single">
                                 <div class="swiper-slide"><a class="gallery-lightbox"
-                                        href="assets/img/slide/<?php echo $data['Image']; ?>"><img
-                                            src="assets/img/slide/<?php echo $data['Image']; ?>" class="img-fluid"
+                                        href="assets/img/uploads/<?php echo $data['Image']; ?>"><img
+                                            src="assets/img/uploads/<?php echo $data['Image']; ?>" class="img-fluid"
                                             alt=""></a>
                                 </div>
 
@@ -723,7 +723,7 @@ if (isset($_GET['type'])) {
                                     ?>
                                     <h6 class="mt-0 mb-2"
                                         style="background-color: <?php echo $backgroundColor; ?>; border-radius: 5px; padding: 3px 6px; width: 50px">
-                                        <a href="news_and_events_details.php"
+                                        <a  
                                             style="color: white;"><span><?php echo ucfirst($type); ?>
                                             </span></a>
                                     </h6>
@@ -771,7 +771,7 @@ if (isset($_GET['type'])) {
                                         $news_ids[] = $news['ID'];
                                         ?>
                                         <div class="post-item clearfix">
-                                            <img src="assets/img/slide/<?php echo $news['Image']; ?>" alt="">
+                                            <img src="assets/img/uploads/<?php echo $news['Image']; ?>" alt="">
                                             <h4><a
                                                     href="news_and_events_details.php?subid=<?php echo $news['ID']; ?>&type=news"><?php echo $news['Title']; ?></a>
                                             </h4>
@@ -814,7 +814,7 @@ if (isset($_GET['type'])) {
                                         $event_ids[] = $event['ID'];
                                         ?>
                                         <div class="post-item clearfix">
-                                            <img src="assets/img/slide/<?php echo $event['Image']; ?>" alt="">
+                                            <img src="assets/img/uploads/<?php echo $event['Image']; ?>" alt="">
                                             <h4><a
                                                     href="news_and_events_details.php?subid=<?php echo $event['ID']; ?>&type=event"><?php echo $event['Title']; ?></a>
                                             </h4>
