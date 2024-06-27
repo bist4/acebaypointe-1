@@ -1,41 +1,35 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+require('../config/db_con.php');
+session_start();
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+// Validate and sanitize input data
+$name = htmlspecialchars(trim($_POST['name']));
+$number = htmlspecialchars(trim($_POST['number']));
+$email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+$subject = htmlspecialchars(trim($_POST['subject']));
+$category = htmlspecialchars(trim($_POST['Category']));
+$message = htmlspecialchars(trim($_POST['message']));
+$date = date('Y-m-d H:i:s');  // Current date and time
+$status = 'PENDING';
+$active = 1;
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+// Determine the department based on the category
+$department = '';  // Adjust logic to determine department from the category
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+// Prepare SQL statement
+$stmt = $conn->prepare("INSERT INTO inbox (Name, Email, Subject, Department, Message, Date, Status, Active) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+// Bind parameters
+$stmt->bind_param("sssssssi", $name, $email, $subject, $department, $message, $date, $status, $active);
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+// Execute statement
+if ($stmt->execute()) {
+    echo 'OK';
+} else {
+    echo "Error: " . $stmt->error;
+}
 
-  echo $contact->send();
+// Close statement and connection
+$stmt->close();
+$conn->close();
 ?>

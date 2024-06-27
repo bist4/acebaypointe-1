@@ -70,57 +70,54 @@
                         <p class="text-lg text-gray-500"></p>
                     </div>
                     <div class="row gx-5">
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
-                                <div class="card-body p-4">
-                                    <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <a class="text-decoration-none link-dark stretched-link"
-                                        href="promo_and_packages_details.php">
-                                        <div class="h5 card-title mb-3">Promo & Packages</div>
-                                        <!-- Title of the promo -->
-                                        <div class="small">
-                                            <div class="text-muted">Valid until: <strong>May 1, 2024</strong></div>
+                        <?php
+                        // Database connection
+                        include 'config/db_con.php';
+
+                        // Fetch approved and active promos that are not expired
+                        $promoQuery = "SELECT * FROM promo_and_packages WHERE Status = 'APPROVED' AND Active = 1 AND Date >= CURDATE() ORDER BY Promo_and_PackagesID";
+                        $result = $conn->query($promoQuery);
+                        ?>
+
+                        <div class="row">
+                            <?php
+                            if ($result->num_rows > 0) {
+                                // Output data of each row
+                                while ($row = $result->fetch_assoc()) {
+                                    ?>
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <img class="card-img-top"
+                                                src="assets/img/uploads/<?php echo $row['Image_Promo']; ?>"
+                                                alt="<?php echo $row['Title_Promo']; ?>">
+                                            <div class="card-body p-4">
+                                                <a class="text-decoration-none link-dark stretched-link"
+                                                    href="promo_and_packages_details.php?id=<?php echo $row['Promo_and_PackagesID']; ?>">
+                                                    <div class="h5 card-title mb-3"><?php echo $row['Title_Promo']; ?></div>
+                                                    <div class="small">
+                                                        <div class="text-muted">Valid until:
+                                                            <strong><?php echo date("F j, Y", strtotime($row['Date'])); ?></strong>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
+                                    </div>
+                                    <?php
+                                }
+                            } else {
+                                echo "<p class='text-center'>No current promos found.</p>";
+                            }
+
+                            $conn->close();
+                            ?>
                         </div>
 
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
-                                <div class="card-body p-4">
-                                    <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <a class="text-decoration-none link-dark stretched-link"
-                                        href="promo_and_packages_details.php">
-                                        <div class="h5 card-title mb-3">Promo & Packages</div>
-                                        <!-- Title of the promo -->
-                                        <div class="small">
-                                            <div class="text-muted">Valid until: <strong>May 1, 2024</strong></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
-                                <div class="card-body p-4">
-                                    <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <a class="text-decoration-none link-dark stretched-link"
-                                        href="promo_and_packages_details.php">
-                                        <div class="h5 card-title mb-3">Promo & Packages</div>
-                                        <!-- Title of the promo -->
-                                        <div class="small">
-                                            <div class="text-muted">Valid until: <strong>May 1, 2024</strong></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+
+
+
+                </div>
                 </div>
             </section>
 
@@ -132,101 +129,46 @@
                         <p class="text-lg text-gray-500"></p>
                     </div>
                     <div class="row gx-5" id="cardContainer">
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0 ">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
-                                <div class="card-body p-4">
-                                    <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Promo & Packages</div>
-                                    <!-- Title of the promo -->
-                                    <div class="small">
-                                        <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
+                        <?php
+
+                        include 'config/db_con.php';
+                        // Fetch expired promos
+                        $expiredPromoQuery = "SELECT * FROM promo_and_packages WHERE Date < CURDATE() AND Status = 'APPROVED' AND Active = 1";
+                        $expiredResult = $conn->query($expiredPromoQuery);
+                        ?>
+
+                        <div class="row">
+                            <?php
+                            if ($expiredResult->num_rows > 0) {
+                                // Output data of each row
+                                while ($row = $expiredResult->fetch_assoc()) {
+                                    ?>
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <img class="card-img-top"
+                                                src="assets/img/uploads/<?php echo $row['Image_Promo']; ?>"
+                                                alt="<?php echo $row['Title_Promo']; ?>">
+                                            <div class="card-body p-4">
+                                                <div class="h5 card-title mb-3"><?php echo $row['Title_Promo']; ?></div>
+                                                <div class="small">
+                                                    <div class="text-muted">Expired on
+                                                        <strong><?php echo date("F j, Y", strtotime($row['Date'])); ?></strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- </a> -->
-                                </div>
-                            </div>
+                                    <?php
+                                }
+                            } else {
+                                echo "<p class='text-center'>No expired promos found.</p>";
+                            }
+
+                            $conn->close();
+                            ?>
                         </div>
 
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
-                                <div class="card-body p-4">
-                                    <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Promo & Packages</div>
-                                    <!-- Title of the promo -->
-                                    <div class="small">
-                                        <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
-                                    </div>
-                                    <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
-                                <div class="card-body p-4">
-                                    <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Promo & Packages</div>
-                                    <!-- Title of the promo -->
-                                    <div class="small">
-                                        <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
-                                    </div>
-                                    <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
-                                <div class="card-body p-4">
-                                    <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Promo & Packages</div>
-                                    <!-- Title of the promo -->
-                                    <div class="small">
-                                        <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
-                                    </div>
-                                    <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
-                                <div class="card-body p-4">
-                                    <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Promo & Packages</div>
-                                    <!-- Title of the promo -->
-                                    <div class="small">
-                                        <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
-                                    </div>
-                                    <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="...">
-                                <div class="card-body p-4">
-                                    <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                                    <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
-                                    <div class="h5 card-title mb-3">Promo & Packages</div>
-                                    <!-- Title of the promo -->
-                                    <div class="small">
-                                        <div class="text-muted">Expired on <strong>May 1, 2024</strong></div>
-                                    </div>
-                                    <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                     <div class="text-center mt-4">

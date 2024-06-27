@@ -1,3 +1,66 @@
+<?php
+include ("config/db_con.php"); //Connection to database
+
+if (isset($_GET['id']) && !empty($_GET['id'])) {
+
+    $id = explode(',', $_GET['id']);
+    $allsubid = array();
+
+    // Fetch details from the events table
+    $sql = "SELECT * FROM promo_and_packages WHERE Promo_and_PackagesID IN (" . implode(',', array_fill(0, count($id), '?')) . ")";
+
+
+
+    // Prepare and execute the query
+    $stmt = mysqli_prepare($conn, $sql);
+    if ($stmt) {
+        // Bind parameters dynamically based on the number of subids
+        $types = str_repeat('i', count($id)); // Assuming id contains integers
+        mysqli_stmt_bind_param($stmt, $types, ...$id);
+
+        mysqli_stmt_execute($stmt);
+        $resultdata = mysqli_stmt_get_result($stmt);
+        $alldata = [];  // Initialize an empty array to store all data
+
+        if ($resultdata) {
+
+            while ($row = mysqli_fetch_assoc($resultdata)) {
+                // Fetch each row and assign its values to variables
+                $title = $row['Title_Promo'];
+                $description = $row['Description_Promo'];
+                $date = $row['Date'];
+                $image = $row['Image_Promo'];
+
+                // Create an associative array for each row
+                $alldata[] = [
+                    'Title_Promo' => $title,
+                    'Description_Promo' => $description,
+                    'Date' => $date,
+                    'Image_Promo' => $image
+                ];
+            }
+
+            if (empty($alldata)) {
+                echo 'No data found.';
+            } else {
+                // Do something with $alldata, such as displaying or processing it further
+            }
+
+
+        } else {
+            echo "Error fetching results: " . mysqli_error($conn);
+        }
+        // Close the statement
+        mysqli_stmt_close($stmt);
+    } else {
+        echo "Error preparing statement: " . mysqli_error($conn);
+    }
+} else {
+    echo "Required parameters not provided.";
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,45 +130,28 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <!-- Post content-->
-                        <article>
-                            <!-- Post header-->
-                            <header class="mb-4">
-                                <!-- Post title-->
-                                <h1 class="fw-bolder mb-1">Fermentum et sollicitudin ac orci</h1>
-                            </header>
-                            <!-- Preview image figure-->
-                            <figure class="mb-4"><img class="img-fluid rounded"
-                                    src="assets/img/announcement/packages.png" alt="..." /></figure>
-                            <!-- Post content-->
-                            <div class="mb-5">
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ultricies lacus sed turpis
-                                    tincidunt id. Eget nullam non nisi est sit amet facilisis. Dui nunc mattis enim ut.
-                                    Lectus proin nibh nisl condimentum. Vestibulum lectus mauris ultrices eros in.
-                                    Semper quis lectus nulla at volutpat diam.</p>
-                                <p class="mb-4">The universe is large and old, and the ingredients for life as we
-                                    know it are everywhere, so there's no reason to think that Earth would be unique in
-                                    that regard. Whether of not the life became intelligent is a different question, and
-                                    we'll see if we find that.</p>
-                                <p class="mb-4">Tristique et egestas quis ipsum suspendisse ultrices gravida dictum
-                                    fusce. Vestibulum mattis ullamcorper velit sed ullamcorper. Mi proin sed libero
-                                    enim. In iaculis nunc sed augue lacus viverra vitae. Eget est lorem ipsum dolor.
-                                    Nibh tellus molestie nunc non blandit massa. Euismod nisi porta lorem mollis aliquam
-                                    ut. Aliquet nibh praesent tristique magna sit amet purus gravida. Urna nec tincidunt
-                                    praesent semper feugiat nibh sed. Sed enim ut sem viverra aliquet eget sit.
-                                    Malesuada pellentesque elit eget gravida. Viverra nibh cras pulvinar mattis nunc
-                                    sed. Ultricies integer quis auctor elit sed.</p>
-                                <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
-                                <p class="mb-4">Sit amet dictum sit amet justo donec enim. Proin libero nunc consequat
-                                    interdum varius. Fermentum dui faucibus in ornare quam viverra orci sagittis. Eget
-                                    est lorem ipsum dolor sit amet consectetur. Tellus in metus vulputate eu scelerisque
-                                    felis imperdiet.</p>
-                                <a href="contact_us.php" class="appointments-btn"
-                                    style="display: block; text-align: center; background-color: #3fbbc0; padding: 10px; color: white; width: fit-content; margin: 0 auto;">Have
-                                    a question? Contact Us</a>
+                        <?php foreach ($alldata as $data): ?>
+                            <article>
+                                <!-- Post header-->
+                                <header class="mb-4">
+                                    <!-- Post title-->
+                                    <h1 class="fw-bolder mb-1"><?php echo $data['Title_Promo']?></h1>
 
-                            </div>
-                        </article>
+                                </header>
+                                <!-- Preview image figure-->
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="assets/img/uploads/<?php echo $data['Image_Promo']?>" alt="..." /></figure>
+                                <!-- Post content-->
+                                <div class="mb-5">
+                                    <p class="mb-4"><?php echo $data['Description_Promo']?></p>
+                                     
+                                    <a href="contact_us.php" class="appointments-btn"
+                                        style="display: block; text-align: center; background-color: #3fbbc0; padding: 10px; color: white; width: fit-content; margin: 0 auto;">Have
+                                        a question? Contact Us</a>
+
+                                </div>
+                            </article>
+                        <?php endforeach; ?>
 
                     </div>
                     <!-- Side widgets-->
@@ -131,7 +177,8 @@
                             <li class="phone"><i class="fa fa-phone"></i><strong>Phone</strong>
                                 <?php echo '<a style="color: black;" href="tel:' . htmlspecialchars(trim($phone)) . '">' . htmlspecialchars(trim($phone)) . '</a><br>'; ?>
                             </li>
-                            <li class="mobile" style="list-style-type: none; margin:0;"><i class="fa fa-mobile"></i><strong>Mobile</strong>
+                            <li class="mobile" style="list-style-type: none; margin:0;"><i
+                                    class="fa fa-mobile"></i><strong>Mobile</strong>
                                 <?php echo '<a style="color: black;" href="tel:' . htmlspecialchars(trim($mobile)) . '">' . htmlspecialchars(trim($mobile)) . '</a><br>'; ?>
                             </li>
                         </ul>

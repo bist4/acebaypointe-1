@@ -287,8 +287,8 @@
                                     <div class="col-lg-5 col-xl-4 mb-lg-5">
                                         <div class="card mb-5 mb-xl-0">
                                             <div class="card-body p-5 gray-shadow">
-                                                <img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
-                                                    alt="" class="img-fluid mb-4">
+                                                <img src="assets/img/uploads/<?php echo $row['Image']?>"
+                                                    alt=""  class="img-fluid mb-4">
                                                 <div class="mb-3 text-center">
                                                     <h5>Dr. <?php echo htmlspecialchars(trim($row['Doctor_Name'])) ?></h5>
                                                     <div class="member-info text-center mb-2">

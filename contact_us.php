@@ -71,11 +71,11 @@
       <!-- Contact Us Section -->
       <section id="contact" class="contact">
         <div class="container">
-          <!-- <div class="my-3"> Message
+          <div class="my-3"> Message
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div> -->
+          </div>
           <?php
           include ("config/db_con.php"); // Connection to database
           
@@ -148,21 +148,13 @@
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
                     <div class="form-outline">
-                      <input type="tel" name="number" required class="form-control form-control-lg" pattern="0\d{9}"
-                        inputmode="numeric" id="numberInput" maxlength="11" oninput="validateNumberInput()">
+                      <input type="tel" name="number" required class="form-control form-control-lg" 
+                        inputmode="numeric" id="numberInput" maxlength="11">
                       <label for="designation" class="form-label">Number<span class="text-danger"></span></label>
                     </div>
                   </div>
 
-                  <script>
-                    function validateNumberInput() {
-                      const input = document.getElementById('numberInput');
-
-                      if (input.value.length > 11) {
-                        input.value = input.value.slice(0, 11);
-                      }
-                    }
-                  </script>
+                   
 
 
                   <div class="form-group mt-3">
@@ -242,6 +234,7 @@
   }
 </script>
 
+ 
 
 </body>
 

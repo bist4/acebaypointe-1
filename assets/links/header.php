@@ -86,7 +86,7 @@ include ("config/db_con.php"); // Connection to the database
         <li><a href="careers.php">CAREERS</a></li>
         <li class="dropdown"><a href="#"><span>PATIENT GUIDE & FEATURES</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="#">VIRTUAL TOUR</a></li>
+            <!-- <li><a href="#">VIRTUAL TOUR</a></li> -->
             <li><a href="admission_procedure.php">ADMISSION PROCEDURE</a></li>
             <li><a href="room_accommodation.php">ROOM ACCOMMODATIONS</a></li>
             <li><a href="patient_partnership.php">PATIENT PARTNERSHIP</a></li>

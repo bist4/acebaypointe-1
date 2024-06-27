@@ -33,7 +33,7 @@ if (isset($_POST['department']) && isset($_POST['doctorName'])) {
            echo                         '<div class="col-lg-5 col-xl-4 mb-lg-5">';
            echo                           '<div class="card mb-5 mb-xl-0">';
            echo                                '<div class="card-body p-5 gray-shadow">';
-           echo                                    '<img src="https://img.freepik.com/premium-vector/smiling-male-doctor-with-stethoscope-vector-illustration-cartoon-style_374761-3140.jpg"
+           echo                                    '<img src="assets/img/uploads/'.$row['Image'].'"
                                                     alt="" class="img-fluid mb-4">
                                                 <div class="mb-3 text-center">';
            echo                                        '<h5>Dr.'. htmlspecialchars(trim($row['Doctor_Name'])).'</h5>';
